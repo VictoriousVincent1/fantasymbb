@@ -1,0 +1,8095 @@
+{
+ "league_id": 0,
+ "year": 2027,
+ "name": "Demo League (made-up players)",
+ "scoring_type": "H2H_CATEGORY",
+ "categories": [
+  {
+   "name": "FG%",
+   "reverse": false
+  },
+  {
+   "name": "FT%",
+   "reverse": false
+  },
+  {
+   "name": "3PM",
+   "reverse": false
+  },
+  {
+   "name": "REB",
+   "reverse": false
+  },
+  {
+   "name": "AST",
+   "reverse": false
+  },
+  {
+   "name": "STL",
+   "reverse": false
+  },
+  {
+   "name": "BLK",
+   "reverse": false
+  },
+  {
+   "name": "TO",
+   "reverse": true
+  },
+  {
+   "name": "PTS",
+   "reverse": false
+  }
+ ],
+ "lineup_slots": {
+  "PG": 1,
+  "SG": 1,
+  "SF": 1,
+  "PF": 1,
+  "C": 1,
+  "G": 1,
+  "F": 1,
+  "UT": 3,
+  "BE": 3,
+  "IR": 1
+ },
+ "roster_limit": 13,
+ "trade_deadline_ms": 0,
+ "teams": [
+  {
+   "id": 1,
+   "name": "Harbor Hawks",
+   "abbrev": "HARB",
+   "wins": 1,
+   "losses": 3,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1000,
+     "name": "Xan Kestrel",
+     "pro_team": "HIL",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 23.111,
+       "REB": 5.184,
+       "AST": 10.314,
+       "STL": 1.779,
+       "BLK": 0.411,
+       "TO": 3.734,
+       "FGM": 7.358,
+       "FGA": 16.533,
+       "FTM": 5.369,
+       "FTA": 6.762,
+       "GP": 10.0,
+       "3PM": 3.026,
+       "FG%": 0.445,
+       "FT%": 0.794
+      },
+      "last_30": {
+       "PTS": 29.147,
+       "REB": 6.673,
+       "AST": 13.458,
+       "STL": 2.263,
+       "BLK": 0.503,
+       "TO": 3.734,
+       "FGM": 9.44,
+       "FGA": 20.376,
+       "FTM": 6.576,
+       "FTA": 8.497,
+       "GP": 10.0,
+       "3PM": 3.961,
+       "FG%": 0.445,
+       "FT%": 0.794
+      }
+     }
+    },
+    {
+     "id": 1025,
+     "name": "Niko Brightwater",
+     "pro_team": "BAY",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 22.214,
+       "REB": 10.351,
+       "AST": 5.624,
+       "STL": 0.998,
+       "BLK": 2.427,
+       "TO": 2.758,
+       "FGM": 8.246,
+       "FGA": 12.903,
+       "FTM": 4.418,
+       "FTA": 5.628,
+       "GP": 6.0,
+       "3PM": 1.304,
+       "FG%": 0.639,
+       "FT%": 0.785
+      },
+      "last_30": {
+       "PTS": 21.589,
+       "REB": 10.268,
+       "AST": 5.504,
+       "STL": 1.015,
+       "BLK": 2.521,
+       "TO": 2.758,
+       "FGM": 8.07,
+       "FGA": 12.807,
+       "FTM": 4.214,
+       "FTA": 5.633,
+       "GP": 6.0,
+       "3PM": 1.333,
+       "FG%": 0.639,
+       "FT%": 0.785
+      }
+     }
+    },
+    {
+     "id": 1028,
+     "name": "Pax Calloway",
+     "pro_team": "ALB",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.121,
+       "REB": 12.102,
+       "AST": 4.598,
+       "STL": 1.041,
+       "BLK": 2.654,
+       "TO": 2.806,
+       "FGM": 7.477,
+       "FGA": 12.26,
+       "FTM": 4.153,
+       "FTA": 7.123,
+       "GP": 11.0,
+       "3PM": 1.015,
+       "FG%": 0.61,
+       "FT%": 0.583
+      },
+      "last_30": {
+       "PTS": 20.396,
+       "REB": 12.656,
+       "AST": 4.426,
+       "STL": 1.009,
+       "BLK": 2.777,
+       "TO": 2.806,
+       "FGM": 7.838,
+       "FGA": 12.092,
+       "FTM": 4.032,
+       "FTA": 6.835,
+       "GP": 11.0,
+       "3PM": 0.976,
+       "FG%": 0.61,
+       "FT%": 0.583
+      }
+     }
+    },
+    {
+     "id": 1044,
+     "name": "Quinn Ashgrove",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 21.205,
+       "REB": 4.187,
+       "AST": 8.146,
+       "STL": 1.219,
+       "BLK": 0.327,
+       "TO": 2.849,
+       "FGM": 7.056,
+       "FGA": 15.553,
+       "FTM": 4.208,
+       "FTA": 5.429,
+       "GP": 7.0,
+       "3PM": 2.886,
+       "FG%": 0.454,
+       "FT%": 0.775
+      },
+      "last_30": {
+       "PTS": 21.589,
+       "REB": 4.13,
+       "AST": 8.13,
+       "STL": 1.199,
+       "BLK": 0.334,
+       "TO": 2.849,
+       "FGM": 7.269,
+       "FGA": 15.931,
+       "FTM": 4.399,
+       "FTA": 5.661,
+       "GP": 7.0,
+       "3PM": 2.744,
+       "FG%": 0.454,
+       "FT%": 0.775
+      }
+     }
+    },
+    {
+     "id": 1047,
+     "name": "Rafe Yarrow",
+     "pro_team": "BAY",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.289,
+       "REB": 6.199,
+       "AST": 3.831,
+       "STL": 1.181,
+       "BLK": 0.739,
+       "TO": 1.726,
+       "FGM": 6.775,
+       "FGA": 14.162,
+       "FTM": 2.846,
+       "FTA": 3.648,
+       "GP": 8.0,
+       "3PM": 1.892,
+       "FG%": 0.478,
+       "FT%": 0.78
+      },
+      "last_30": {
+       "PTS": 18.165,
+       "REB": 5.986,
+       "AST": 3.972,
+       "STL": 1.237,
+       "BLK": 0.76,
+       "TO": 1.726,
+       "FGM": 6.939,
+       "FGA": 13.918,
+       "FTM": 2.885,
+       "FTA": 3.787,
+       "GP": 8.0,
+       "3PM": 1.844,
+       "FG%": 0.478,
+       "FT%": 0.78
+      }
+     }
+    },
+    {
+     "id": 1066,
+     "name": "Emeka Quillfeather",
+     "pro_team": "DUN",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 16.96,
+       "REB": 7.814,
+       "AST": 3.082,
+       "STL": 0.703,
+       "BLK": 0.828,
+       "TO": 1.524,
+       "FGM": 6.282,
+       "FGA": 11.902,
+       "FTM": 3.146,
+       "FTA": 3.888,
+       "GP": 11.0,
+       "3PM": 1.25,
+       "FG%": 0.528,
+       "FT%": 0.809
+      },
+      "last_30": {
+       "PTS": 17.743,
+       "REB": 7.52,
+       "AST": 3.104,
+       "STL": 0.721,
+       "BLK": 0.796,
+       "TO": 1.524,
+       "FGM": 6.067,
+       "FGA": 12.23,
+       "FTM": 3.158,
+       "FTA": 3.978,
+       "GP": 11.0,
+       "3PM": 1.227,
+       "FG%": 0.528,
+       "FT%": 0.809
+      }
+     }
+    },
+    {
+     "id": 1074,
+     "name": "Finn Larkspur",
+     "pro_team": "COL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 15.966,
+       "REB": 7.466,
+       "AST": 3.041,
+       "STL": 0.776,
+       "BLK": 1.334,
+       "TO": 1.96,
+       "FGM": 6.398,
+       "FGA": 10.675,
+       "FTM": 2.437,
+       "FTA": 3.687,
+       "GP": 6.0,
+       "3PM": 0.733,
+       "FG%": 0.599,
+       "FT%": 0.661
+      },
+      "last_30": {
+       "PTS": 11.93,
+       "REB": 5.887,
+       "AST": 2.394,
+       "STL": 0.626,
+       "BLK": 1.084,
+       "TO": 1.96,
+       "FGM": 5.09,
+       "FGA": 7.973,
+       "FTM": 1.963,
+       "FTA": 2.824,
+       "GP": 6.0,
+       "3PM": 0.57,
+       "FG%": 0.599,
+       "FT%": 0.661
+      }
+     }
+    },
+    {
+     "id": 1093,
+     "name": "Bram Ravenscar",
+     "pro_team": "BAY",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "PG",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.919,
+       "REB": 3.368,
+       "AST": 2.451,
+       "STL": 0.917,
+       "BLK": 0.265,
+       "TO": 1.387,
+       "FGM": 4.329,
+       "FGA": 9.84,
+       "FTM": 2.277,
+       "FTA": 2.547,
+       "GP": 6.0,
+       "3PM": 1.984,
+       "FG%": 0.44,
+       "FT%": 0.894
+      },
+      "last_30": {
+       "PTS": 12.877,
+       "REB": 3.326,
+       "AST": 2.466,
+       "STL": 0.886,
+       "BLK": 0.256,
+       "TO": 1.387,
+       "FGM": 4.41,
+       "FGA": 9.797,
+       "FTM": 2.179,
+       "FTA": 2.666,
+       "GP": 6.0,
+       "3PM": 2.021,
+       "FG%": 0.44,
+       "FT%": 0.894
+      }
+     }
+    },
+    {
+     "id": 1101,
+     "name": "Rafe Ravenscar",
+     "pro_team": "FOX",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.476,
+       "REB": 7.129,
+       "AST": 1.788,
+       "STL": 0.598,
+       "BLK": 1.071,
+       "TO": 1.161,
+       "FGM": 5.05,
+       "FGA": 8.706,
+       "FTM": 1.899,
+       "FTA": 2.708,
+       "GP": 11.0,
+       "3PM": 0.478,
+       "FG%": 0.58,
+       "FT%": 0.701
+      },
+      "last_30": {
+       "PTS": 12.006,
+       "REB": 7.129,
+       "AST": 1.818,
+       "STL": 0.606,
+       "BLK": 1.025,
+       "TO": 1.161,
+       "FGM": 4.898,
+       "FGA": 8.449,
+       "FTM": 1.9,
+       "FTA": 2.698,
+       "GP": 11.0,
+       "3PM": 0.463,
+       "FG%": 0.58,
+       "FT%": 0.701
+      }
+     }
+    },
+    {
+     "id": 1117,
+     "name": "Hale Ashgrove",
+     "pro_team": "ELM",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.433,
+       "REB": 3.713,
+       "AST": 1.877,
+       "STL": 0.666,
+       "BLK": 0.298,
+       "TO": 1.166,
+       "FGM": 3.15,
+       "FGA": 7.124,
+       "FTM": 1.18,
+       "FTA": 1.357,
+       "GP": 12.0,
+       "3PM": 0.953,
+       "FG%": 0.442,
+       "FT%": 0.869
+      },
+      "last_30": {
+       "PTS": 10.839,
+       "REB": 4.455,
+       "AST": 2.249,
+       "STL": 0.857,
+       "BLK": 0.382,
+       "TO": 1.166,
+       "FGM": 4.091,
+       "FGA": 9.337,
+       "FTM": 1.405,
+       "FTA": 1.625,
+       "GP": 12.0,
+       "3PM": 1.15,
+       "FG%": 0.442,
+       "FT%": 0.869
+      }
+     }
+    },
+    {
+     "id": 1124,
+     "name": "Bram Ashgrove",
+     "pro_team": "HIL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.195,
+       "REB": 6.349,
+       "AST": 1.196,
+       "STL": 0.462,
+       "BLK": 0.841,
+       "TO": 0.943,
+       "FGM": 3.299,
+       "FGA": 5.691,
+       "FTM": 1.357,
+       "FTA": 2.138,
+       "GP": 8.0,
+       "3PM": 0.241,
+       "FG%": 0.58,
+       "FT%": 0.635
+      },
+      "last_30": {
+       "PTS": 6.618,
+       "REB": 4.852,
+       "AST": 0.956,
+       "STL": 0.371,
+       "BLK": 0.668,
+       "TO": 0.943,
+       "FGM": 2.674,
+       "FGA": 4.271,
+       "FTM": 1.047,
+       "FTA": 1.662,
+       "GP": 8.0,
+       "3PM": 0.191,
+       "FG%": 0.58,
+       "FT%": 0.635
+      }
+     }
+    },
+    {
+     "id": 1144,
+     "name": "Uri Westmere",
+     "pro_team": "HIL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.698,
+       "REB": 6.921,
+       "AST": 0.964,
+       "STL": 0.41,
+       "BLK": 0.715,
+       "TO": 0.97,
+       "FGM": 3.718,
+       "FGA": 6.15,
+       "FTM": 1.125,
+       "FTA": 1.428,
+       "GP": 12.0,
+       "3PM": 0.138,
+       "FG%": 0.604,
+       "FT%": 0.788
+      },
+      "last_30": {
+       "PTS": 9.098,
+       "REB": 6.879,
+       "AST": 1.002,
+       "STL": 0.391,
+       "BLK": 0.692,
+       "TO": 0.97,
+       "FGM": 3.55,
+       "FGA": 6.455,
+       "FTM": 1.157,
+       "FTA": 1.461,
+       "GP": 12.0,
+       "3PM": 0.145,
+       "FG%": 0.604,
+       "FT%": 0.788
+      }
+     }
+    },
+    {
+     "id": 1146,
+     "name": "Niko Westmere",
+     "pro_team": "DUN",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 6.079,
+       "REB": 5.128,
+       "AST": 0.914,
+       "STL": 0.341,
+       "BLK": 0.79,
+       "TO": 0.913,
+       "FGM": 2.536,
+       "FGA": 4.865,
+       "FTM": 0.902,
+       "FTA": 1.324,
+       "GP": 11.0,
+       "3PM": 0.104,
+       "FG%": 0.521,
+       "FT%": 0.681
+      },
+      "last_30": {
+       "PTS": 5.97,
+       "REB": 5.229,
+       "AST": 0.926,
+       "STL": 0.351,
+       "BLK": 0.792,
+       "TO": 0.913,
+       "FGM": 2.63,
+       "FGA": 5.011,
+       "FTM": 0.887,
+       "FTA": 1.341,
+       "GP": 11.0,
+       "3PM": 0.1,
+       "FG%": 0.521,
+       "FT%": 0.681
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Copper Comets",
+   "abbrev": "COPP",
+   "wins": 3,
+   "losses": 1,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1003,
+     "name": "Omar Oakhurst",
+     "pro_team": "BAY",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "PG",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 27.004,
+       "REB": 5.904,
+       "AST": 6.858,
+       "STL": 1.839,
+       "BLK": 0.557,
+       "TO": 3.06,
+       "FGM": 9.156,
+       "FGA": 20.407,
+       "FTM": 5.506,
+       "FTA": 6.299,
+       "GP": 9.0,
+       "3PM": 3.186,
+       "FG%": 0.449,
+       "FT%": 0.874
+      },
+      "last_30": {
+       "PTS": 26.688,
+       "REB": 6.114,
+       "AST": 6.961,
+       "STL": 1.765,
+       "BLK": 0.576,
+       "TO": 3.06,
+       "FGM": 9.209,
+       "FGA": 20.204,
+       "FTM": 5.318,
+       "FTA": 6.588,
+       "GP": 9.0,
+       "3PM": 3.317,
+       "FG%": 0.449,
+       "FT%": 0.874
+      }
+     }
+    },
+    {
+     "id": 1023,
+     "name": "Wes Eastlake",
+     "pro_team": "BAY",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "PG",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.696,
+       "REB": 5.944,
+       "AST": 5.927,
+       "STL": 1.269,
+       "BLK": 0.55,
+       "TO": 2.204,
+       "FGM": 6.876,
+       "FGA": 14.861,
+       "FTM": 3.437,
+       "FTA": 4.515,
+       "GP": 12.0,
+       "3PM": 3.507,
+       "FG%": 0.463,
+       "FT%": 0.761
+      },
+      "last_30": {
+       "PTS": 21.631,
+       "REB": 6.183,
+       "AST": 5.761,
+       "STL": 1.226,
+       "BLK": 0.562,
+       "TO": 2.204,
+       "FGM": 7.152,
+       "FGA": 15.409,
+       "FTM": 3.368,
+       "FTA": 4.627,
+       "GP": 12.0,
+       "3PM": 3.604,
+       "FG%": 0.463,
+       "FT%": 0.761
+      }
+     }
+    },
+    {
+     "id": 1030,
+     "name": "Pax Ashgrove",
+     "pro_team": "ALB",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 21.469,
+       "REB": 4.367,
+       "AST": 4.804,
+       "STL": 1.257,
+       "BLK": 0.424,
+       "TO": 2.303,
+       "FGM": 6.849,
+       "FGA": 16.044,
+       "FTM": 4.302,
+       "FTA": 4.885,
+       "GP": 12.0,
+       "3PM": 3.469,
+       "FG%": 0.427,
+       "FT%": 0.881
+      },
+      "last_30": {
+       "PTS": 20.43,
+       "REB": 4.258,
+       "AST": 4.971,
+       "STL": 1.314,
+       "BLK": 0.427,
+       "TO": 2.303,
+       "FGM": 6.999,
+       "FGA": 16.19,
+       "FTM": 4.409,
+       "FTA": 4.655,
+       "GP": 12.0,
+       "3PM": 3.558,
+       "FG%": 0.427,
+       "FT%": 0.881
+      }
+     }
+    },
+    {
+     "id": 1049,
+     "name": "Zane Westmere",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.313,
+       "REB": 3.745,
+       "AST": 4.424,
+       "STL": 0.98,
+       "BLK": 0.383,
+       "TO": 1.949,
+       "FGM": 5.836,
+       "FGA": 12.498,
+       "FTM": 3.723,
+       "FTA": 4.433,
+       "GP": 8.0,
+       "3PM": 2.916,
+       "FG%": 0.467,
+       "FT%": 0.84
+      },
+      "last_30": {
+       "PTS": 18.674,
+       "REB": 3.596,
+       "AST": 4.583,
+       "STL": 0.972,
+       "BLK": 0.397,
+       "TO": 1.949,
+       "FGM": 5.549,
+       "FGA": 13.006,
+       "FTM": 3.845,
+       "FTA": 4.419,
+       "GP": 8.0,
+       "3PM": 2.915,
+       "FG%": 0.467,
+       "FT%": 0.84
+      }
+     }
+    },
+    {
+     "id": 1048,
+     "name": "Rafe Brightwater",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 21.57,
+       "REB": 5.013,
+       "AST": 7.66,
+       "STL": 1.096,
+       "BLK": 0.316,
+       "TO": 2.367,
+       "FGM": 7.055,
+       "FGA": 15.917,
+       "FTM": 4.584,
+       "FTA": 5.122,
+       "GP": 9.0,
+       "3PM": 2.875,
+       "FG%": 0.443,
+       "FT%": 0.895
+      },
+      "last_30": {
+       "PTS": 20.69,
+       "REB": 4.913,
+       "AST": 7.372,
+       "STL": 1.122,
+       "BLK": 0.325,
+       "TO": 2.367,
+       "FGM": 7.04,
+       "FGA": 16.279,
+       "FTM": 4.46,
+       "FTA": 5.219,
+       "GP": 9.0,
+       "3PM": 2.948,
+       "FG%": 0.443,
+       "FT%": 0.895
+      }
+     }
+    },
+    {
+     "id": 1073,
+     "name": "Goran Ravenscar",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.294,
+       "REB": 4.067,
+       "AST": 3.014,
+       "STL": 1.146,
+       "BLK": 0.343,
+       "TO": 1.618,
+       "FGM": 6.704,
+       "FGA": 14.011,
+       "FTM": 2.403,
+       "FTA": 3.092,
+       "GP": 7.0,
+       "3PM": 2.483,
+       "FG%": 0.478,
+       "FT%": 0.777
+      },
+      "last_30": {
+       "PTS": 18.61,
+       "REB": 3.909,
+       "AST": 2.915,
+       "STL": 1.135,
+       "BLK": 0.343,
+       "TO": 1.618,
+       "FGM": 6.586,
+       "FGA": 13.727,
+       "FTM": 2.287,
+       "FTA": 3.15,
+       "GP": 7.0,
+       "3PM": 2.424,
+       "FG%": 0.478,
+       "FT%": 0.777
+      }
+     }
+    },
+    {
+     "id": 1075,
+     "name": "Luca Westmere",
+     "pro_team": "FOX",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 14.569,
+       "REB": 3.16,
+       "AST": 2.925,
+       "STL": 1.117,
+       "BLK": 0.315,
+       "TO": 1.375,
+       "FGM": 5.218,
+       "FGA": 11.108,
+       "FTM": 2.11,
+       "FTA": 2.633,
+       "GP": 10.0,
+       "3PM": 2.023,
+       "FG%": 0.47,
+       "FT%": 0.801
+      },
+      "last_30": {
+       "PTS": 14.728,
+       "REB": 3.305,
+       "AST": 2.814,
+       "STL": 1.08,
+       "BLK": 0.315,
+       "TO": 1.375,
+       "FGM": 5.347,
+       "FGA": 11.548,
+       "FTM": 2.021,
+       "FTA": 2.522,
+       "GP": 10.0,
+       "3PM": 2.052,
+       "FG%": 0.47,
+       "FT%": 0.801
+      }
+     }
+    },
+    {
+     "id": 1097,
+     "name": "Finn Quillfeather",
+     "pro_team": "DUN",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.474,
+       "REB": 2.729,
+       "AST": 2.136,
+       "STL": 0.818,
+       "BLK": 0.188,
+       "TO": 1.337,
+       "FGM": 4.86,
+       "FGA": 11.598,
+       "FTM": 1.648,
+       "FTA": 2.146,
+       "GP": 10.0,
+       "3PM": 2.106,
+       "FG%": 0.419,
+       "FT%": 0.768
+      },
+      "last_30": {
+       "PTS": 10.192,
+       "REB": 2.028,
+       "AST": 1.746,
+       "STL": 0.646,
+       "BLK": 0.142,
+       "TO": 1.337,
+       "FGM": 3.881,
+       "FGA": 9.367,
+       "FTM": 1.297,
+       "FTA": 1.717,
+       "GP": 10.0,
+       "3PM": 1.692,
+       "FG%": 0.419,
+       "FT%": 0.768
+      }
+     }
+    },
+    {
+     "id": 1096,
+     "name": "Xan Zephyrine",
+     "pro_team": "DUN",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.539,
+       "REB": 3.32,
+       "AST": 2.136,
+       "STL": 0.969,
+       "BLK": 0.245,
+       "TO": 1.224,
+       "FGM": 4.92,
+       "FGA": 11.246,
+       "FTM": 1.927,
+       "FTA": 2.193,
+       "GP": 6.0,
+       "3PM": 1.773,
+       "FG%": 0.437,
+       "FT%": 0.879
+      },
+      "last_30": {
+       "PTS": 10.416,
+       "REB": 2.626,
+       "AST": 1.732,
+       "STL": 0.74,
+       "BLK": 0.196,
+       "TO": 1.224,
+       "FGM": 3.99,
+       "FGA": 8.694,
+       "FTM": 1.456,
+       "FTA": 1.729,
+       "GP": 6.0,
+       "3PM": 1.328,
+       "FG%": 0.437,
+       "FT%": 0.879
+      }
+     }
+    },
+    {
+     "id": 1119,
+     "name": "Finn Ravenscar",
+     "pro_team": "BAY",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.635,
+       "REB": 2.498,
+       "AST": 2.235,
+       "STL": 0.685,
+       "BLK": 0.173,
+       "TO": 1.167,
+       "FGM": 3.279,
+       "FGA": 7.826,
+       "FTM": 1.384,
+       "FTA": 1.806,
+       "GP": 7.0,
+       "3PM": 1.694,
+       "FG%": 0.419,
+       "FT%": 0.766
+      },
+      "last_30": {
+       "PTS": 9.765,
+       "REB": 2.537,
+       "AST": 2.314,
+       "STL": 0.7,
+       "BLK": 0.173,
+       "TO": 1.167,
+       "FGM": 3.135,
+       "FGA": 7.944,
+       "FTM": 1.333,
+       "FTA": 1.846,
+       "GP": 7.0,
+       "3PM": 1.629,
+       "FG%": 0.419,
+       "FT%": 0.766
+      }
+     }
+    },
+    {
+     "id": 1121,
+     "name": "Kofi Larkspur",
+     "pro_team": "GRV",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "PG",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 11.594,
+       "REB": 2.544,
+       "AST": 1.635,
+       "STL": 0.692,
+       "BLK": 0.178,
+       "TO": 1.015,
+       "FGM": 4.406,
+       "FGA": 9.365,
+       "FTM": 1.159,
+       "FTA": 1.428,
+       "GP": 7.0,
+       "3PM": 1.623,
+       "FG%": 0.47,
+       "FT%": 0.812
+      },
+      "last_30": {
+       "PTS": 14.687,
+       "REB": 3.216,
+       "AST": 2.073,
+       "STL": 0.847,
+       "BLK": 0.217,
+       "TO": 1.015,
+       "FGM": 5.334,
+       "FGA": 11.825,
+       "FTM": 1.396,
+       "FTA": 1.794,
+       "GP": 7.0,
+       "3PM": 2.005,
+       "FG%": 0.47,
+       "FT%": 0.812
+      }
+     }
+    },
+    {
+     "id": 1141,
+     "name": "Jonah Oakhurst",
+     "pro_team": "HIL",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.855,
+       "REB": 3.217,
+       "AST": 1.259,
+       "STL": 0.593,
+       "BLK": 0.245,
+       "TO": 0.815,
+       "FGM": 3.125,
+       "FGA": 6.525,
+       "FTM": 0.764,
+       "FTA": 0.947,
+       "GP": 12.0,
+       "3PM": 0.84,
+       "FG%": 0.479,
+       "FT%": 0.808
+      },
+      "last_30": {
+       "PTS": 7.74,
+       "REB": 3.205,
+       "AST": 1.262,
+       "STL": 0.564,
+       "BLK": 0.248,
+       "TO": 0.815,
+       "FGM": 3.039,
+       "FGA": 6.73,
+       "FTM": 0.771,
+       "FTA": 0.909,
+       "GP": 12.0,
+       "3PM": 0.817,
+       "FG%": 0.479,
+       "FT%": 0.808
+      }
+     }
+    },
+    {
+     "id": 1143,
+     "name": "Yuri Ravenscar",
+     "pro_team": "FOX",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.208,
+       "REB": 5.31,
+       "AST": 1.278,
+       "STL": 0.464,
+       "BLK": 0.446,
+       "TO": 0.697,
+       "FGM": 2.946,
+       "FGA": 6.176,
+       "FTM": 0.822,
+       "FTA": 1.082,
+       "GP": 9.0,
+       "3PM": 0.495,
+       "FG%": 0.477,
+       "FT%": 0.76
+      },
+      "last_30": {
+       "PTS": 7.368,
+       "REB": 5.206,
+       "AST": 1.236,
+       "STL": 0.443,
+       "BLK": 0.433,
+       "TO": 0.697,
+       "FGM": 2.825,
+       "FGA": 6.107,
+       "FTM": 0.781,
+       "FTA": 1.037,
+       "GP": 9.0,
+       "3PM": 0.487,
+       "FG%": 0.477,
+       "FT%": 0.76
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Lakeside Lynx",
+   "abbrev": "LAKE",
+   "wins": 1,
+   "losses": 3,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1002,
+     "name": "Wes Ironwood",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 22.091,
+       "REB": 4.902,
+       "AST": 10.948,
+       "STL": 1.537,
+       "BLK": 0.428,
+       "TO": 3.697,
+       "FGM": 6.761,
+       "FGA": 16.255,
+       "FTM": 5.347,
+       "FTA": 6.928,
+       "GP": 9.0,
+       "3PM": 3.223,
+       "FG%": 0.416,
+       "FT%": 0.772
+      },
+      "last_30": {
+       "PTS": 22.232,
+       "REB": 5.127,
+       "AST": 10.998,
+       "STL": 1.523,
+       "BLK": 0.433,
+       "TO": 3.697,
+       "FGM": 6.456,
+       "FGA": 15.587,
+       "FTM": 5.43,
+       "FTA": 6.604,
+       "GP": 9.0,
+       "3PM": 3.127,
+       "FG%": 0.416,
+       "FT%": 0.772
+      }
+     }
+    },
+    {
+     "id": 1021,
+     "name": "Soren Yarrow",
+     "pro_team": "COL",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 21.052,
+       "REB": 5.538,
+       "AST": 8.248,
+       "STL": 1.782,
+       "BLK": 0.439,
+       "TO": 3.187,
+       "FGM": 6.799,
+       "FGA": 14.508,
+       "FTM": 4.797,
+       "FTA": 5.757,
+       "GP": 10.0,
+       "3PM": 2.656,
+       "FG%": 0.469,
+       "FT%": 0.833
+      },
+      "last_30": {
+       "PTS": 21.698,
+       "REB": 5.592,
+       "AST": 8.584,
+       "STL": 1.849,
+       "BLK": 0.448,
+       "TO": 3.187,
+       "FGM": 6.967,
+       "FGA": 14.255,
+       "FTM": 4.722,
+       "FTA": 5.641,
+       "GP": 10.0,
+       "3PM": 2.762,
+       "FG%": 0.469,
+       "FT%": 0.833
+      }
+     }
+    },
+    {
+     "id": 1022,
+     "name": "Mateo Ironwood",
+     "pro_team": "GRV",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 24.675,
+       "REB": 6.484,
+       "AST": 5.187,
+       "STL": 1.619,
+       "BLK": 0.933,
+       "TO": 2.142,
+       "FGM": 8.815,
+       "FGA": 17.364,
+       "FTM": 4.452,
+       "FTA": 5.752,
+       "GP": 7.0,
+       "3PM": 2.593,
+       "FG%": 0.508,
+       "FT%": 0.774
+      },
+      "last_30": {
+       "PTS": 25.176,
+       "REB": 6.627,
+       "AST": 4.996,
+       "STL": 1.637,
+       "BLK": 0.889,
+       "TO": 2.142,
+       "FGM": 8.576,
+       "FGA": 17.198,
+       "FTM": 4.488,
+       "FTA": 5.687,
+       "GP": 7.0,
+       "3PM": 2.72,
+       "FG%": 0.508,
+       "FT%": 0.774
+      }
+     }
+    },
+    {
+     "id": 1045,
+     "name": "Dario Harrowgate",
+     "pro_team": "ELM",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 19.879,
+       "REB": 3.741,
+       "AST": 6.835,
+       "STL": 1.519,
+       "BLK": 0.348,
+       "TO": 2.967,
+       "FGM": 6.765,
+       "FGA": 15.287,
+       "FTM": 3.493,
+       "FTA": 4.407,
+       "GP": 9.0,
+       "3PM": 2.855,
+       "FG%": 0.443,
+       "FT%": 0.793
+      },
+      "last_30": {
+       "PTS": 20.4,
+       "REB": 3.894,
+       "AST": 6.955,
+       "STL": 1.577,
+       "BLK": 0.337,
+       "TO": 2.967,
+       "FGM": 6.929,
+       "FGA": 16.015,
+       "FTM": 3.595,
+       "FTA": 4.326,
+       "GP": 9.0,
+       "3PM": 2.908,
+       "FG%": 0.443,
+       "FT%": 0.793
+      }
+     }
+    },
+    {
+     "id": 1050,
+     "name": "Kofi Thornfield",
+     "pro_team": "GRV",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "OUT",
+     "stats": {
+      "season": {
+       "PTS": 19.783,
+       "REB": 4.866,
+       "AST": 6.746,
+       "STL": 1.192,
+       "BLK": 0.375,
+       "TO": 2.931,
+       "FGM": 6.856,
+       "FGA": 15.924,
+       "FTM": 3.974,
+       "FTA": 4.506,
+       "GP": 8.0,
+       "3PM": 2.097,
+       "FG%": 0.431,
+       "FT%": 0.882
+      },
+      "last_30": {
+       "PTS": 25.295,
+       "REB": 6.202,
+       "AST": 8.596,
+       "STL": 1.52,
+       "BLK": 0.477,
+       "TO": 2.931,
+       "FGM": 8.959,
+       "FGA": 20.016,
+       "FTM": 5.106,
+       "FTA": 5.507,
+       "GP": 8.0,
+       "3PM": 2.653,
+       "FG%": 0.431,
+       "FT%": 0.882
+      }
+     }
+    },
+    {
+     "id": 1064,
+     "name": "Cato Northcote",
+     "pro_team": "HIL",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.53,
+       "REB": 5.769,
+       "AST": 3.339,
+       "STL": 0.915,
+       "BLK": 0.565,
+       "TO": 1.95,
+       "FGM": 4.732,
+       "FGA": 10.902,
+       "FTM": 2.417,
+       "FTA": 3.112,
+       "GP": 9.0,
+       "3PM": 1.648,
+       "FG%": 0.434,
+       "FT%": 0.777
+      },
+      "last_30": {
+       "PTS": 13.961,
+       "REB": 5.979,
+       "AST": 3.289,
+       "STL": 0.918,
+       "BLK": 0.56,
+       "TO": 1.95,
+       "FGM": 4.656,
+       "FGA": 10.933,
+       "FTM": 2.524,
+       "FTA": 3.064,
+       "GP": 9.0,
+       "3PM": 1.715,
+       "FG%": 0.434,
+       "FT%": 0.777
+      }
+     }
+    },
+    {
+     "id": 1068,
+     "name": "Rafe Glenhaven",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 16.716,
+       "REB": 7.718,
+       "AST": 3.144,
+       "STL": 0.818,
+       "BLK": 0.998,
+       "TO": 1.46,
+       "FGM": 6.229,
+       "FGA": 11.837,
+       "FTM": 2.936,
+       "FTA": 3.791,
+       "GP": 12.0,
+       "3PM": 1.322,
+       "FG%": 0.526,
+       "FT%": 0.774
+      },
+      "last_30": {
+       "PTS": 21.238,
+       "REB": 9.56,
+       "AST": 4.112,
+       "STL": 1.042,
+       "BLK": 1.213,
+       "TO": 1.46,
+       "FGM": 7.753,
+       "FGA": 15.366,
+       "FTM": 3.816,
+       "FTA": 4.922,
+       "GP": 12.0,
+       "3PM": 1.639,
+       "FG%": 0.526,
+       "FT%": 0.774
+      }
+     }
+    },
+    {
+     "id": 1098,
+     "name": "Rafe Kestrel",
+     "pro_team": "COL",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.549,
+       "REB": 3.235,
+       "AST": 6.31,
+       "STL": 0.729,
+       "BLK": 0.186,
+       "TO": 1.535,
+       "FGM": 4.219,
+       "FGA": 9.526,
+       "FTM": 2.29,
+       "FTA": 2.888,
+       "GP": 12.0,
+       "3PM": 1.819,
+       "FG%": 0.443,
+       "FT%": 0.793
+      },
+      "last_30": {
+       "PTS": 10.162,
+       "REB": 2.5,
+       "AST": 5.109,
+       "STL": 0.559,
+       "BLK": 0.152,
+       "TO": 1.535,
+       "FGM": 3.283,
+       "FGA": 7.685,
+       "FTM": 1.809,
+       "FTA": 2.266,
+       "GP": 12.0,
+       "3PM": 1.36,
+       "FG%": 0.443,
+       "FT%": 0.793
+      }
+     }
+    },
+    {
+     "id": 1094,
+     "name": "Kofi Northcote",
+     "pro_team": "HIL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 11.305,
+       "REB": 4.972,
+       "AST": 1.809,
+       "STL": 0.637,
+       "BLK": 0.716,
+       "TO": 1.533,
+       "FGM": 4.416,
+       "FGA": 8.386,
+       "FTM": 1.569,
+       "FTA": 2.143,
+       "GP": 10.0,
+       "3PM": 0.903,
+       "FG%": 0.527,
+       "FT%": 0.732
+      },
+      "last_30": {
+       "PTS": 11.77,
+       "REB": 4.866,
+       "AST": 1.844,
+       "STL": 0.62,
+       "BLK": 0.737,
+       "TO": 1.533,
+       "FGM": 4.493,
+       "FGA": 8.45,
+       "FTM": 1.609,
+       "FTA": 2.205,
+       "GP": 10.0,
+       "3PM": 0.88,
+       "FG%": 0.527,
+       "FT%": 0.732
+      }
+     }
+    },
+    {
+     "id": 1122,
+     "name": "Rafe Eastlake",
+     "pro_team": "GRV",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 10.593,
+       "REB": 2.491,
+       "AST": 4.387,
+       "STL": 0.835,
+       "BLK": 0.152,
+       "TO": 1.786,
+       "FGM": 3.883,
+       "FGA": 9.411,
+       "FTM": 1.71,
+       "FTA": 2.046,
+       "GP": 12.0,
+       "3PM": 1.116,
+       "FG%": 0.413,
+       "FT%": 0.835
+      },
+      "last_30": {
+       "PTS": 10.235,
+       "REB": 2.536,
+       "AST": 4.424,
+       "STL": 0.826,
+       "BLK": 0.145,
+       "TO": 1.786,
+       "FGM": 3.86,
+       "FGA": 9.012,
+       "FTM": 1.645,
+       "FTA": 1.997,
+       "GP": 12.0,
+       "3PM": 1.133,
+       "FG%": 0.413,
+       "FT%": 0.835
+      }
+     }
+    },
+    {
+     "id": 1118,
+     "name": "Dario Ravenscar",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "PG",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.865,
+       "REB": 2.354,
+       "AST": 1.687,
+       "STL": 0.823,
+       "BLK": 0.184,
+       "TO": 1.209,
+       "FGM": 3.496,
+       "FGA": 8.275,
+       "FTM": 1.26,
+       "FTA": 1.549,
+       "GP": 10.0,
+       "3PM": 1.613,
+       "FG%": 0.423,
+       "FT%": 0.813
+      },
+      "last_30": {
+       "PTS": 10.09,
+       "REB": 2.457,
+       "AST": 1.73,
+       "STL": 0.827,
+       "BLK": 0.189,
+       "TO": 1.209,
+       "FGM": 3.56,
+       "FGA": 8.531,
+       "FTM": 1.216,
+       "FTA": 1.595,
+       "GP": 10.0,
+       "3PM": 1.617,
+       "FG%": 0.423,
+       "FT%": 0.813
+      }
+     }
+    },
+    {
+     "id": 1140,
+     "name": "Luca Ironwood",
+     "pro_team": "HIL",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.432,
+       "REB": 2.505,
+       "AST": 4.25,
+       "STL": 0.66,
+       "BLK": 0.131,
+       "TO": 1.507,
+       "FGM": 2.757,
+       "FGA": 6.212,
+       "FTM": 0.94,
+       "FTA": 1.143,
+       "GP": 12.0,
+       "3PM": 0.977,
+       "FG%": 0.444,
+       "FT%": 0.823
+      },
+      "last_30": {
+       "PTS": 7.09,
+       "REB": 2.5,
+       "AST": 4.188,
+       "STL": 0.652,
+       "BLK": 0.128,
+       "TO": 1.507,
+       "FGM": 2.808,
+       "FGA": 6.013,
+       "FTM": 0.951,
+       "FTA": 1.174,
+       "GP": 12.0,
+       "3PM": 0.97,
+       "FG%": 0.444,
+       "FT%": 0.823
+      }
+     }
+    },
+    {
+     "id": 1145,
+     "name": "Wes Vanterpool",
+     "pro_team": "ELM",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.43,
+       "REB": 1.973,
+       "AST": 3.676,
+       "STL": 0.731,
+       "BLK": 0.104,
+       "TO": 1.439,
+       "FGM": 3.637,
+       "FGA": 8.349,
+       "FTM": 1.061,
+       "FTA": 1.393,
+       "GP": 8.0,
+       "3PM": 1.094,
+       "FG%": 0.436,
+       "FT%": 0.762
+      },
+      "last_30": {
+       "PTS": 9.18,
+       "REB": 1.97,
+       "AST": 3.805,
+       "STL": 0.742,
+       "BLK": 0.102,
+       "TO": 1.439,
+       "FGM": 3.6,
+       "FGA": 7.954,
+       "FTM": 1.042,
+       "FTA": 1.363,
+       "GP": 8.0,
+       "3PM": 1.077,
+       "FG%": 0.436,
+       "FT%": 0.762
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Summit Sharks",
+   "abbrev": "SUMM",
+   "wins": 3,
+   "losses": 1,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1006,
+     "name": "Soren Merrow",
+     "pro_team": "ALB",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 27.391,
+       "REB": 9.02,
+       "AST": 5.007,
+       "STL": 1.806,
+       "BLK": 0.976,
+       "TO": 3.053,
+       "FGM": 9.879,
+       "FGA": 21.013,
+       "FTM": 5.035,
+       "FTA": 6.644,
+       "GP": 11.0,
+       "3PM": 2.597,
+       "FG%": 0.47,
+       "FT%": 0.758
+      },
+      "last_30": {
+       "PTS": 32.933,
+       "REB": 11.18,
+       "AST": 6.356,
+       "STL": 2.145,
+       "BLK": 1.256,
+       "TO": 3.053,
+       "FGM": 12.311,
+       "FGA": 26.149,
+       "FTM": 6.476,
+       "FTA": 8.24,
+       "GP": 11.0,
+       "3PM": 3.106,
+       "FG%": 0.47,
+       "FT%": 0.758
+      }
+     }
+    },
+    {
+     "id": 1019,
+     "name": "Wes Stonebridge",
+     "pro_team": "GRV",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 22.762,
+       "REB": 10.404,
+       "AST": 4.714,
+       "STL": 1.244,
+       "BLK": 1.995,
+       "TO": 3.182,
+       "FGM": 8.045,
+       "FGA": 13.646,
+       "FTM": 5.426,
+       "FTA": 7.919,
+       "GP": 9.0,
+       "3PM": 1.246,
+       "FG%": 0.59,
+       "FT%": 0.685
+      },
+      "last_30": {
+       "PTS": 18.197,
+       "REB": 8.386,
+       "AST": 3.78,
+       "STL": 0.974,
+       "BLK": 1.626,
+       "TO": 3.182,
+       "FGM": 6.11,
+       "FGA": 10.473,
+       "FTM": 4.187,
+       "FTA": 6.482,
+       "GP": 9.0,
+       "3PM": 1.007,
+       "FG%": 0.59,
+       "FT%": 0.685
+      }
+     }
+    },
+    {
+     "id": 1024,
+     "name": "Theo Vanterpool",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.378,
+       "REB": 7.289,
+       "AST": 4.818,
+       "STL": 1.08,
+       "BLK": 1.067,
+       "TO": 2.497,
+       "FGM": 6.051,
+       "FGA": 12.734,
+       "FTM": 4.557,
+       "FTA": 5.492,
+       "GP": 7.0,
+       "3PM": 1.719,
+       "FG%": 0.475,
+       "FT%": 0.83
+      },
+      "last_30": {
+       "PTS": 18.239,
+       "REB": 7.378,
+       "AST": 5.002,
+       "STL": 1.095,
+       "BLK": 1.064,
+       "TO": 2.497,
+       "FGM": 6.031,
+       "FGA": 13.083,
+       "FTM": 4.682,
+       "FTA": 5.239,
+       "GP": 7.0,
+       "3PM": 1.71,
+       "FG%": 0.475,
+       "FT%": 0.83
+      }
+     }
+    },
+    {
+     "id": 1042,
+     "name": "Dario Glenhaven",
+     "pro_team": "ELM",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.604,
+       "REB": 5.435,
+       "AST": 3.831,
+       "STL": 1.42,
+       "BLK": 0.637,
+       "TO": 2.362,
+       "FGM": 6.587,
+       "FGA": 14.468,
+       "FTM": 3.208,
+       "FTA": 3.741,
+       "GP": 11.0,
+       "3PM": 2.221,
+       "FG%": 0.455,
+       "FT%": 0.857
+      },
+      "last_30": {
+       "PTS": 18.764,
+       "REB": 5.457,
+       "AST": 3.658,
+       "STL": 1.387,
+       "BLK": 0.611,
+       "TO": 2.362,
+       "FGM": 6.845,
+       "FGA": 14.872,
+       "FTM": 3.271,
+       "FTA": 3.859,
+       "GP": 11.0,
+       "3PM": 2.199,
+       "FG%": 0.455,
+       "FT%": 0.857
+      }
+     }
+    },
+    {
+     "id": 1051,
+     "name": "Yuri Larkspur",
+     "pro_team": "GRV",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.477,
+       "REB": 11.342,
+       "AST": 3.637,
+       "STL": 0.965,
+       "BLK": 1.568,
+       "TO": 2.239,
+       "FGM": 6.966,
+       "FGA": 11.554,
+       "FTM": 3.711,
+       "FTA": 4.661,
+       "GP": 8.0,
+       "3PM": 0.835,
+       "FG%": 0.603,
+       "FT%": 0.796
+      },
+      "last_30": {
+       "PTS": 17.704,
+       "REB": 11.716,
+       "AST": 3.765,
+       "STL": 0.936,
+       "BLK": 1.513,
+       "TO": 2.239,
+       "FGM": 6.975,
+       "FGA": 11.586,
+       "FTM": 3.645,
+       "FTA": 4.475,
+       "GP": 8.0,
+       "3PM": 0.854,
+       "FG%": 0.603,
+       "FT%": 0.796
+      }
+     }
+    },
+    {
+     "id": 1070,
+     "name": "Theo Zephyrine",
+     "pro_team": "ALB",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.802,
+       "REB": 5.375,
+       "AST": 2.508,
+       "STL": 0.921,
+       "BLK": 0.54,
+       "TO": 1.387,
+       "FGM": 4.407,
+       "FGA": 10.227,
+       "FTM": 2.359,
+       "FTA": 2.876,
+       "GP": 10.0,
+       "3PM": 1.63,
+       "FG%": 0.431,
+       "FT%": 0.82
+      },
+      "last_30": {
+       "PTS": 12.947,
+       "REB": 5.146,
+       "AST": 2.576,
+       "STL": 0.897,
+       "BLK": 0.538,
+       "TO": 1.387,
+       "FGM": 4.425,
+       "FGA": 9.854,
+       "FTM": 2.318,
+       "FTA": 2.837,
+       "GP": 10.0,
+       "3PM": 1.654,
+       "FG%": 0.431,
+       "FT%": 0.82
+      }
+     }
+    },
+    {
+     "id": 1078,
+     "name": "Zane Glenhaven",
+     "pro_team": "HIL",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.128,
+       "REB": 4.379,
+       "AST": 2.926,
+       "STL": 0.823,
+       "BLK": 0.539,
+       "TO": 1.692,
+       "FGM": 4.491,
+       "FGA": 8.898,
+       "FTM": 2.375,
+       "FTA": 3.16,
+       "GP": 7.0,
+       "3PM": 1.772,
+       "FG%": 0.505,
+       "FT%": 0.751
+      },
+      "last_30": {
+       "PTS": 13.166,
+       "REB": 4.562,
+       "AST": 2.807,
+       "STL": 0.789,
+       "BLK": 0.54,
+       "TO": 1.692,
+       "FGM": 4.636,
+       "FGA": 9.249,
+       "FTM": 2.376,
+       "FTA": 3.286,
+       "GP": 7.0,
+       "3PM": 1.783,
+       "FG%": 0.505,
+       "FT%": 0.751
+      }
+     }
+    },
+    {
+     "id": 1092,
+     "name": "Vito Underhill",
+     "pro_team": "BAY",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 14.617,
+       "REB": 2.603,
+       "AST": 5.783,
+       "STL": 0.867,
+       "BLK": 0.232,
+       "TO": 2.092,
+       "FGM": 5.292,
+       "FGA": 11.19,
+       "FTM": 2.358,
+       "FTA": 2.65,
+       "GP": 12.0,
+       "3PM": 1.675,
+       "FG%": 0.473,
+       "FT%": 0.89
+      },
+      "last_30": {
+       "PTS": 14.728,
+       "REB": 2.5,
+       "AST": 5.92,
+       "STL": 0.825,
+       "BLK": 0.229,
+       "TO": 2.092,
+       "FGM": 5.534,
+       "FGA": 11.283,
+       "FTM": 2.397,
+       "FTA": 2.546,
+       "GP": 12.0,
+       "3PM": 1.641,
+       "FG%": 0.473,
+       "FT%": 0.89
+      }
+     }
+    },
+    {
+     "id": 1102,
+     "name": "Vito Northcote",
+     "pro_team": "DUN",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 11.821,
+       "REB": 3.959,
+       "AST": 2.042,
+       "STL": 0.811,
+       "BLK": 0.405,
+       "TO": 1.065,
+       "FGM": 4.406,
+       "FGA": 9.392,
+       "FTM": 1.498,
+       "FTA": 1.825,
+       "GP": 11.0,
+       "3PM": 1.512,
+       "FG%": 0.469,
+       "FT%": 0.821
+      },
+      "last_30": {
+       "PTS": 15.254,
+       "REB": 4.741,
+       "AST": 2.56,
+       "STL": 0.984,
+       "BLK": 0.502,
+       "TO": 1.065,
+       "FGM": 5.503,
+       "FGA": 12.064,
+       "FTM": 1.931,
+       "FTA": 2.199,
+       "GP": 11.0,
+       "3PM": 1.832,
+       "FG%": 0.469,
+       "FT%": 0.821
+      }
+     }
+    },
+    {
+     "id": 1116,
+     "name": "Luca Kestrel",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.216,
+       "REB": 2.387,
+       "AST": 4.168,
+       "STL": 0.849,
+       "BLK": 0.175,
+       "TO": 1.645,
+       "FGM": 4.442,
+       "FGA": 9.485,
+       "FTM": 1.853,
+       "FTA": 2.113,
+       "GP": 9.0,
+       "3PM": 1.478,
+       "FG%": 0.468,
+       "FT%": 0.877
+      },
+      "last_30": {
+       "PTS": 12.724,
+       "REB": 2.402,
+       "AST": 4.227,
+       "STL": 0.879,
+       "BLK": 0.175,
+       "TO": 1.645,
+       "FGM": 4.283,
+       "FGA": 9.257,
+       "FTM": 1.77,
+       "FTA": 2.143,
+       "GP": 9.0,
+       "3PM": 1.527,
+       "FG%": 0.468,
+       "FT%": 0.877
+      }
+     }
+    },
+    {
+     "id": 1128,
+     "name": "Cato Pinecrest",
+     "pro_team": "GRV",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.897,
+       "REB": 3.479,
+       "AST": 1.288,
+       "STL": 0.735,
+       "BLK": 0.227,
+       "TO": 0.967,
+       "FGM": 2.832,
+       "FGA": 5.812,
+       "FTM": 1.226,
+       "FTA": 1.492,
+       "GP": 10.0,
+       "3PM": 1.006,
+       "FG%": 0.487,
+       "FT%": 0.821
+      },
+      "last_30": {
+       "PTS": 8.056,
+       "REB": 3.334,
+       "AST": 1.277,
+       "STL": 0.758,
+       "BLK": 0.235,
+       "TO": 0.967,
+       "FGM": 2.93,
+       "FGA": 5.798,
+       "FTM": 1.209,
+       "FTA": 1.45,
+       "GP": 10.0,
+       "3PM": 0.987,
+       "FG%": 0.487,
+       "FT%": 0.821
+      }
+     }
+    },
+    {
+     "id": 1142,
+     "name": "Rafe Thornfield",
+     "pro_team": "ELM",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.844,
+       "REB": 2.751,
+       "AST": 1.352,
+       "STL": 0.565,
+       "BLK": 0.208,
+       "TO": 0.869,
+       "FGM": 2.845,
+       "FGA": 6.582,
+       "FTM": 1.074,
+       "FTA": 1.314,
+       "GP": 6.0,
+       "3PM": 1.079,
+       "FG%": 0.432,
+       "FT%": 0.818
+      },
+      "last_30": {
+       "PTS": 7.895,
+       "REB": 2.685,
+       "AST": 1.418,
+       "STL": 0.588,
+       "BLK": 0.204,
+       "TO": 0.869,
+       "FGM": 2.722,
+       "FGA": 6.307,
+       "FTM": 1.099,
+       "FTA": 1.375,
+       "GP": 6.0,
+       "3PM": 1.088,
+       "FG%": 0.432,
+       "FT%": 0.818
+      }
+     }
+    },
+    {
+     "id": 1148,
+     "name": "Niko Eastlake",
+     "pro_team": "HIL",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.484,
+       "REB": 3.436,
+       "AST": 1.082,
+       "STL": 0.577,
+       "BLK": 0.233,
+       "TO": 0.759,
+       "FGM": 2.72,
+       "FGA": 5.602,
+       "FTM": 0.953,
+       "FTA": 1.163,
+       "GP": 6.0,
+       "3PM": 1.09,
+       "FG%": 0.486,
+       "FT%": 0.82
+      },
+      "last_30": {
+       "PTS": 7.277,
+       "REB": 3.361,
+       "AST": 1.035,
+       "STL": 0.55,
+       "BLK": 0.226,
+       "TO": 0.759,
+       "FGM": 2.698,
+       "FGA": 5.4,
+       "FTM": 0.916,
+       "FTA": 1.161,
+       "GP": 6.0,
+       "3PM": 1.081,
+       "FG%": 0.486,
+       "FT%": 0.82
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Riverbend Rams",
+   "abbrev": "RIVE",
+   "wins": 2,
+   "losses": 2,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1009,
+     "name": "Xan Glenhaven",
+     "pro_team": "DUN",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 25.493,
+       "REB": 15.165,
+       "AST": 5.125,
+       "STL": 1.075,
+       "BLK": 2.699,
+       "TO": 2.833,
+       "FGM": 8.97,
+       "FGA": 14.658,
+       "FTM": 6.035,
+       "FTA": 8.451,
+       "GP": 10.0,
+       "3PM": 1.518,
+       "FG%": 0.612,
+       "FT%": 0.714
+      },
+      "last_30": {
+       "PTS": 30.789,
+       "REB": 19.717,
+       "AST": 6.598,
+       "STL": 1.321,
+       "BLK": 3.535,
+       "TO": 2.833,
+       "FGM": 10.687,
+       "FGA": 17.431,
+       "FTM": 7.733,
+       "FTA": 10.645,
+       "GP": 10.0,
+       "3PM": 1.812,
+       "FG%": 0.612,
+       "FT%": 0.714
+      }
+     }
+    },
+    {
+     "id": 1018,
+     "name": "Luca Northcote",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 25.407,
+       "REB": 4.448,
+       "AST": 9.096,
+       "STL": 1.735,
+       "BLK": 0.432,
+       "TO": 3.735,
+       "FGM": 8.615,
+       "FGA": 18.579,
+       "FTM": 4.969,
+       "FTA": 5.706,
+       "GP": 11.0,
+       "3PM": 3.208,
+       "FG%": 0.464,
+       "FT%": 0.871
+      },
+      "last_30": {
+       "PTS": 24.511,
+       "REB": 4.605,
+       "AST": 8.709,
+       "STL": 1.653,
+       "BLK": 0.444,
+       "TO": 3.735,
+       "FGM": 8.798,
+       "FGA": 18.606,
+       "FTM": 4.948,
+       "FTA": 5.978,
+       "GP": 11.0,
+       "3PM": 3.212,
+       "FG%": 0.464,
+       "FT%": 0.871
+      }
+     }
+    },
+    {
+     "id": 1026,
+     "name": "Quinn Ironwood",
+     "pro_team": "HIL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 23.32,
+       "REB": 7.658,
+       "AST": 4.475,
+       "STL": 1.023,
+       "BLK": 1.205,
+       "TO": 1.984,
+       "FGM": 8.991,
+       "FGA": 16.813,
+       "FTM": 3.763,
+       "FTA": 5.066,
+       "GP": 6.0,
+       "3PM": 1.575,
+       "FG%": 0.535,
+       "FT%": 0.743
+      },
+      "last_30": {
+       "PTS": 22.483,
+       "REB": 7.763,
+       "AST": 4.698,
+       "STL": 1.018,
+       "BLK": 1.173,
+       "TO": 1.984,
+       "FGM": 9.018,
+       "FGA": 16.176,
+       "FTM": 3.92,
+       "FTA": 4.959,
+       "GP": 6.0,
+       "3PM": 1.624,
+       "FG%": 0.535,
+       "FT%": 0.743
+      }
+     }
+    },
+    {
+     "id": 1041,
+     "name": "Aiden Pinecrest",
+     "pro_team": "HIL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.858,
+       "REB": 11.855,
+       "AST": 3.64,
+       "STL": 0.909,
+       "BLK": 2.169,
+       "TO": 2.506,
+       "FGM": 6.462,
+       "FGA": 11.445,
+       "FTM": 3.769,
+       "FTA": 6.346,
+       "GP": 11.0,
+       "3PM": 1.164,
+       "FG%": 0.565,
+       "FT%": 0.594
+      },
+      "last_30": {
+       "PTS": 13.9,
+       "REB": 9.133,
+       "AST": 2.783,
+       "STL": 0.736,
+       "BLK": 1.607,
+       "TO": 2.506,
+       "FGM": 4.869,
+       "FGA": 8.968,
+       "FTM": 2.994,
+       "FTA": 4.935,
+       "GP": 11.0,
+       "3PM": 0.876,
+       "FG%": 0.565,
+       "FT%": 0.594
+      }
+     }
+    },
+    {
+     "id": 1052,
+     "name": "Hale Calloway",
+     "pro_team": "BAY",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 19.994,
+       "REB": 4.937,
+       "AST": 3.61,
+       "STL": 1.276,
+       "BLK": 0.341,
+       "TO": 1.74,
+       "FGM": 7.09,
+       "FGA": 16.046,
+       "FTM": 2.919,
+       "FTA": 3.467,
+       "GP": 9.0,
+       "3PM": 2.896,
+       "FG%": 0.442,
+       "FT%": 0.842
+      },
+      "last_30": {
+       "PTS": 14.958,
+       "REB": 3.969,
+       "AST": 2.896,
+       "STL": 1.021,
+       "BLK": 0.277,
+       "TO": 1.74,
+       "FGM": 5.79,
+       "FGA": 13.104,
+       "FTM": 2.338,
+       "FTA": 2.815,
+       "GP": 9.0,
+       "3PM": 2.324,
+       "FG%": 0.442,
+       "FT%": 0.842
+      }
+     }
+    },
+    {
+     "id": 1071,
+     "name": "Emeka Fairbourne",
+     "pro_team": "GRV",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 15.074,
+       "REB": 10.287,
+       "AST": 2.805,
+       "STL": 0.675,
+       "BLK": 1.645,
+       "TO": 1.645,
+       "FGM": 5.818,
+       "FGA": 9.214,
+       "FTM": 2.744,
+       "FTA": 3.774,
+       "GP": 7.0,
+       "3PM": 0.695,
+       "FG%": 0.631,
+       "FT%": 0.727
+      },
+      "last_30": {
+       "PTS": 11.474,
+       "REB": 7.732,
+       "AST": 2.127,
+       "STL": 0.515,
+       "BLK": 1.299,
+       "TO": 1.645,
+       "FGM": 4.747,
+       "FGA": 6.859,
+       "FTM": 2.202,
+       "FTA": 3.05,
+       "GP": 7.0,
+       "3PM": 0.566,
+       "FG%": 0.631,
+       "FT%": 0.727
+      }
+     }
+    },
+    {
+     "id": 1072,
+     "name": "Dario Zephyrine",
+     "pro_team": "FOX",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.89,
+       "REB": 4.962,
+       "AST": 3.409,
+       "STL": 1.085,
+       "BLK": 0.58,
+       "TO": 1.679,
+       "FGM": 4.284,
+       "FGA": 9.708,
+       "FTM": 2.608,
+       "FTA": 3.036,
+       "GP": 7.0,
+       "3PM": 1.714,
+       "FG%": 0.441,
+       "FT%": 0.859
+      },
+      "last_30": {
+       "PTS": 13.236,
+       "REB": 4.84,
+       "AST": 3.293,
+       "STL": 1.119,
+       "BLK": 0.569,
+       "TO": 1.679,
+       "FGM": 4.17,
+       "FGA": 9.36,
+       "FTM": 2.623,
+       "FTA": 3.071,
+       "GP": 7.0,
+       "3PM": 1.728,
+       "FG%": 0.441,
+       "FT%": 0.859
+      }
+     }
+    },
+    {
+     "id": 1091,
+     "name": "Yuri Underhill",
+     "pro_team": "ELM",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.234,
+       "REB": 4.996,
+       "AST": 2.016,
+       "STL": 0.833,
+       "BLK": 0.444,
+       "TO": 1.115,
+       "FGM": 4.968,
+       "FGA": 10.627,
+       "FTM": 1.823,
+       "FTA": 2.279,
+       "GP": 12.0,
+       "3PM": 1.476,
+       "FG%": 0.468,
+       "FT%": 0.8
+      },
+      "last_30": {
+       "PTS": 10.736,
+       "REB": 3.974,
+       "AST": 1.603,
+       "STL": 0.642,
+       "BLK": 0.346,
+       "TO": 1.115,
+       "FGM": 3.925,
+       "FGA": 8.083,
+       "FTM": 1.37,
+       "FTA": 1.737,
+       "GP": 12.0,
+       "3PM": 1.16,
+       "FG%": 0.468,
+       "FT%": 0.8
+      }
+     }
+    },
+    {
+     "id": 1095,
+     "name": "Omar Zephyrine",
+     "pro_team": "ALB",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.628,
+       "REB": 4.613,
+       "AST": 2.597,
+       "STL": 0.722,
+       "BLK": 0.335,
+       "TO": 1.507,
+       "FGM": 4.823,
+       "FGA": 9.528,
+       "FTM": 1.52,
+       "FTA": 1.83,
+       "GP": 7.0,
+       "3PM": 1.461,
+       "FG%": 0.506,
+       "FT%": 0.831
+      },
+      "last_30": {
+       "PTS": 15.416,
+       "REB": 5.697,
+       "AST": 3.15,
+       "STL": 0.947,
+       "BLK": 0.403,
+       "TO": 1.507,
+       "FGM": 6.069,
+       "FGA": 12.01,
+       "FTM": 1.974,
+       "FTA": 2.248,
+       "GP": 7.0,
+       "3PM": 1.775,
+       "FG%": 0.506,
+       "FT%": 0.831
+      }
+     }
+    },
+    {
+     "id": 1115,
+     "name": "Luca Oakhurst",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "PG",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.616,
+       "REB": 2.752,
+       "AST": 2.086,
+       "STL": 0.627,
+       "BLK": 0.176,
+       "TO": 1.196,
+       "FGM": 3.322,
+       "FGA": 7.997,
+       "FTM": 1.217,
+       "FTA": 1.459,
+       "GP": 10.0,
+       "3PM": 1.755,
+       "FG%": 0.415,
+       "FT%": 0.834
+      },
+      "last_30": {
+       "PTS": 9.774,
+       "REB": 2.741,
+       "AST": 1.996,
+       "STL": 0.643,
+       "BLK": 0.171,
+       "TO": 1.196,
+       "FGM": 3.248,
+       "FGA": 8.239,
+       "FTM": 1.222,
+       "FTA": 1.388,
+       "GP": 10.0,
+       "3PM": 1.791,
+       "FG%": 0.415,
+       "FT%": 0.834
+      }
+     }
+    },
+    {
+     "id": 1120,
+     "name": "Wes Thornfield",
+     "pro_team": "ELM",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.577,
+       "REB": 4.578,
+       "AST": 1.319,
+       "STL": 0.557,
+       "BLK": 0.486,
+       "TO": 1.03,
+       "FGM": 3.395,
+       "FGA": 6.653,
+       "FTM": 1.193,
+       "FTA": 1.705,
+       "GP": 6.0,
+       "3PM": 0.594,
+       "FG%": 0.51,
+       "FT%": 0.699
+      },
+      "last_30": {
+       "PTS": 8.271,
+       "REB": 4.598,
+       "AST": 1.349,
+       "STL": 0.53,
+       "BLK": 0.503,
+       "TO": 1.03,
+       "FGM": 3.439,
+       "FGA": 6.976,
+       "FTM": 1.194,
+       "FTA": 1.714,
+       "GP": 6.0,
+       "3PM": 0.608,
+       "FG%": 0.51,
+       "FT%": 0.699
+      }
+     }
+    },
+    {
+     "id": 1139,
+     "name": "Kofi Quillfeather",
+     "pro_team": "DUN",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.429,
+       "REB": 3.718,
+       "AST": 1.421,
+       "STL": 0.704,
+       "BLK": 0.251,
+       "TO": 0.93,
+       "FGM": 3.714,
+       "FGA": 7.429,
+       "FTM": 1.101,
+       "FTA": 1.35,
+       "GP": 10.0,
+       "3PM": 0.901,
+       "FG%": 0.5,
+       "FT%": 0.816
+      },
+      "last_30": {
+       "PTS": 7.024,
+       "REB": 2.815,
+       "AST": 1.086,
+       "STL": 0.556,
+       "BLK": 0.19,
+       "TO": 0.93,
+       "FGM": 2.978,
+       "FGA": 6.053,
+       "FTM": 0.839,
+       "FTA": 1.1,
+       "GP": 10.0,
+       "3PM": 0.7,
+       "FG%": 0.5,
+       "FT%": 0.816
+      }
+     }
+    },
+    {
+     "id": 1149,
+     "name": "Vito Fairbourne",
+     "pro_team": "HIL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 6.125,
+       "REB": 6.249,
+       "AST": 0.923,
+       "STL": 0.343,
+       "BLK": 0.721,
+       "TO": 0.778,
+       "FGM": 2.559,
+       "FGA": 4.4,
+       "FTM": 0.892,
+       "FTA": 1.358,
+       "GP": 6.0,
+       "3PM": 0.115,
+       "FG%": 0.582,
+       "FT%": 0.657
+      },
+      "last_30": {
+       "PTS": 5.902,
+       "REB": 5.985,
+       "AST": 0.92,
+       "STL": 0.358,
+       "BLK": 0.704,
+       "TO": 0.778,
+       "FGM": 2.455,
+       "FGA": 4.459,
+       "FTM": 0.928,
+       "FTA": 1.312,
+       "GP": 6.0,
+       "3PM": 0.111,
+       "FG%": 0.582,
+       "FT%": 0.657
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Foundry Foxes",
+   "abbrev": "FOUN",
+   "wins": 2,
+   "losses": 2,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1001,
+     "name": "Vito Ravenscar",
+     "pro_team": "COL",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 22.068,
+       "REB": 7.674,
+       "AST": 4.94,
+       "STL": 1.487,
+       "BLK": 0.928,
+       "TO": 2.336,
+       "FGM": 6.92,
+       "FGA": 15.901,
+       "FTM": 5.351,
+       "FTA": 6.594,
+       "GP": 6.0,
+       "3PM": 2.878,
+       "FG%": 0.435,
+       "FT%": 0.811
+      },
+      "last_30": {
+       "PTS": 21.141,
+       "REB": 7.441,
+       "AST": 5.153,
+       "STL": 1.469,
+       "BLK": 0.921,
+       "TO": 2.336,
+       "FGM": 6.884,
+       "FGA": 16.273,
+       "FTM": 5.581,
+       "FTA": 6.539,
+       "GP": 6.0,
+       "3PM": 2.973,
+       "FG%": 0.435,
+       "FT%": 0.811
+      }
+     }
+    },
+    {
+     "id": 1017,
+     "name": "Omar Brightwater",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 23.994,
+       "REB": 5.096,
+       "AST": 11.366,
+       "STL": 1.877,
+       "BLK": 0.452,
+       "TO": 3.468,
+       "FGM": 8.129,
+       "FGA": 18.812,
+       "FTM": 4.51,
+       "FTA": 5.804,
+       "GP": 6.0,
+       "3PM": 3.226,
+       "FG%": 0.432,
+       "FT%": 0.777
+      },
+      "last_30": {
+       "PTS": 24.565,
+       "REB": 5.309,
+       "AST": 10.834,
+       "STL": 1.955,
+       "BLK": 0.43,
+       "TO": 3.468,
+       "FGM": 8.213,
+       "FGA": 19.159,
+       "FTM": 4.659,
+       "FTA": 5.722,
+       "GP": 6.0,
+       "3PM": 3.199,
+       "FG%": 0.432,
+       "FT%": 0.777
+      }
+     }
+    },
+    {
+     "id": 1031,
+     "name": "Niko Ashgrove",
+     "pro_team": "COL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 23.669,
+       "REB": 9.64,
+       "AST": 5.226,
+       "STL": 0.849,
+       "BLK": 2.135,
+       "TO": 2.921,
+       "FGM": 9.491,
+       "FGA": 15.185,
+       "FTM": 3.621,
+       "FTA": 5.568,
+       "GP": 10.0,
+       "3PM": 1.067,
+       "FG%": 0.625,
+       "FT%": 0.65
+      },
+      "last_30": {
+       "PTS": 24.831,
+       "REB": 9.904,
+       "AST": 5.2,
+       "STL": 0.85,
+       "BLK": 2.111,
+       "TO": 2.921,
+       "FGM": 9.32,
+       "FGA": 15.253,
+       "FTM": 3.71,
+       "FTA": 5.812,
+       "GP": 10.0,
+       "3PM": 1.014,
+       "FG%": 0.625,
+       "FT%": 0.65
+      }
+     }
+    },
+    {
+     "id": 1046,
+     "name": "Yuri Stonebridge",
+     "pro_team": "ELM",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.061,
+       "REB": 10.21,
+       "AST": 3.25,
+       "STL": 1.027,
+       "BLK": 2.078,
+       "TO": 2.082,
+       "FGM": 6.275,
+       "FGA": 11.973,
+       "FTM": 3.558,
+       "FTA": 5.102,
+       "GP": 7.0,
+       "3PM": 0.952,
+       "FG%": 0.524,
+       "FT%": 0.697
+      },
+      "last_30": {
+       "PTS": 17.781,
+       "REB": 10.229,
+       "AST": 3.239,
+       "STL": 1.036,
+       "BLK": 2.12,
+       "TO": 2.082,
+       "FGM": 6.226,
+       "FGA": 12.222,
+       "FTM": 3.723,
+       "FTA": 4.87,
+       "GP": 7.0,
+       "3PM": 0.974,
+       "FG%": 0.524,
+       "FT%": 0.697
+      }
+     }
+    },
+    {
+     "id": 1053,
+     "name": "Mateo Kestrel",
+     "pro_team": "HIL",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 15.825,
+       "REB": 4.409,
+       "AST": 7.084,
+       "STL": 1.04,
+       "BLK": 0.352,
+       "TO": 2.436,
+       "FGM": 5.15,
+       "FGA": 12.201,
+       "FTM": 3.074,
+       "FTA": 4.008,
+       "GP": 11.0,
+       "3PM": 2.451,
+       "FG%": 0.422,
+       "FT%": 0.767
+      },
+      "last_30": {
+       "PTS": 16.143,
+       "REB": 4.509,
+       "AST": 6.949,
+       "STL": 1.007,
+       "BLK": 0.358,
+       "TO": 2.436,
+       "FGM": 5.225,
+       "FGA": 12.459,
+       "FTM": 3.141,
+       "FTA": 3.923,
+       "GP": 11.0,
+       "3PM": 2.522,
+       "FG%": 0.422,
+       "FT%": 0.767
+      }
+     }
+    },
+    {
+     "id": 1067,
+     "name": "Goran Vanterpool",
+     "pro_team": "ELM",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 15.772,
+       "REB": 9.036,
+       "AST": 2.726,
+       "STL": 0.763,
+       "BLK": 1.648,
+       "TO": 1.709,
+       "FGM": 5.796,
+       "FGA": 9.841,
+       "FTM": 3.54,
+       "FTA": 4.61,
+       "GP": 12.0,
+       "3PM": 0.64,
+       "FG%": 0.589,
+       "FT%": 0.768
+      },
+      "last_30": {
+       "PTS": 16.46,
+       "REB": 8.685,
+       "AST": 2.741,
+       "STL": 0.742,
+       "BLK": 1.591,
+       "TO": 1.709,
+       "FGM": 6.072,
+       "FGA": 9.44,
+       "FTM": 3.434,
+       "FTA": 4.453,
+       "GP": 12.0,
+       "3PM": 0.65,
+       "FG%": 0.589,
+       "FT%": 0.768
+      }
+     }
+    },
+    {
+     "id": 1076,
+     "name": "Soren Underhill",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 14.092,
+       "REB": 5.76,
+       "AST": 2.832,
+       "STL": 0.595,
+       "BLK": 0.77,
+       "TO": 1.539,
+       "FGM": 5.466,
+       "FGA": 10.43,
+       "FTM": 1.963,
+       "FTA": 2.914,
+       "GP": 6.0,
+       "3PM": 1.198,
+       "FG%": 0.524,
+       "FT%": 0.674
+      },
+      "last_30": {
+       "PTS": 13.633,
+       "REB": 5.608,
+       "AST": 2.853,
+       "STL": 0.594,
+       "BLK": 0.733,
+       "TO": 1.539,
+       "FGM": 5.43,
+       "FGA": 10.735,
+       "FTM": 1.937,
+       "FTA": 2.943,
+       "GP": 6.0,
+       "3PM": 1.231,
+       "FG%": 0.524,
+       "FT%": 0.674
+      }
+     }
+    },
+    {
+     "id": 1089,
+     "name": "Omar Larkspur",
+     "pro_team": "ALB",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "DAY_TO_DAY",
+     "stats": {
+      "season": {
+       "PTS": 11.799,
+       "REB": 7.971,
+       "AST": 2.484,
+       "STL": 0.516,
+       "BLK": 1.165,
+       "TO": 1.547,
+       "FGM": 4.715,
+       "FGA": 7.581,
+       "FTM": 1.879,
+       "FTA": 2.599,
+       "GP": 10.0,
+       "3PM": 0.491,
+       "FG%": 0.622,
+       "FT%": 0.723
+      },
+      "last_30": {
+       "PTS": 11.85,
+       "REB": 8.196,
+       "AST": 2.53,
+       "STL": 0.505,
+       "BLK": 1.161,
+       "TO": 1.547,
+       "FGM": 4.669,
+       "FGA": 7.637,
+       "FTM": 1.9,
+       "FTA": 2.497,
+       "GP": 10.0,
+       "3PM": 0.488,
+       "FG%": 0.622,
+       "FT%": 0.723
+      }
+     }
+    },
+    {
+     "id": 1099,
+     "name": "Rafe Zephyrine",
+     "pro_team": "HIL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.218,
+       "REB": 5.352,
+       "AST": 1.678,
+       "STL": 0.57,
+       "BLK": 0.536,
+       "TO": 1.142,
+       "FGM": 4.823,
+       "FGA": 8.738,
+       "FTM": 1.859,
+       "FTA": 2.598,
+       "GP": 10.0,
+       "3PM": 0.714,
+       "FG%": 0.552,
+       "FT%": 0.716
+      },
+      "last_30": {
+       "PTS": 11.656,
+       "REB": 5.366,
+       "AST": 1.599,
+       "STL": 0.588,
+       "BLK": 0.535,
+       "TO": 1.142,
+       "FGM": 4.975,
+       "FGA": 8.955,
+       "FTM": 1.899,
+       "FTA": 2.68,
+       "GP": 10.0,
+       "3PM": 0.737,
+       "FG%": 0.552,
+       "FT%": 0.716
+      }
+     }
+    },
+    {
+     "id": 1114,
+     "name": "Finn Harrowgate",
+     "pro_team": "BAY",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.74,
+       "REB": 2.846,
+       "AST": 4.507,
+       "STL": 0.881,
+       "BLK": 0.155,
+       "TO": 1.922,
+       "FGM": 3.316,
+       "FGA": 7.838,
+       "FTM": 1.553,
+       "FTA": 1.73,
+       "GP": 9.0,
+       "3PM": 1.556,
+       "FG%": 0.423,
+       "FT%": 0.898
+      },
+      "last_30": {
+       "PTS": 9.357,
+       "REB": 2.966,
+       "AST": 4.314,
+       "STL": 0.875,
+       "BLK": 0.153,
+       "TO": 1.922,
+       "FGM": 3.291,
+       "FGA": 8.189,
+       "FTM": 1.624,
+       "FTA": 1.696,
+       "GP": 9.0,
+       "3PM": 1.549,
+       "FG%": 0.423,
+       "FT%": 0.898
+      }
+     }
+    },
+    {
+     "id": 1123,
+     "name": "Rafe Stonebridge",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.878,
+       "REB": 4.941,
+       "AST": 1.589,
+       "STL": 0.52,
+       "BLK": 0.576,
+       "TO": 1.129,
+       "FGM": 3.464,
+       "FGA": 6.707,
+       "FTM": 1.333,
+       "FTA": 1.696,
+       "GP": 8.0,
+       "3PM": 0.617,
+       "FG%": 0.516,
+       "FT%": 0.786
+      },
+      "last_30": {
+       "PTS": 9.259,
+       "REB": 4.846,
+       "AST": 1.566,
+       "STL": 0.539,
+       "BLK": 0.575,
+       "TO": 1.129,
+       "FGM": 3.361,
+       "FGA": 6.425,
+       "FTM": 1.31,
+       "FTA": 1.667,
+       "GP": 8.0,
+       "3PM": 0.591,
+       "FG%": 0.516,
+       "FT%": 0.786
+      }
+     }
+    },
+    {
+     "id": 1138,
+     "name": "Bram Westmere",
+     "pro_team": "HIL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 6.679,
+       "REB": 5.336,
+       "AST": 1.041,
+       "STL": 0.48,
+       "BLK": 0.5,
+       "TO": 0.823,
+       "FGM": 2.649,
+       "FGA": 5.451,
+       "FTM": 0.938,
+       "FTA": 1.297,
+       "GP": 6.0,
+       "3PM": 0.442,
+       "FG%": 0.486,
+       "FT%": 0.723
+      },
+      "last_30": {
+       "PTS": 5.119,
+       "REB": 4.047,
+       "AST": 0.809,
+       "STL": 0.385,
+       "BLK": 0.383,
+       "TO": 0.823,
+       "FGM": 2.104,
+       "FGA": 4.213,
+       "FTM": 0.741,
+       "FTA": 0.972,
+       "GP": 6.0,
+       "3PM": 0.337,
+       "FG%": 0.486,
+       "FT%": 0.723
+      }
+     }
+    },
+    {
+     "id": 1147,
+     "name": "Luca Zephyrine",
+     "pro_team": "ELM",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.477,
+       "REB": 1.852,
+       "AST": 4.535,
+       "STL": 0.558,
+       "BLK": 0.114,
+       "TO": 1.158,
+       "FGM": 3.107,
+       "FGA": 6.986,
+       "FTM": 1.296,
+       "FTA": 1.472,
+       "GP": 7.0,
+       "3PM": 0.967,
+       "FG%": 0.445,
+       "FT%": 0.881
+      },
+      "last_30": {
+       "PTS": 8.589,
+       "REB": 1.91,
+       "AST": 4.682,
+       "STL": 0.532,
+       "BLK": 0.119,
+       "TO": 1.158,
+       "FGM": 3.04,
+       "FGA": 7.203,
+       "FTM": 1.311,
+       "FTA": 1.491,
+       "GP": 7.0,
+       "3PM": 0.973,
+       "FG%": 0.445,
+       "FT%": 0.881
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "Prairie Pumas",
+   "abbrev": "PRAI",
+   "wins": 2,
+   "losses": 2,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1005,
+     "name": "Xan Northcote",
+     "pro_team": "HIL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 27.5,
+       "REB": 10.241,
+       "AST": 4.242,
+       "STL": 0.967,
+       "BLK": 1.591,
+       "TO": 2.734,
+       "FGM": 10.015,
+       "FGA": 19.662,
+       "FTM": 5.407,
+       "FTA": 7.43,
+       "GP": 12.0,
+       "3PM": 2.063,
+       "FG%": 0.509,
+       "FT%": 0.728
+      },
+      "last_30": {
+       "PTS": 26.754,
+       "REB": 10.418,
+       "AST": 4.057,
+       "STL": 0.942,
+       "BLK": 1.532,
+       "TO": 2.734,
+       "FGM": 10.084,
+       "FGA": 19.924,
+       "FTM": 5.607,
+       "FTA": 7.316,
+       "GP": 12.0,
+       "3PM": 2.024,
+       "FG%": 0.509,
+       "FT%": 0.728
+      }
+     }
+    },
+    {
+     "id": 1020,
+     "name": "Uri Merrow",
+     "pro_team": "DUN",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.956,
+       "REB": 10.345,
+       "AST": 4.459,
+       "STL": 0.954,
+       "BLK": 1.47,
+       "TO": 2.771,
+       "FGM": 7.769,
+       "FGA": 16.462,
+       "FTM": 3.557,
+       "FTA": 5.079,
+       "GP": 6.0,
+       "3PM": 1.862,
+       "FG%": 0.472,
+       "FT%": 0.7
+      },
+      "last_30": {
+       "PTS": 16.427,
+       "REB": 8.277,
+       "AST": 3.531,
+       "STL": 0.772,
+       "BLK": 1.2,
+       "TO": 2.771,
+       "FGM": 5.925,
+       "FGA": 13.083,
+       "FTM": 2.913,
+       "FTA": 3.88,
+       "GP": 6.0,
+       "3PM": 1.453,
+       "FG%": 0.472,
+       "FT%": 0.7
+      }
+     }
+    },
+    {
+     "id": 1034,
+     "name": "Yuri Dunmore",
+     "pro_team": "DUN",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 22.519,
+       "REB": 6.858,
+       "AST": 4.376,
+       "STL": 0.794,
+       "BLK": 1.181,
+       "TO": 2.123,
+       "FGM": 8.581,
+       "FGA": 16.442,
+       "FTM": 3.73,
+       "FTA": 5.537,
+       "GP": 6.0,
+       "3PM": 1.627,
+       "FG%": 0.522,
+       "FT%": 0.674
+      },
+      "last_30": {
+       "PTS": 22.454,
+       "REB": 7.121,
+       "AST": 4.543,
+       "STL": 0.812,
+       "BLK": 1.201,
+       "TO": 2.123,
+       "FGM": 8.276,
+       "FGA": 16.218,
+       "FTM": 3.636,
+       "FTA": 5.566,
+       "GP": 6.0,
+       "3PM": 1.608,
+       "FG%": 0.522,
+       "FT%": 0.674
+      }
+     }
+    },
+    {
+     "id": 1043,
+     "name": "Hale Brightwater",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 16.209,
+       "REB": 7.001,
+       "AST": 2.913,
+       "STL": 1.042,
+       "BLK": 0.885,
+       "TO": 2.316,
+       "FGM": 5.792,
+       "FGA": 11.619,
+       "FTM": 3.04,
+       "FTA": 4.538,
+       "GP": 8.0,
+       "3PM": 1.585,
+       "FG%": 0.498,
+       "FT%": 0.67
+      },
+      "last_30": {
+       "PTS": 19.442,
+       "REB": 8.774,
+       "AST": 3.737,
+       "STL": 1.355,
+       "BLK": 1.116,
+       "TO": 2.316,
+       "FGM": 6.97,
+       "FGA": 15.073,
+       "FTM": 3.657,
+       "FTA": 5.934,
+       "GP": 8.0,
+       "3PM": 2.026,
+       "FG%": 0.498,
+       "FT%": 0.67
+      }
+     }
+    },
+    {
+     "id": 1058,
+     "name": "Luca Larkspur",
+     "pro_team": "FOX",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 16.439,
+       "REB": 7.483,
+       "AST": 3.481,
+       "STL": 0.657,
+       "BLK": 0.977,
+       "TO": 1.97,
+       "FGM": 6.011,
+       "FGA": 10.841,
+       "FTM": 2.951,
+       "FTA": 4.12,
+       "GP": 6.0,
+       "3PM": 1.465,
+       "FG%": 0.555,
+       "FT%": 0.716
+      },
+      "last_30": {
+       "PTS": 16.421,
+       "REB": 7.398,
+       "AST": 3.526,
+       "STL": 0.624,
+       "BLK": 0.991,
+       "TO": 1.97,
+       "FGM": 6.252,
+       "FGA": 10.438,
+       "FTM": 3.04,
+       "FTA": 4.204,
+       "GP": 6.0,
+       "3PM": 1.525,
+       "FG%": 0.555,
+       "FT%": 0.716
+      }
+     }
+    },
+    {
+     "id": 1063,
+     "name": "Emeka Westmere",
+     "pro_team": "BAY",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 15.2,
+       "REB": 6.351,
+       "AST": 2.795,
+       "STL": 0.869,
+       "BLK": 0.868,
+       "TO": 1.551,
+       "FGM": 5.615,
+       "FGA": 10.2,
+       "FTM": 2.79,
+       "FTA": 3.633,
+       "GP": 10.0,
+       "3PM": 1.181,
+       "FG%": 0.55,
+       "FT%": 0.768
+      },
+      "last_30": {
+       "PTS": 15.207,
+       "REB": 6.587,
+       "AST": 2.755,
+       "STL": 0.883,
+       "BLK": 0.843,
+       "TO": 1.551,
+       "FGM": 5.444,
+       "FGA": 10.54,
+       "FTM": 2.838,
+       "FTA": 3.608,
+       "GP": 10.0,
+       "3PM": 1.19,
+       "FG%": 0.55,
+       "FT%": 0.768
+      }
+     }
+    },
+    {
+     "id": 1077,
+     "name": "Jonah Merrow",
+     "pro_team": "BAY",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 14.276,
+       "REB": 5.945,
+       "AST": 2.531,
+       "STL": 0.681,
+       "BLK": 0.912,
+       "TO": 1.63,
+       "FGM": 5.405,
+       "FGA": 11.213,
+       "FTM": 2.294,
+       "FTA": 2.936,
+       "GP": 11.0,
+       "3PM": 1.172,
+       "FG%": 0.482,
+       "FT%": 0.782
+      },
+      "last_30": {
+       "PTS": 10.733,
+       "REB": 4.717,
+       "AST": 1.904,
+       "STL": 0.544,
+       "BLK": 0.708,
+       "TO": 1.63,
+       "FGM": 4.191,
+       "FGA": 9.071,
+       "FTM": 1.815,
+       "FTA": 2.259,
+       "GP": 11.0,
+       "3PM": 0.907,
+       "FG%": 0.482,
+       "FT%": 0.782
+      }
+     }
+    },
+    {
+     "id": 1084,
+     "name": "Luca Yarrow",
+     "pro_team": "ELM",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 11.655,
+       "REB": 6.975,
+       "AST": 2.591,
+       "STL": 0.752,
+       "BLK": 1.437,
+       "TO": 1.451,
+       "FGM": 4.496,
+       "FGA": 8.031,
+       "FTM": 2.058,
+       "FTA": 3.629,
+       "GP": 9.0,
+       "3PM": 0.606,
+       "FG%": 0.56,
+       "FT%": 0.567
+      },
+      "last_30": {
+       "PTS": 13.906,
+       "REB": 8.912,
+       "AST": 3.104,
+       "STL": 0.917,
+       "BLK": 1.709,
+       "TO": 1.451,
+       "FGM": 5.357,
+       "FGA": 10.336,
+       "FTM": 2.608,
+       "FTA": 4.452,
+       "GP": 9.0,
+       "3PM": 0.741,
+       "FG%": 0.56,
+       "FT%": 0.567
+      }
+     }
+    },
+    {
+     "id": 1100,
+     "name": "Pax Quillfeather",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.866,
+       "REB": 4.758,
+       "AST": 2.103,
+       "STL": 0.569,
+       "BLK": 0.558,
+       "TO": 1.124,
+       "FGM": 3.103,
+       "FGA": 6.492,
+       "FTM": 1.795,
+       "FTA": 2.669,
+       "GP": 10.0,
+       "3PM": 0.865,
+       "FG%": 0.478,
+       "FT%": 0.673
+      },
+      "last_30": {
+       "PTS": 6.581,
+       "REB": 3.859,
+       "AST": 1.604,
+       "STL": 0.433,
+       "BLK": 0.436,
+       "TO": 1.124,
+       "FGM": 2.522,
+       "FGA": 5.304,
+       "FTM": 1.42,
+       "FTA": 2.08,
+       "GP": 10.0,
+       "3PM": 0.675,
+       "FG%": 0.478,
+       "FT%": 0.673
+      }
+     }
+    },
+    {
+     "id": 1113,
+     "name": "Mateo Quillfeather",
+     "pro_team": "BAY",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.375,
+       "REB": 2.852,
+       "AST": 4.419,
+       "STL": 0.766,
+       "BLK": 0.179,
+       "TO": 1.76,
+       "FGM": 4.471,
+       "FGA": 9.839,
+       "FTM": 1.903,
+       "FTA": 2.087,
+       "GP": 12.0,
+       "3PM": 1.531,
+       "FG%": 0.454,
+       "FT%": 0.912
+      },
+      "last_30": {
+       "PTS": 11.956,
+       "REB": 2.709,
+       "AST": 4.501,
+       "STL": 0.772,
+       "BLK": 0.171,
+       "TO": 1.76,
+       "FGM": 4.464,
+       "FGA": 10.286,
+       "FTM": 1.939,
+       "FTA": 2.114,
+       "GP": 12.0,
+       "3PM": 1.493,
+       "FG%": 0.454,
+       "FT%": 0.912
+      }
+     }
+    },
+    {
+     "id": 1126,
+     "name": "Bram Quillfeather",
+     "pro_team": "FOX",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.998,
+       "REB": 5.272,
+       "AST": 1.187,
+       "STL": 0.54,
+       "BLK": 0.536,
+       "TO": 0.925,
+       "FGM": 3.211,
+       "FGA": 6.717,
+       "FTM": 0.936,
+       "FTA": 1.286,
+       "GP": 10.0,
+       "3PM": 0.64,
+       "FG%": 0.478,
+       "FT%": 0.728
+      },
+      "last_30": {
+       "PTS": 7.971,
+       "REB": 5.294,
+       "AST": 1.229,
+       "STL": 0.553,
+       "BLK": 0.517,
+       "TO": 0.925,
+       "FGM": 3.091,
+       "FGA": 6.666,
+       "FTM": 0.898,
+       "FTA": 1.342,
+       "GP": 10.0,
+       "3PM": 0.621,
+       "FG%": 0.478,
+       "FT%": 0.728
+      }
+     }
+    },
+    {
+     "id": 1137,
+     "name": "Yuri Westmere",
+     "pro_team": "HIL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 6.991,
+       "REB": 6.742,
+       "AST": 1.01,
+       "STL": 0.504,
+       "BLK": 0.678,
+       "TO": 1.009,
+       "FGM": 2.933,
+       "FGA": 5.395,
+       "FTM": 0.967,
+       "FTA": 1.337,
+       "GP": 11.0,
+       "3PM": 0.158,
+       "FG%": 0.544,
+       "FT%": 0.723
+      },
+      "last_30": {
+       "PTS": 7.128,
+       "REB": 7.027,
+       "AST": 0.981,
+       "STL": 0.491,
+       "BLK": 0.694,
+       "TO": 1.009,
+       "FGM": 2.846,
+       "FGA": 5.15,
+       "FTM": 0.975,
+       "FTA": 1.315,
+       "GP": 11.0,
+       "3PM": 0.156,
+       "FG%": 0.544,
+       "FT%": 0.723
+      }
+     }
+    },
+    {
+     "id": 1150,
+     "name": "Rafe Fairbourne",
+     "pro_team": "DUN",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.651,
+       "REB": 2.23,
+       "AST": 4.335,
+       "STL": 0.504,
+       "BLK": 0.103,
+       "TO": 1.362,
+       "FGM": 2.706,
+       "FGA": 6.076,
+       "FTM": 1.199,
+       "FTA": 1.333,
+       "GP": 12.0,
+       "3PM": 1.04,
+       "FG%": 0.445,
+       "FT%": 0.9
+      },
+      "last_30": {
+       "PTS": 7.394,
+       "REB": 2.161,
+       "AST": 4.372,
+       "STL": 0.518,
+       "BLK": 0.105,
+       "TO": 1.362,
+       "FGM": 2.772,
+       "FGA": 6.189,
+       "FTM": 1.229,
+       "FTA": 1.272,
+       "GP": 12.0,
+       "3PM": 1.021,
+       "FG%": 0.445,
+       "FT%": 0.9
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "Glacier Geese",
+   "abbrev": "GLAC",
+   "wins": 1,
+   "losses": 3,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1011,
+     "name": "Yuri Glenhaven",
+     "pro_team": "DUN",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.148,
+       "REB": 8.218,
+       "AST": 4.536,
+       "STL": 1.485,
+       "BLK": 0.811,
+       "TO": 3.049,
+       "FGM": 6.422,
+       "FGA": 14.817,
+       "FTM": 4.588,
+       "FTA": 5.615,
+       "GP": 6.0,
+       "3PM": 2.715,
+       "FG%": 0.433,
+       "FT%": 0.817
+      },
+      "last_30": {
+       "PTS": 19.69,
+       "REB": 7.946,
+       "AST": 4.618,
+       "STL": 1.415,
+       "BLK": 0.831,
+       "TO": 3.049,
+       "FGM": 6.594,
+       "FGA": 14.422,
+       "FTM": 4.555,
+       "FTA": 5.409,
+       "GP": 6.0,
+       "3PM": 2.617,
+       "FG%": 0.433,
+       "FT%": 0.817
+      }
+     }
+    },
+    {
+     "id": 1016,
+     "name": "Zane Calloway",
+     "pro_team": "BAY",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 23.892,
+       "REB": 11.395,
+       "AST": 4.721,
+       "STL": 0.994,
+       "BLK": 2.671,
+       "TO": 2.42,
+       "FGM": 8.656,
+       "FGA": 13.679,
+       "FTM": 5.369,
+       "FTA": 8.104,
+       "GP": 12.0,
+       "3PM": 1.212,
+       "FG%": 0.633,
+       "FT%": 0.662
+      },
+      "last_30": {
+       "PTS": 23.112,
+       "REB": 11.516,
+       "AST": 4.788,
+       "STL": 1.003,
+       "BLK": 2.681,
+       "TO": 2.42,
+       "FGM": 9.048,
+       "FGA": 13.624,
+       "FTM": 5.166,
+       "FTA": 7.999,
+       "GP": 12.0,
+       "3PM": 1.238,
+       "FG%": 0.633,
+       "FT%": 0.662
+      }
+     }
+    },
+    {
+     "id": 1033,
+     "name": "Dario Underhill",
+     "pro_team": "ALB",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 22.036,
+       "REB": 6.916,
+       "AST": 3.979,
+       "STL": 1.48,
+       "BLK": 0.715,
+       "TO": 1.95,
+       "FGM": 7.806,
+       "FGA": 16.976,
+       "FTM": 4.378,
+       "FTA": 5.077,
+       "GP": 7.0,
+       "3PM": 2.046,
+       "FG%": 0.46,
+       "FT%": 0.862
+      },
+      "last_30": {
+       "PTS": 22.062,
+       "REB": 7.166,
+       "AST": 3.788,
+       "STL": 1.481,
+       "BLK": 0.749,
+       "TO": 1.95,
+       "FGM": 7.591,
+       "FGA": 16.636,
+       "FTM": 4.526,
+       "FTA": 5.171,
+       "GP": 7.0,
+       "3PM": 2.042,
+       "FG%": 0.46,
+       "FT%": 0.862
+      }
+     }
+    },
+    {
+     "id": 1040,
+     "name": "Pax Oakhurst",
+     "pro_team": "GRV",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.941,
+       "REB": 4.493,
+       "AST": 4.627,
+       "STL": 1.454,
+       "BLK": 0.41,
+       "TO": 1.798,
+       "FGM": 5.959,
+       "FGA": 14.293,
+       "FTM": 3.408,
+       "FTA": 4.355,
+       "GP": 7.0,
+       "3PM": 2.615,
+       "FG%": 0.417,
+       "FT%": 0.783
+      },
+      "last_30": {
+       "PTS": 14.283,
+       "REB": 3.45,
+       "AST": 3.775,
+       "STL": 1.105,
+       "BLK": 0.306,
+       "TO": 1.798,
+       "FGM": 4.538,
+       "FGA": 11.256,
+       "FTM": 2.549,
+       "FTA": 3.429,
+       "GP": 7.0,
+       "3PM": 2.079,
+       "FG%": 0.417,
+       "FT%": 0.783
+      }
+     }
+    },
+    {
+     "id": 1054,
+     "name": "Quinn Kestrel",
+     "pro_team": "FOX",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.051,
+       "REB": 3.651,
+       "AST": 3.441,
+       "STL": 1.007,
+       "BLK": 0.388,
+       "TO": 1.826,
+       "FGM": 6.189,
+       "FGA": 14.112,
+       "FTM": 3.041,
+       "FTA": 3.357,
+       "GP": 7.0,
+       "3PM": 2.632,
+       "FG%": 0.439,
+       "FT%": 0.906
+      },
+      "last_30": {
+       "PTS": 23.519,
+       "REB": 4.403,
+       "AST": 4.437,
+       "STL": 1.207,
+       "BLK": 0.477,
+       "TO": 1.826,
+       "FGM": 7.843,
+       "FGA": 17.877,
+       "FTM": 3.825,
+       "FTA": 4.197,
+       "GP": 7.0,
+       "3PM": 3.305,
+       "FG%": 0.439,
+       "FT%": 0.906
+      }
+     }
+    },
+    {
+     "id": 1069,
+     "name": "Omar Underhill",
+     "pro_team": "HIL",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 15.92,
+       "REB": 5.243,
+       "AST": 2.932,
+       "STL": 0.916,
+       "BLK": 0.554,
+       "TO": 1.654,
+       "FGM": 5.793,
+       "FGA": 11.926,
+       "FTM": 2.48,
+       "FTA": 3.101,
+       "GP": 11.0,
+       "3PM": 1.854,
+       "FG%": 0.486,
+       "FT%": 0.8
+      },
+      "last_30": {
+       "PTS": 15.665,
+       "REB": 5.315,
+       "AST": 2.813,
+       "STL": 0.896,
+       "BLK": 0.575,
+       "TO": 1.654,
+       "FGM": 5.906,
+       "FGA": 11.739,
+       "FTM": 2.54,
+       "FTA": 3.195,
+       "GP": 11.0,
+       "3PM": 1.818,
+       "FG%": 0.486,
+       "FT%": 0.8
+      }
+     }
+    },
+    {
+     "id": 1083,
+     "name": "Dario Dunmore",
+     "pro_team": "ALB",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 11.788,
+       "REB": 4.333,
+       "AST": 2.116,
+       "STL": 0.925,
+       "BLK": 0.477,
+       "TO": 1.597,
+       "FGM": 4.225,
+       "FGA": 9.004,
+       "FTM": 1.909,
+       "FTA": 2.478,
+       "GP": 11.0,
+       "3PM": 1.43,
+       "FG%": 0.469,
+       "FT%": 0.77
+      },
+      "last_30": {
+       "PTS": 11.586,
+       "REB": 4.181,
+       "AST": 2.191,
+       "STL": 0.888,
+       "BLK": 0.455,
+       "TO": 1.597,
+       "FGM": 4.194,
+       "FGA": 8.645,
+       "FTM": 1.846,
+       "FTA": 2.596,
+       "GP": 11.0,
+       "3PM": 1.46,
+       "FG%": 0.469,
+       "FT%": 0.77
+      }
+     }
+    },
+    {
+     "id": 1090,
+     "name": "Luca Calloway",
+     "pro_team": "DUN",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.601,
+       "REB": 4.125,
+       "AST": 2.198,
+       "STL": 0.84,
+       "BLK": 0.396,
+       "TO": 1.501,
+       "FGM": 5.222,
+       "FGA": 11.235,
+       "FTM": 1.83,
+       "FTA": 2.38,
+       "GP": 12.0,
+       "3PM": 1.327,
+       "FG%": 0.465,
+       "FT%": 0.769
+      },
+      "last_30": {
+       "PTS": 13.928,
+       "REB": 4.16,
+       "AST": 2.107,
+       "STL": 0.852,
+       "BLK": 0.409,
+       "TO": 1.501,
+       "FGM": 5.4,
+       "FGA": 11.758,
+       "FTM": 1.843,
+       "FTA": 2.476,
+       "GP": 12.0,
+       "3PM": 1.388,
+       "FG%": 0.465,
+       "FT%": 0.769
+      }
+     }
+    },
+    {
+     "id": 1104,
+     "name": "Cato Calloway",
+     "pro_team": "DUN",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 11.605,
+       "REB": 3.79,
+       "AST": 2.066,
+       "STL": 0.836,
+       "BLK": 0.417,
+       "TO": 1.284,
+       "FGM": 4.531,
+       "FGA": 9.513,
+       "FTM": 1.213,
+       "FTA": 1.667,
+       "GP": 8.0,
+       "3PM": 1.33,
+       "FG%": 0.476,
+       "FT%": 0.728
+      },
+      "last_30": {
+       "PTS": 14.881,
+       "REB": 4.93,
+       "AST": 2.683,
+       "STL": 1.066,
+       "BLK": 0.499,
+       "TO": 1.284,
+       "FGM": 5.658,
+       "FGA": 12.058,
+       "FTM": 1.467,
+       "FTA": 2.119,
+       "GP": 8.0,
+       "3PM": 1.664,
+       "FG%": 0.476,
+       "FT%": 0.728
+      }
+     }
+    },
+    {
+     "id": 1112,
+     "name": "Ivo Larkspur",
+     "pro_team": "ELM",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.306,
+       "REB": 4.809,
+       "AST": 1.776,
+       "STL": 0.458,
+       "BLK": 0.567,
+       "TO": 1.237,
+       "FGM": 3.608,
+       "FGA": 7.296,
+       "FTM": 1.33,
+       "FTA": 1.78,
+       "GP": 12.0,
+       "3PM": 0.759,
+       "FG%": 0.495,
+       "FT%": 0.748
+      },
+      "last_30": {
+       "PTS": 9.168,
+       "REB": 4.932,
+       "AST": 1.822,
+       "STL": 0.45,
+       "BLK": 0.561,
+       "TO": 1.237,
+       "FGM": 3.552,
+       "FGA": 7.46,
+       "FTM": 1.294,
+       "FTA": 1.704,
+       "GP": 12.0,
+       "3PM": 0.775,
+       "FG%": 0.495,
+       "FT%": 0.748
+      }
+     }
+    },
+    {
+     "id": 1125,
+     "name": "Mateo Northcote",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.983,
+       "REB": 2.776,
+       "AST": 4.888,
+       "STL": 0.767,
+       "BLK": 0.16,
+       "TO": 1.788,
+       "FGM": 3.719,
+       "FGA": 8.12,
+       "FTM": 1.283,
+       "FTA": 1.497,
+       "GP": 9.0,
+       "3PM": 1.264,
+       "FG%": 0.458,
+       "FT%": 0.857
+      },
+      "last_30": {
+       "PTS": 12.832,
+       "REB": 3.477,
+       "AST": 6.093,
+       "STL": 0.959,
+       "BLK": 0.205,
+       "TO": 1.788,
+       "FGM": 4.723,
+       "FGA": 10.455,
+       "FTM": 1.579,
+       "FTA": 1.821,
+       "GP": 9.0,
+       "3PM": 1.515,
+       "FG%": 0.458,
+       "FT%": 0.857
+      }
+     }
+    },
+    {
+     "id": 1136,
+     "name": "Dario Ashgrove",
+     "pro_team": "BAY",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.224,
+       "REB": 3.535,
+       "AST": 1.573,
+       "STL": 0.538,
+       "BLK": 0.231,
+       "TO": 0.769,
+       "FGM": 2.531,
+       "FGA": 5.804,
+       "FTM": 0.99,
+       "FTA": 1.23,
+       "GP": 7.0,
+       "3PM": 1.173,
+       "FG%": 0.436,
+       "FT%": 0.805
+      },
+      "last_30": {
+       "PTS": 9.011,
+       "REB": 4.228,
+       "AST": 2.044,
+       "STL": 0.698,
+       "BLK": 0.283,
+       "TO": 0.769,
+       "FGM": 3.273,
+       "FGA": 7.184,
+       "FTM": 1.205,
+       "FTA": 1.55,
+       "GP": 7.0,
+       "3PM": 1.489,
+       "FG%": 0.436,
+       "FT%": 0.805
+      }
+     }
+    },
+    {
+     "id": 1153,
+     "name": "Soren Northcote",
+     "pro_team": "GRV",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.739,
+       "REB": 2.549,
+       "AST": 1.133,
+       "STL": 0.565,
+       "BLK": 0.189,
+       "TO": 0.836,
+       "FGM": 3.131,
+       "FGA": 6.858,
+       "FTM": 0.7,
+       "FTA": 0.836,
+       "GP": 10.0,
+       "3PM": 0.778,
+       "FG%": 0.456,
+       "FT%": 0.837
+      },
+      "last_30": {
+       "PTS": 7.936,
+       "REB": 2.465,
+       "AST": 1.148,
+       "STL": 0.55,
+       "BLK": 0.19,
+       "TO": 0.836,
+       "FGM": 3.097,
+       "FGA": 6.721,
+       "FTM": 0.685,
+       "FTA": 0.834,
+       "GP": 10.0,
+       "3PM": 0.78,
+       "FG%": 0.456,
+       "FT%": 0.837
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "Canyon Crows",
+   "abbrev": "CANY",
+   "wins": 1,
+   "losses": 3,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1004,
+     "name": "Zane Harrowgate",
+     "pro_team": "ELM",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 25.32,
+       "REB": 9.334,
+       "AST": 4.152,
+       "STL": 1.109,
+       "BLK": 1.532,
+       "TO": 2.575,
+       "FGM": 9.223,
+       "FGA": 19.384,
+       "FTM": 5.005,
+       "FTA": 6.66,
+       "GP": 11.0,
+       "3PM": 1.869,
+       "FG%": 0.476,
+       "FT%": 0.752
+      },
+      "last_30": {
+       "PTS": 26.025,
+       "REB": 9.768,
+       "AST": 4.065,
+       "STL": 1.063,
+       "BLK": 1.547,
+       "TO": 2.575,
+       "FGM": 9.569,
+       "FGA": 19.023,
+       "FTM": 5.192,
+       "FTA": 6.335,
+       "GP": 11.0,
+       "3PM": 1.779,
+       "FG%": 0.476,
+       "FT%": 0.752
+      }
+     }
+    },
+    {
+     "id": 1015,
+     "name": "Bram Fairbourne",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 19.318,
+       "REB": 9.159,
+       "AST": 3.939,
+       "STL": 1.122,
+       "BLK": 1.463,
+       "TO": 2.443,
+       "FGM": 6.852,
+       "FGA": 13.285,
+       "FTM": 3.419,
+       "FTA": 5.096,
+       "GP": 10.0,
+       "3PM": 2.196,
+       "FG%": 0.516,
+       "FT%": 0.671
+      },
+      "last_30": {
+       "PTS": 19.645,
+       "REB": 8.993,
+       "AST": 4.013,
+       "STL": 1.158,
+       "BLK": 1.49,
+       "TO": 2.443,
+       "FGM": 7.118,
+       "FGA": 13.698,
+       "FTM": 3.462,
+       "FTA": 5.339,
+       "GP": 10.0,
+       "3PM": 2.092,
+       "FG%": 0.516,
+       "FT%": 0.671
+      }
+     }
+    },
+    {
+     "id": 1035,
+     "name": "Kofi Harrowgate",
+     "pro_team": "GRV",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.172,
+       "REB": 7.049,
+       "AST": 4.607,
+       "STL": 1.247,
+       "BLK": 0.662,
+       "TO": 2.493,
+       "FGM": 5.715,
+       "FGA": 12.434,
+       "FTM": 3.503,
+       "FTA": 4.035,
+       "GP": 6.0,
+       "3PM": 2.239,
+       "FG%": 0.46,
+       "FT%": 0.868
+      },
+      "last_30": {
+       "PTS": 21.651,
+       "REB": 9.118,
+       "AST": 5.478,
+       "STL": 1.564,
+       "BLK": 0.817,
+       "TO": 2.493,
+       "FGM": 7.314,
+       "FGA": 15.877,
+       "FTM": 4.418,
+       "FTA": 4.809,
+       "GP": 6.0,
+       "3PM": 2.77,
+       "FG%": 0.46,
+       "FT%": 0.868
+      }
+     }
+    },
+    {
+     "id": 1038,
+     "name": "Niko Kestrel",
+     "pro_team": "FOX",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.294,
+       "REB": 10.352,
+       "AST": 3.705,
+       "STL": 0.816,
+       "BLK": 1.876,
+       "TO": 2.761,
+       "FGM": 7.769,
+       "FGA": 14.737,
+       "FTM": 3.643,
+       "FTA": 4.966,
+       "GP": 7.0,
+       "3PM": 1.114,
+       "FG%": 0.527,
+       "FT%": 0.734
+      },
+      "last_30": {
+       "PTS": 20.721,
+       "REB": 10.743,
+       "AST": 3.563,
+       "STL": 0.799,
+       "BLK": 1.913,
+       "TO": 2.761,
+       "FGM": 7.469,
+       "FGA": 15.336,
+       "FTM": 3.666,
+       "FTA": 5.186,
+       "GP": 7.0,
+       "3PM": 1.13,
+       "FG%": 0.527,
+       "FT%": 0.734
+      }
+     }
+    },
+    {
+     "id": 1055,
+     "name": "Pax Dunmore",
+     "pro_team": "ELM",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 19.956,
+       "REB": 3.96,
+       "AST": 4.478,
+       "STL": 1.166,
+       "BLK": 0.342,
+       "TO": 2.013,
+       "FGM": 6.713,
+       "FGA": 15.963,
+       "FTM": 3.563,
+       "FTA": 4.02,
+       "GP": 12.0,
+       "3PM": 2.968,
+       "FG%": 0.421,
+       "FT%": 0.886
+      },
+      "last_30": {
+       "PTS": 19.455,
+       "REB": 3.774,
+       "AST": 4.374,
+       "STL": 1.199,
+       "BLK": 0.337,
+       "TO": 2.013,
+       "FGM": 6.649,
+       "FGA": 15.29,
+       "FTM": 3.597,
+       "FTA": 4.098,
+       "GP": 12.0,
+       "3PM": 2.949,
+       "FG%": 0.421,
+       "FT%": 0.886
+      }
+     }
+    },
+    {
+     "id": 1062,
+     "name": "Cato Harrowgate",
+     "pro_team": "DUN",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.456,
+       "REB": 6.529,
+       "AST": 3.024,
+       "STL": 0.823,
+       "BLK": 0.974,
+       "TO": 2.026,
+       "FGM": 6.55,
+       "FGA": 12.818,
+       "FTM": 2.899,
+       "FTA": 4.094,
+       "GP": 12.0,
+       "3PM": 1.457,
+       "FG%": 0.511,
+       "FT%": 0.708
+      },
+      "last_30": {
+       "PTS": 17.598,
+       "REB": 6.386,
+       "AST": 3.124,
+       "STL": 0.809,
+       "BLK": 0.981,
+       "TO": 2.026,
+       "FGM": 6.835,
+       "FGA": 12.594,
+       "FTM": 2.937,
+       "FTA": 3.935,
+       "GP": 12.0,
+       "3PM": 1.489,
+       "FG%": 0.511,
+       "FT%": 0.708
+      }
+     }
+    },
+    {
+     "id": 1079,
+     "name": "Soren Fairbourne",
+     "pro_team": "FOX",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 14.842,
+       "REB": 3.35,
+       "AST": 3.428,
+       "STL": 0.98,
+       "BLK": 0.257,
+       "TO": 1.364,
+       "FGM": 4.912,
+       "FGA": 11.126,
+       "FTM": 2.6,
+       "FTA": 2.943,
+       "GP": 6.0,
+       "3PM": 2.418,
+       "FG%": 0.442,
+       "FT%": 0.883
+      },
+      "last_30": {
+       "PTS": 14.322,
+       "REB": 3.515,
+       "AST": 3.397,
+       "STL": 0.972,
+       "BLK": 0.262,
+       "TO": 1.364,
+       "FGM": 4.81,
+       "FGA": 11.095,
+       "FTM": 2.664,
+       "FTA": 2.852,
+       "GP": 6.0,
+       "3PM": 2.396,
+       "FG%": 0.442,
+       "FT%": 0.883
+      }
+     }
+    },
+    {
+     "id": 1087,
+     "name": "Cato Glenhaven",
+     "pro_team": "ELM",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.824,
+       "REB": 4.207,
+       "AST": 2.029,
+       "STL": 0.86,
+       "BLK": 0.401,
+       "TO": 1.53,
+       "FGM": 5.126,
+       "FGA": 11.217,
+       "FTM": 1.879,
+       "FTA": 2.541,
+       "GP": 6.0,
+       "3PM": 1.692,
+       "FG%": 0.457,
+       "FT%": 0.739
+      },
+      "last_30": {
+       "PTS": 10.628,
+       "REB": 3.299,
+       "AST": 1.557,
+       "STL": 0.698,
+       "BLK": 0.304,
+       "TO": 1.53,
+       "FGM": 3.863,
+       "FGA": 8.905,
+       "FTM": 1.392,
+       "FTA": 2.012,
+       "GP": 6.0,
+       "3PM": 1.292,
+       "FG%": 0.457,
+       "FT%": 0.739
+      }
+     }
+    },
+    {
+     "id": 1103,
+     "name": "Niko Zephyrine",
+     "pro_team": "ELM",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.16,
+       "REB": 6.511,
+       "AST": 2.027,
+       "STL": 0.623,
+       "BLK": 0.683,
+       "TO": 1.248,
+       "FGM": 3.356,
+       "FGA": 6.764,
+       "FTM": 1.765,
+       "FTA": 2.126,
+       "GP": 6.0,
+       "3PM": 0.682,
+       "FG%": 0.496,
+       "FT%": 0.83
+      },
+      "last_30": {
+       "PTS": 8.924,
+       "REB": 6.77,
+       "AST": 2.065,
+       "STL": 0.628,
+       "BLK": 0.672,
+       "TO": 1.248,
+       "FGM": 3.274,
+       "FGA": 6.631,
+       "FTM": 1.783,
+       "FTA": 2.095,
+       "GP": 6.0,
+       "3PM": 0.707,
+       "FG%": 0.496,
+       "FT%": 0.83
+      }
+     }
+    },
+    {
+     "id": 1110,
+     "name": "Rafe Pinecrest",
+     "pro_team": "HIL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 10.68,
+       "REB": 4.984,
+       "AST": 1.395,
+       "STL": 0.441,
+       "BLK": 0.577,
+       "TO": 0.924,
+       "FGM": 4.198,
+       "FGA": 8.279,
+       "FTM": 1.499,
+       "FTA": 1.796,
+       "GP": 10.0,
+       "3PM": 0.785,
+       "FG%": 0.507,
+       "FT%": 0.835
+      },
+      "last_30": {
+       "PTS": 10.735,
+       "REB": 5.104,
+       "AST": 1.464,
+       "STL": 0.439,
+       "BLK": 0.549,
+       "TO": 0.924,
+       "FGM": 4.375,
+       "FGA": 8.552,
+       "FTM": 1.48,
+       "FTA": 1.773,
+       "GP": 10.0,
+       "3PM": 0.782,
+       "FG%": 0.507,
+       "FT%": 0.835
+      }
+     }
+    },
+    {
+     "id": 1127,
+     "name": "Niko Fairbourne",
+     "pro_team": "DUN",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 10.497,
+       "REB": 2.122,
+       "AST": 4.075,
+       "STL": 0.604,
+       "BLK": 0.112,
+       "TO": 1.359,
+       "FGM": 4.058,
+       "FGA": 8.753,
+       "FTM": 1.302,
+       "FTA": 1.478,
+       "GP": 12.0,
+       "3PM": 1.079,
+       "FG%": 0.464,
+       "FT%": 0.881
+      },
+      "last_30": {
+       "PTS": 10.851,
+       "REB": 2.105,
+       "AST": 4.213,
+       "STL": 0.599,
+       "BLK": 0.112,
+       "TO": 1.359,
+       "FGM": 4.222,
+       "FGA": 8.324,
+       "FTM": 1.305,
+       "FTA": 1.535,
+       "GP": 12.0,
+       "3PM": 1.098,
+       "FG%": 0.464,
+       "FT%": 0.881
+      }
+     }
+    },
+    {
+     "id": 1133,
+     "name": "Theo Northcote",
+     "pro_team": "GRV",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.172,
+       "REB": 3.413,
+       "AST": 1.702,
+       "STL": 0.646,
+       "BLK": 0.227,
+       "TO": 0.981,
+       "FGM": 2.661,
+       "FGA": 5.976,
+       "FTM": 0.994,
+       "FTA": 1.379,
+       "GP": 6.0,
+       "3PM": 0.857,
+       "FG%": 0.445,
+       "FT%": 0.721
+      },
+      "last_30": {
+       "PTS": 5.482,
+       "REB": 2.605,
+       "AST": 1.334,
+       "STL": 0.521,
+       "BLK": 0.184,
+       "TO": 0.981,
+       "FGM": 2.021,
+       "FGA": 4.789,
+       "FTM": 0.788,
+       "FTA": 1.072,
+       "GP": 6.0,
+       "3PM": 0.682,
+       "FG%": 0.445,
+       "FT%": 0.721
+      }
+     }
+    },
+    {
+     "id": 1151,
+     "name": "Kofi Ravenscar",
+     "pro_team": "ALB",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "IR",
+     "injury_status": "OUT",
+     "stats": {
+      "season": {
+       "PTS": 7.121,
+       "REB": 6.068,
+       "AST": 0.907,
+       "STL": 0.46,
+       "BLK": 0.824,
+       "TO": 0.703,
+       "FGM": 3.066,
+       "FGA": 5.049,
+       "FTM": 0.866,
+       "FTA": 1.263,
+       "GP": 7.0,
+       "3PM": 0.124,
+       "FG%": 0.607,
+       "FT%": 0.685
+      },
+      "last_30": {
+       "PTS": 7.349,
+       "REB": 6.009,
+       "AST": 0.946,
+       "STL": 0.468,
+       "BLK": 0.786,
+       "TO": 0.703,
+       "FGM": 3.066,
+       "FGA": 5.168,
+       "FTM": 0.901,
+       "FTA": 1.303,
+       "GP": 7.0,
+       "3PM": 0.129,
+       "FG%": 0.607,
+       "FT%": 0.685
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "Mesa Moths",
+   "abbrev": "MESA",
+   "wins": 3,
+   "losses": 1,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1007,
+     "name": "Hale Fairbourne",
+     "pro_team": "ELM",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 28.781,
+       "REB": 13.236,
+       "AST": 5.466,
+       "STL": 0.953,
+       "BLK": 2.768,
+       "TO": 2.87,
+       "FGM": 10.13,
+       "FGA": 19.111,
+       "FTM": 6.921,
+       "FTA": 8.806,
+       "GP": 8.0,
+       "3PM": 1.601,
+       "FG%": 0.53,
+       "FT%": 0.786
+      },
+      "last_30": {
+       "PTS": 22.179,
+       "REB": 10.315,
+       "AST": 4.344,
+       "STL": 0.716,
+       "BLK": 2.235,
+       "TO": 2.87,
+       "FGM": 7.599,
+       "FGA": 14.238,
+       "FTM": 5.507,
+       "FTA": 6.641,
+       "GP": 8.0,
+       "3PM": 1.261,
+       "FG%": 0.53,
+       "FT%": 0.786
+      }
+     }
+    },
+    {
+     "id": 1014,
+     "name": "Pax Glenhaven",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 26.714,
+       "REB": 6.129,
+       "AST": 10.353,
+       "STL": 1.495,
+       "BLK": 0.465,
+       "TO": 3.825,
+       "FGM": 9.245,
+       "FGA": 20.662,
+       "FTM": 4.914,
+       "FTA": 5.911,
+       "GP": 10.0,
+       "3PM": 3.311,
+       "FG%": 0.447,
+       "FT%": 0.831
+      },
+      "last_30": {
+       "PTS": 25.892,
+       "REB": 6.267,
+       "AST": 10.557,
+       "STL": 1.494,
+       "BLK": 0.487,
+       "TO": 3.825,
+       "FGM": 9.303,
+       "FGA": 19.721,
+       "FTM": 4.974,
+       "FTA": 5.967,
+       "GP": 10.0,
+       "3PM": 3.178,
+       "FG%": 0.447,
+       "FT%": 0.831
+      }
+     }
+    },
+    {
+     "id": 1027,
+     "name": "Dario Ironwood",
+     "pro_team": "ALB",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.221,
+       "REB": 5.605,
+       "AST": 4.337,
+       "STL": 1.53,
+       "BLK": 0.419,
+       "TO": 2.308,
+       "FGM": 6.51,
+       "FGA": 13.799,
+       "FTM": 4.264,
+       "FTA": 5.007,
+       "GP": 11.0,
+       "3PM": 2.939,
+       "FG%": 0.472,
+       "FT%": 0.852
+      },
+      "last_30": {
+       "PTS": 25.395,
+       "REB": 7.03,
+       "AST": 5.177,
+       "STL": 1.823,
+       "BLK": 0.515,
+       "TO": 2.308,
+       "FGM": 8.051,
+       "FGA": 17.458,
+       "FTM": 5.547,
+       "FTA": 6.517,
+       "GP": 11.0,
+       "3PM": 3.8,
+       "FG%": 0.472,
+       "FT%": 0.852
+      }
+     }
+    },
+    {
+     "id": 1037,
+     "name": "Finn Pinecrest",
+     "pro_team": "COL",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 19.238,
+       "REB": 9.488,
+       "AST": 3.361,
+       "STL": 0.947,
+       "BLK": 1.139,
+       "TO": 1.78,
+       "FGM": 7.299,
+       "FGA": 13.338,
+       "FTM": 2.926,
+       "FTA": 4.309,
+       "GP": 7.0,
+       "3PM": 1.715,
+       "FG%": 0.547,
+       "FT%": 0.679
+      },
+      "last_30": {
+       "PTS": 18.703,
+       "REB": 9.447,
+       "AST": 3.468,
+       "STL": 0.965,
+       "BLK": 1.082,
+       "TO": 1.78,
+       "FGM": 7.332,
+       "FGA": 12.674,
+       "FTM": 3.057,
+       "FTA": 4.144,
+       "GP": 7.0,
+       "3PM": 1.746,
+       "FG%": 0.547,
+       "FT%": 0.679
+      }
+     }
+    },
+    {
+     "id": 1056,
+     "name": "Cato Oakhurst",
+     "pro_team": "ELM",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.899,
+       "REB": 3.869,
+       "AST": 3.977,
+       "STL": 1.123,
+       "BLK": 0.372,
+       "TO": 1.953,
+       "FGM": 7.589,
+       "FGA": 16.009,
+       "FTM": 3.223,
+       "FTA": 3.861,
+       "GP": 9.0,
+       "3PM": 2.497,
+       "FG%": 0.474,
+       "FT%": 0.835
+      },
+      "last_30": {
+       "PTS": 26.121,
+       "REB": 4.992,
+       "AST": 5.109,
+       "STL": 1.444,
+       "BLK": 0.469,
+       "TO": 1.953,
+       "FGM": 9.108,
+       "FGA": 19.073,
+       "FTM": 4.16,
+       "FTA": 4.754,
+       "GP": 9.0,
+       "3PM": 3.27,
+       "FG%": 0.474,
+       "FT%": 0.835
+      }
+     }
+    },
+    {
+     "id": 1060,
+     "name": "Uri Larkspur",
+     "pro_team": "BAY",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 15.45,
+       "REB": 8.36,
+       "AST": 2.511,
+       "STL": 0.773,
+       "BLK": 0.912,
+       "TO": 1.623,
+       "FGM": 5.773,
+       "FGA": 12.208,
+       "FTM": 2.568,
+       "FTA": 3.298,
+       "GP": 6.0,
+       "3PM": 1.336,
+       "FG%": 0.473,
+       "FT%": 0.779
+      },
+      "last_30": {
+       "PTS": 14.996,
+       "REB": 8.689,
+       "AST": 2.634,
+       "STL": 0.736,
+       "BLK": 0.872,
+       "TO": 1.623,
+       "FGM": 6.028,
+       "FGA": 12.378,
+       "FTM": 2.482,
+       "FTA": 3.431,
+       "GP": 6.0,
+       "3PM": 1.346,
+       "FG%": 0.473,
+       "FT%": 0.779
+      }
+     }
+    },
+    {
+     "id": 1080,
+     "name": "Bram Underhill",
+     "pro_team": "ELM",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 16.004,
+       "REB": 3.446,
+       "AST": 7.5,
+       "STL": 0.876,
+       "BLK": 0.277,
+       "TO": 1.773,
+       "FGM": 5.742,
+       "FGA": 12.918,
+       "FTM": 2.604,
+       "FTA": 3.424,
+       "GP": 7.0,
+       "3PM": 1.916,
+       "FG%": 0.444,
+       "FT%": 0.761
+      },
+      "last_30": {
+       "PTS": 15.252,
+       "REB": 3.542,
+       "AST": 7.134,
+       "STL": 0.902,
+       "BLK": 0.268,
+       "TO": 1.773,
+       "FGM": 6.005,
+       "FGA": 12.972,
+       "FTM": 2.588,
+       "FTA": 3.355,
+       "GP": 7.0,
+       "3PM": 1.939,
+       "FG%": 0.444,
+       "FT%": 0.761
+      }
+     }
+    },
+    {
+     "id": 1086,
+     "name": "Cato Merrow",
+     "pro_team": "GRV",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 14.312,
+       "REB": 7.364,
+       "AST": 2.482,
+       "STL": 0.537,
+       "BLK": 1.218,
+       "TO": 1.26,
+       "FGM": 5.489,
+       "FGA": 9.944,
+       "FTM": 2.728,
+       "FTA": 3.646,
+       "GP": 11.0,
+       "3PM": 0.606,
+       "FG%": 0.552,
+       "FT%": 0.748
+      },
+      "last_30": {
+       "PTS": 18.039,
+       "REB": 8.907,
+       "AST": 3.172,
+       "STL": 0.642,
+       "BLK": 1.5,
+       "TO": 1.26,
+       "FGM": 6.854,
+       "FGA": 12.302,
+       "FTM": 3.322,
+       "FTA": 4.346,
+       "GP": 11.0,
+       "3PM": 0.753,
+       "FG%": 0.552,
+       "FT%": 0.748
+      }
+     }
+    },
+    {
+     "id": 1107,
+     "name": "Quinn Merrow",
+     "pro_team": "ELM",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 10.495,
+       "REB": 6.505,
+       "AST": 1.691,
+       "STL": 0.601,
+       "BLK": 0.932,
+       "TO": 1.094,
+       "FGM": 4.395,
+       "FGA": 7.77,
+       "FTM": 1.387,
+       "FTA": 2.086,
+       "GP": 11.0,
+       "3PM": 0.317,
+       "FG%": 0.566,
+       "FT%": 0.665
+      },
+      "last_30": {
+       "PTS": 10.229,
+       "REB": 6.225,
+       "AST": 1.734,
+       "STL": 0.579,
+       "BLK": 0.963,
+       "TO": 1.094,
+       "FGM": 4.349,
+       "FGA": 7.914,
+       "FTM": 1.398,
+       "FTA": 2.16,
+       "GP": 11.0,
+       "3PM": 0.331,
+       "FG%": 0.566,
+       "FT%": 0.665
+      }
+     }
+    },
+    {
+     "id": 1111,
+     "name": "Rafe Vanterpool",
+     "pro_team": "ELM",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 10.075,
+       "REB": 7.132,
+       "AST": 1.341,
+       "STL": 0.506,
+       "BLK": 0.902,
+       "TO": 1.187,
+       "FGM": 4.084,
+       "FGA": 6.639,
+       "FTM": 1.607,
+       "FTA": 2.555,
+       "GP": 11.0,
+       "3PM": 0.3,
+       "FG%": 0.615,
+       "FT%": 0.629
+      },
+      "last_30": {
+       "PTS": 10.48,
+       "REB": 6.896,
+       "AST": 1.396,
+       "STL": 0.518,
+       "BLK": 0.879,
+       "TO": 1.187,
+       "FGM": 3.941,
+       "FGA": 6.395,
+       "FTM": 1.572,
+       "FTA": 2.527,
+       "GP": 11.0,
+       "3PM": 0.312,
+       "FG%": 0.615,
+       "FT%": 0.629
+      }
+     }
+    },
+    {
+     "id": 1134,
+     "name": "Xan Yarrow",
+     "pro_team": "DUN",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.206,
+       "REB": 6.179,
+       "AST": 1.093,
+       "STL": 0.446,
+       "BLK": 0.716,
+       "TO": 1.081,
+       "FGM": 4.018,
+       "FGA": 6.294,
+       "FTM": 0.961,
+       "FTA": 1.391,
+       "GP": 9.0,
+       "3PM": 0.209,
+       "FG%": 0.638,
+       "FT%": 0.691
+      },
+      "last_30": {
+       "PTS": 7.032,
+       "REB": 4.755,
+       "AST": 0.879,
+       "STL": 0.354,
+       "BLK": 0.549,
+       "TO": 1.081,
+       "FGM": 3.185,
+       "FGA": 4.826,
+       "FTM": 0.714,
+       "FTA": 1.139,
+       "GP": 9.0,
+       "3PM": 0.162,
+       "FG%": 0.638,
+       "FT%": 0.691
+      }
+     }
+    },
+    {
+     "id": 1132,
+     "name": "Jonah Kestrel",
+     "pro_team": "GRV",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.254,
+       "REB": 4.888,
+       "AST": 1.394,
+       "STL": 0.485,
+       "BLK": 0.481,
+       "TO": 0.811,
+       "FGM": 3.517,
+       "FGA": 6.772,
+       "FTM": 0.781,
+       "FTA": 1.13,
+       "GP": 10.0,
+       "3PM": 0.439,
+       "FG%": 0.519,
+       "FT%": 0.691
+      },
+      "last_30": {
+       "PTS": 6.631,
+       "REB": 3.822,
+       "AST": 1.091,
+       "STL": 0.382,
+       "BLK": 0.368,
+       "TO": 0.811,
+       "FGM": 2.61,
+       "FGA": 5.028,
+       "FTM": 0.595,
+       "FTA": 0.866,
+       "GP": 10.0,
+       "3PM": 0.347,
+       "FG%": 0.519,
+       "FT%": 0.691
+      }
+     }
+    },
+    {
+     "id": 1154,
+     "name": "Goran Quillfeather",
+     "pro_team": "BAY",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 6.575,
+       "REB": 6.957,
+       "AST": 0.828,
+       "STL": 0.376,
+       "BLK": 0.683,
+       "TO": 0.923,
+       "FGM": 2.738,
+       "FGA": 4.532,
+       "FTM": 0.99,
+       "FTA": 1.339,
+       "GP": 8.0,
+       "3PM": 0.108,
+       "FG%": 0.604,
+       "FT%": 0.74
+      },
+      "last_30": {
+       "PTS": 6.564,
+       "REB": 7.052,
+       "AST": 0.814,
+       "STL": 0.365,
+       "BLK": 0.694,
+       "TO": 0.923,
+       "FGM": 2.763,
+       "FGA": 4.422,
+       "FTM": 0.945,
+       "FTA": 1.35,
+       "GP": 8.0,
+       "3PM": 0.106,
+       "FG%": 0.604,
+       "FT%": 0.74
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "Delta Drakes",
+   "abbrev": "DELT",
+   "wins": 1,
+   "losses": 3,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1008,
+     "name": "Niko Quillfeather",
+     "pro_team": "GRV",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 27.502,
+       "REB": 5.143,
+       "AST": 9.354,
+       "STL": 1.771,
+       "BLK": 0.388,
+       "TO": 2.985,
+       "FGM": 8.401,
+       "FGA": 20.089,
+       "FTM": 6.865,
+       "FTA": 7.549,
+       "GP": 9.0,
+       "3PM": 3.833,
+       "FG%": 0.418,
+       "FT%": 0.909
+      },
+      "last_30": {
+       "PTS": 28.5,
+       "REB": 4.915,
+       "AST": 8.92,
+       "STL": 1.778,
+       "BLK": 0.405,
+       "TO": 2.985,
+       "FGM": 8.668,
+       "FGA": 20.517,
+       "FTM": 7.116,
+       "FTA": 7.415,
+       "GP": 9.0,
+       "3PM": 3.712,
+       "FG%": 0.418,
+       "FT%": 0.909
+      }
+     }
+    },
+    {
+     "id": 1012,
+     "name": "Pax Westmere",
+     "pro_team": "COL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 23.991,
+       "REB": 13.726,
+       "AST": 5.685,
+       "STL": 1.197,
+       "BLK": 2.795,
+       "TO": 2.608,
+       "FGM": 8.982,
+       "FGA": 14.122,
+       "FTM": 4.425,
+       "FTA": 7.528,
+       "GP": 6.0,
+       "3PM": 1.601,
+       "FG%": 0.636,
+       "FT%": 0.588
+      },
+      "last_30": {
+       "PTS": 30.999,
+       "REB": 17.256,
+       "AST": 6.904,
+       "STL": 1.513,
+       "BLK": 3.473,
+       "TO": 2.608,
+       "FGM": 11.524,
+       "FGA": 18.164,
+       "FTM": 5.255,
+       "FTA": 8.972,
+       "GP": 6.0,
+       "3PM": 1.97,
+       "FG%": 0.636,
+       "FT%": 0.588
+      }
+     }
+    },
+    {
+     "id": 1029,
+     "name": "Jonah Harrowgate",
+     "pro_team": "ELM",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 23.111,
+       "REB": 4.346,
+       "AST": 4.511,
+       "STL": 1.151,
+       "BLK": 0.436,
+       "TO": 2.465,
+       "FGM": 7.849,
+       "FGA": 16.933,
+       "FTM": 3.8,
+       "FTA": 4.938,
+       "GP": 11.0,
+       "3PM": 3.613,
+       "FG%": 0.464,
+       "FT%": 0.77
+      },
+      "last_30": {
+       "PTS": 18.63,
+       "REB": 3.251,
+       "AST": 3.556,
+       "STL": 0.942,
+       "BLK": 0.357,
+       "TO": 2.465,
+       "FGM": 6.013,
+       "FGA": 13.117,
+       "FTM": 3.05,
+       "FTA": 3.9,
+       "GP": 11.0,
+       "3PM": 2.76,
+       "FG%": 0.464,
+       "FT%": 0.77
+      }
+     }
+    },
+    {
+     "id": 1032,
+     "name": "Quinn Underhill",
+     "pro_team": "BAY",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 18.803,
+       "REB": 5.046,
+       "AST": 5.05,
+       "STL": 1.425,
+       "BLK": 0.478,
+       "TO": 2.235,
+       "FGM": 5.93,
+       "FGA": 13.926,
+       "FTM": 4.365,
+       "FTA": 5.021,
+       "GP": 12.0,
+       "3PM": 2.578,
+       "FG%": 0.426,
+       "FT%": 0.869
+      },
+      "last_30": {
+       "PTS": 19.068,
+       "REB": 4.86,
+       "AST": 4.833,
+       "STL": 1.485,
+       "BLK": 0.497,
+       "TO": 2.235,
+       "FGM": 5.972,
+       "FGA": 14.37,
+       "FTM": 4.217,
+       "FTA": 5.053,
+       "GP": 12.0,
+       "3PM": 2.497,
+       "FG%": 0.426,
+       "FT%": 0.869
+      }
+     }
+    },
+    {
+     "id": 1057,
+     "name": "Vito Westmere",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.005,
+       "REB": 3.713,
+       "AST": 4.45,
+       "STL": 1.137,
+       "BLK": 0.291,
+       "TO": 1.884,
+       "FGM": 6.279,
+       "FGA": 14.473,
+       "FTM": 2.257,
+       "FTA": 2.915,
+       "GP": 11.0,
+       "3PM": 2.189,
+       "FG%": 0.434,
+       "FT%": 0.775
+      },
+      "last_30": {
+       "PTS": 17.485,
+       "REB": 3.655,
+       "AST": 4.274,
+       "STL": 1.107,
+       "BLK": 0.28,
+       "TO": 1.884,
+       "FGM": 6.538,
+       "FGA": 14.644,
+       "FTM": 2.172,
+       "FTA": 2.907,
+       "GP": 11.0,
+       "3PM": 2.175,
+       "FG%": 0.434,
+       "FT%": 0.775
+      }
+     }
+    },
+    {
+     "id": 1059,
+     "name": "Kofi Stonebridge",
+     "pro_team": "ELM",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 16.541,
+       "REB": 3.815,
+       "AST": 7.211,
+       "STL": 1.383,
+       "BLK": 0.282,
+       "TO": 2.715,
+       "FGM": 5.874,
+       "FGA": 14.277,
+       "FTM": 2.865,
+       "FTA": 3.448,
+       "GP": 7.0,
+       "3PM": 1.928,
+       "FG%": 0.411,
+       "FT%": 0.831
+      }
+     }
+    },
+    {
+     "id": 1081,
+     "name": "Zane Ashgrove",
+     "pro_team": "COL",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "PF",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.733,
+       "REB": 5.226,
+       "AST": 2.394,
+       "STL": 1.13,
+       "BLK": 0.491,
+       "TO": 1.606,
+       "FGM": 4.524,
+       "FGA": 8.889,
+       "FTM": 1.936,
+       "FTA": 2.518,
+       "GP": 7.0,
+       "3PM": 1.749,
+       "FG%": 0.509,
+       "FT%": 0.769
+      },
+      "last_30": {
+       "PTS": 12.445,
+       "REB": 5.159,
+       "AST": 2.402,
+       "STL": 1.084,
+       "BLK": 0.5,
+       "TO": 1.606,
+       "FGM": 4.636,
+       "FGA": 8.683,
+       "FTM": 1.966,
+       "FTA": 2.641,
+       "GP": 7.0,
+       "3PM": 1.763,
+       "FG%": 0.509,
+       "FT%": 0.769
+      }
+     }
+    },
+    {
+     "id": 1088,
+     "name": "Aiden Brightwater",
+     "pro_team": "ALB",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.6,
+       "REB": 3.444,
+       "AST": 5.613,
+       "STL": 0.936,
+       "BLK": 0.187,
+       "TO": 1.796,
+       "FGM": 4.131,
+       "FGA": 9.961,
+       "FTM": 2.795,
+       "FTA": 3.346,
+       "GP": 11.0,
+       "3PM": 1.544,
+       "FG%": 0.415,
+       "FT%": 0.835
+      },
+      "last_30": {
+       "PTS": 13.099,
+       "REB": 3.388,
+       "AST": 5.858,
+       "STL": 0.965,
+       "BLK": 0.181,
+       "TO": 1.796,
+       "FGM": 3.951,
+       "FGA": 9.775,
+       "FTM": 2.721,
+       "FTA": 3.343,
+       "GP": 11.0,
+       "3PM": 1.6,
+       "FG%": 0.415,
+       "FT%": 0.835
+      }
+     }
+    },
+    {
+     "id": 1105,
+     "name": "Goran Yarrow",
+     "pro_team": "GRV",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 10.586,
+       "REB": 2.677,
+       "AST": 4.525,
+       "STL": 0.715,
+       "BLK": 0.183,
+       "TO": 2.06,
+       "FGM": 3.463,
+       "FGA": 7.949,
+       "FTM": 1.937,
+       "FTA": 2.207,
+       "GP": 12.0,
+       "3PM": 1.724,
+       "FG%": 0.436,
+       "FT%": 0.878
+      },
+      "last_30": {
+       "PTS": 12.596,
+       "REB": 3.485,
+       "AST": 5.672,
+       "STL": 0.886,
+       "BLK": 0.23,
+       "TO": 2.06,
+       "FGM": 4.202,
+       "FGA": 10.05,
+       "FTM": 2.373,
+       "FTA": 2.751,
+       "GP": 12.0,
+       "3PM": 2.147,
+       "FG%": 0.436,
+       "FT%": 0.878
+      }
+     }
+    },
+    {
+     "id": 1109,
+     "name": "Dario Quillfeather",
+     "pro_team": "ELM",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.101,
+       "REB": 4.789,
+       "AST": 1.896,
+       "STL": 0.521,
+       "BLK": 0.626,
+       "TO": 1.037,
+       "FGM": 3.048,
+       "FGA": 6.37,
+       "FTM": 1.329,
+       "FTA": 1.646,
+       "GP": 12.0,
+       "3PM": 0.676,
+       "FG%": 0.479,
+       "FT%": 0.807
+      },
+      "last_30": {
+       "PTS": 8.099,
+       "REB": 4.672,
+       "AST": 1.974,
+       "STL": 0.529,
+       "BLK": 0.638,
+       "TO": 1.037,
+       "FGM": 3.188,
+       "FGA": 6.678,
+       "FTM": 1.378,
+       "FTA": 1.728,
+       "GP": 12.0,
+       "3PM": 0.692,
+       "FG%": 0.479,
+       "FT%": 0.807
+      }
+     }
+    },
+    {
+     "id": 1129,
+     "name": "Bram Glenhaven",
+     "pro_team": "ELM",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.987,
+       "REB": 2.013,
+       "AST": 4.205,
+       "STL": 0.699,
+       "BLK": 0.122,
+       "TO": 1.28,
+       "FGM": 3.657,
+       "FGA": 7.875,
+       "FTM": 1.307,
+       "FTA": 1.425,
+       "GP": 9.0,
+       "3PM": 1.365,
+       "FG%": 0.464,
+       "FT%": 0.918
+      },
+      "last_30": {
+       "PTS": 9.55,
+       "REB": 2.089,
+       "AST": 4.369,
+       "STL": 0.712,
+       "BLK": 0.116,
+       "TO": 1.28,
+       "FGM": 3.666,
+       "FGA": 8.007,
+       "FTM": 1.248,
+       "FTA": 1.382,
+       "GP": 9.0,
+       "3PM": 1.432,
+       "FG%": 0.464,
+       "FT%": 0.918
+      }
+     }
+    },
+    {
+     "id": 1135,
+     "name": "Hale Ravenscar",
+     "pro_team": "ELM",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 7.819,
+       "REB": 2.488,
+       "AST": 4.028,
+       "STL": 0.645,
+       "BLK": 0.122,
+       "TO": 1.387,
+       "FGM": 2.711,
+       "FGA": 6.311,
+       "FTM": 1.346,
+       "FTA": 1.738,
+       "GP": 10.0,
+       "3PM": 1.052,
+       "FG%": 0.43,
+       "FT%": 0.774
+      },
+      "last_30": {
+       "PTS": 9.449,
+       "REB": 3.108,
+       "AST": 4.806,
+       "STL": 0.808,
+       "BLK": 0.152,
+       "TO": 1.387,
+       "FGM": 3.514,
+       "FGA": 8.004,
+       "FTM": 1.634,
+       "FTA": 2.277,
+       "GP": 10.0,
+       "3PM": 1.282,
+       "FG%": 0.43,
+       "FT%": 0.774
+      }
+     }
+    },
+    {
+     "id": 1152,
+     "name": "Finn Vanterpool",
+     "pro_team": "BAY",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.053,
+       "REB": 2.241,
+       "AST": 4.686,
+       "STL": 0.6,
+       "BLK": 0.109,
+       "TO": 1.173,
+       "FGM": 2.967,
+       "FGA": 6.27,
+       "FTM": 1.012,
+       "FTA": 1.182,
+       "GP": 6.0,
+       "3PM": 1.107,
+       "FG%": 0.473,
+       "FT%": 0.856
+      },
+      "last_30": {
+       "PTS": 10.484,
+       "REB": 2.664,
+       "AST": 5.621,
+       "STL": 0.73,
+       "BLK": 0.143,
+       "TO": 1.173,
+       "FGM": 3.613,
+       "FGA": 7.792,
+       "FTM": 1.28,
+       "FTA": 1.512,
+       "GP": 6.0,
+       "3PM": 1.358,
+       "FG%": 0.473,
+       "FT%": 0.856
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Orchard Otters",
+   "abbrev": "ORCH",
+   "wins": 1,
+   "losses": 3,
+   "ties": 0,
+   "players": [
+    {
+     "id": 1013,
+     "name": "Uri Eastlake",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 24.418,
+       "REB": 6.367,
+       "AST": 4.582,
+       "STL": 1.242,
+       "BLK": 0.625,
+       "TO": 2.929,
+       "FGM": 8.016,
+       "FGA": 17.67,
+       "FTM": 5.09,
+       "FTA": 6.021,
+       "GP": 11.0,
+       "3PM": 3.295,
+       "FG%": 0.454,
+       "FT%": 0.845
+      },
+      "last_30": {
+       "PTS": 23.475,
+       "REB": 6.169,
+       "AST": 4.463,
+       "STL": 1.274,
+       "BLK": 0.595,
+       "TO": 2.929,
+       "FGM": 8.002,
+       "FGA": 17.019,
+       "FTM": 5.116,
+       "FTA": 6.126,
+       "GP": 11.0,
+       "3PM": 3.209,
+       "FG%": 0.454,
+       "FT%": 0.845
+      }
+     }
+    },
+    {
+     "id": 1010,
+     "name": "Omar Glenhaven",
+     "pro_team": "COL",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 21.365,
+       "REB": 12.917,
+       "AST": 5.656,
+       "STL": 1.07,
+       "BLK": 2.207,
+       "TO": 3.463,
+       "FGM": 7.634,
+       "FGA": 13.21,
+       "FTM": 4.73,
+       "FTA": 7.33,
+       "GP": 8.0,
+       "3PM": 1.366,
+       "FG%": 0.578,
+       "FT%": 0.645
+      },
+      "last_30": {
+       "PTS": 22.432,
+       "REB": 13.356,
+       "AST": 5.821,
+       "STL": 1.121,
+       "BLK": 2.166,
+       "TO": 3.463,
+       "FGM": 7.578,
+       "FGA": 13.245,
+       "FTM": 4.966,
+       "FTA": 7.399,
+       "GP": 8.0,
+       "3PM": 1.352,
+       "FG%": 0.578,
+       "FT%": 0.645
+      }
+     }
+    },
+    {
+     "id": 1039,
+     "name": "Zane Underhill",
+     "pro_team": "DUN",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.978,
+       "REB": 5.204,
+       "AST": 5.065,
+       "STL": 1.443,
+       "BLK": 0.438,
+       "TO": 2.13,
+       "FGM": 6.252,
+       "FGA": 14.609,
+       "FTM": 3.104,
+       "FTA": 3.717,
+       "GP": 10.0,
+       "3PM": 2.37,
+       "FG%": 0.428,
+       "FT%": 0.835
+      },
+      "last_30": {
+       "PTS": 18.006,
+       "REB": 5.047,
+       "AST": 5.229,
+       "STL": 1.393,
+       "BLK": 0.451,
+       "TO": 2.13,
+       "FGM": 6.37,
+       "FGA": 14.412,
+       "FTM": 2.971,
+       "FTA": 3.871,
+       "GP": 10.0,
+       "3PM": 2.466,
+       "FG%": 0.428,
+       "FT%": 0.835
+      }
+     }
+    },
+    {
+     "id": 1036,
+     "name": "Quinn Harrowgate",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 20.933,
+       "REB": 4.817,
+       "AST": 4.913,
+       "STL": 1.261,
+       "BLK": 0.481,
+       "TO": 2.513,
+       "FGM": 7.15,
+       "FGA": 16.386,
+       "FTM": 3.482,
+       "FTA": 4.409,
+       "GP": 9.0,
+       "3PM": 3.152,
+       "FG%": 0.436,
+       "FT%": 0.79
+      },
+      "last_30": {
+       "PTS": 16.384,
+       "REB": 3.621,
+       "AST": 3.989,
+       "STL": 0.935,
+       "BLK": 0.386,
+       "TO": 2.513,
+       "FGM": 5.736,
+       "FGA": 12.164,
+       "FTM": 2.828,
+       "FTA": 3.423,
+       "GP": 9.0,
+       "3PM": 2.385,
+       "FG%": 0.436,
+       "FT%": 0.79
+      }
+     }
+    },
+    {
+     "id": 1061,
+     "name": "Jonah Fairbourne",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 17.464,
+       "REB": 4.571,
+       "AST": 4.283,
+       "STL": 1.22,
+       "BLK": 0.372,
+       "TO": 1.545,
+       "FGM": 6.141,
+       "FGA": 12.837,
+       "FTM": 3.099,
+       "FTA": 3.882,
+       "GP": 12.0,
+       "3PM": 2.084,
+       "FG%": 0.478,
+       "FT%": 0.798
+      },
+      "last_30": {
+       "PTS": 18.134,
+       "REB": 4.386,
+       "AST": 4.429,
+       "STL": 1.267,
+       "BLK": 0.365,
+       "TO": 1.545,
+       "FGM": 6.304,
+       "FGA": 13.345,
+       "FTM": 3.16,
+       "FTA": 3.952,
+       "GP": 12.0,
+       "3PM": 2.095,
+       "FG%": 0.478,
+       "FT%": 0.798
+      }
+     }
+    },
+    {
+     "id": 1065,
+     "name": "Aiden Underhill",
+     "pro_team": "BAY",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "PG",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 16.934,
+       "REB": 4.002,
+       "AST": 3.876,
+       "STL": 1.104,
+       "BLK": 0.326,
+       "TO": 2.025,
+       "FGM": 5.994,
+       "FGA": 13.709,
+       "FTM": 2.773,
+       "FTA": 3.179,
+       "GP": 8.0,
+       "3PM": 2.173,
+       "FG%": 0.437,
+       "FT%": 0.872
+      },
+      "last_30": {
+       "PTS": 17.173,
+       "REB": 4.098,
+       "AST": 3.925,
+       "STL": 1.145,
+       "BLK": 0.322,
+       "TO": 2.025,
+       "FGM": 6.002,
+       "FGA": 14.319,
+       "FTM": 2.732,
+       "FTA": 3.318,
+       "GP": 8.0,
+       "3PM": 2.136,
+       "FG%": 0.437,
+       "FT%": 0.872
+      }
+     }
+    },
+    {
+     "id": 1085,
+     "name": "Soren Stonebridge",
+     "pro_team": "COL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 12.781,
+       "REB": 3.112,
+       "AST": 3.275,
+       "STL": 0.909,
+       "BLK": 0.297,
+       "TO": 1.371,
+       "FGM": 4.506,
+       "FGA": 9.639,
+       "FTM": 1.986,
+       "FTA": 2.419,
+       "GP": 9.0,
+       "3PM": 1.782,
+       "FG%": 0.467,
+       "FT%": 0.821
+      },
+      "last_30": {
+       "PTS": 9.922,
+       "REB": 2.489,
+       "AST": 2.435,
+       "STL": 0.73,
+       "BLK": 0.229,
+       "TO": 1.371,
+       "FGM": 3.674,
+       "FGA": 7.705,
+       "FTM": 1.589,
+       "FTA": 1.877,
+       "GP": 9.0,
+       "3PM": 1.441,
+       "FG%": 0.467,
+       "FT%": 0.821
+      }
+     }
+    },
+    {
+     "id": 1082,
+     "name": "Uri Glenhaven",
+     "pro_team": "HIL",
+     "position": "PG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "IR",
+      "PG",
+      "SG",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 13.659,
+       "REB": 2.932,
+       "AST": 6.074,
+       "STL": 1.04,
+       "BLK": 0.216,
+       "TO": 2.034,
+       "FGM": 4.441,
+       "FGA": 9.552,
+       "FTM": 2.975,
+       "FTA": 3.533,
+       "GP": 9.0,
+       "3PM": 1.802,
+       "FG%": 0.465,
+       "FT%": 0.842
+      },
+      "last_30": {
+       "PTS": 14.307,
+       "REB": 2.987,
+       "AST": 6.143,
+       "STL": 0.993,
+       "BLK": 0.217,
+       "TO": 2.034,
+       "FGM": 4.312,
+       "FGA": 9.268,
+       "FTM": 3.072,
+       "FTA": 3.549,
+       "GP": 9.0,
+       "3PM": 1.825,
+       "FG%": 0.465,
+       "FT%": 0.842
+      }
+     }
+    },
+    {
+     "id": 1106,
+     "name": "Hale Merrow",
+     "pro_team": "DUN",
+     "position": "PF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "IR",
+      "PF",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 10.295,
+       "REB": 6.372,
+       "AST": 1.877,
+       "STL": 0.52,
+       "BLK": 0.593,
+       "TO": 1.199,
+       "FGM": 3.988,
+       "FGA": 8.167,
+       "FTM": 1.608,
+       "FTA": 2.083,
+       "GP": 10.0,
+       "3PM": 0.71,
+       "FG%": 0.488,
+       "FT%": 0.772
+      },
+      "last_30": {
+       "PTS": 13.24,
+       "REB": 7.81,
+       "AST": 2.312,
+       "STL": 0.622,
+       "BLK": 0.728,
+       "TO": 1.199,
+       "FGM": 5.02,
+       "FGA": 9.772,
+       "FTM": 2.085,
+       "FTA": 2.667,
+       "GP": 10.0,
+       "3PM": 0.893,
+       "FG%": 0.488,
+       "FT%": 0.772
+      }
+     }
+    },
+    {
+     "id": 1108,
+     "name": "Uri Underhill",
+     "pro_team": "GRV",
+     "position": "C",
+     "eligible_slots": [
+      "BE",
+      "C",
+      "F/C",
+      "IR",
+      "PF/C",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 11.087,
+       "REB": 7.304,
+       "AST": 1.84,
+       "STL": 0.508,
+       "BLK": 0.894,
+       "TO": 1.377,
+       "FGM": 4.429,
+       "FGA": 8.043,
+       "FTM": 1.9,
+       "FTA": 2.621,
+       "GP": 12.0,
+       "3PM": 0.329,
+       "FG%": 0.551,
+       "FT%": 0.725
+      },
+      "last_30": {
+       "PTS": 14.073,
+       "REB": 9.403,
+       "AST": 2.312,
+       "STL": 0.624,
+       "BLK": 1.141,
+       "TO": 1.377,
+       "FGM": 5.487,
+       "FGA": 9.811,
+       "FTM": 2.363,
+       "FTA": 3.349,
+       "GP": 12.0,
+       "3PM": 0.394,
+       "FG%": 0.551,
+       "FT%": 0.725
+      }
+     }
+    },
+    {
+     "id": 1130,
+     "name": "Luca Thornfield",
+     "pro_team": "ALB",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 9.067,
+       "REB": 2.072,
+       "AST": 1.957,
+       "STL": 0.701,
+       "BLK": 0.133,
+       "TO": 1.142,
+       "FGM": 3.373,
+       "FGA": 7.249,
+       "FTM": 1.021,
+       "FTA": 1.196,
+       "GP": 11.0,
+       "3PM": 1.301,
+       "FG%": 0.465,
+       "FT%": 0.854
+      },
+      "last_30": {
+       "PTS": 8.698,
+       "REB": 2.118,
+       "AST": 1.966,
+       "STL": 0.725,
+       "BLK": 0.133,
+       "TO": 1.142,
+       "FGM": 3.205,
+       "FGA": 7.061,
+       "FTM": 0.997,
+       "FTA": 1.201,
+       "GP": 11.0,
+       "3PM": 1.264,
+       "FG%": 0.465,
+       "FT%": 0.854
+      }
+     }
+    },
+    {
+     "id": 1131,
+     "name": "Rafe Larkspur",
+     "pro_team": "FOX",
+     "position": "SF",
+     "eligible_slots": [
+      "BE",
+      "F",
+      "F/C",
+      "G/F",
+      "IR",
+      "SF",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.625,
+       "REB": 3.452,
+       "AST": 1.473,
+       "STL": 0.604,
+       "BLK": 0.251,
+       "TO": 0.958,
+       "FGM": 3.328,
+       "FGA": 6.943,
+       "FTM": 0.928,
+       "FTA": 1.254,
+       "GP": 10.0,
+       "3PM": 1.04,
+       "FG%": 0.479,
+       "FT%": 0.74
+      },
+      "last_30": {
+       "PTS": 8.973,
+       "REB": 3.612,
+       "AST": 1.539,
+       "STL": 0.601,
+       "BLK": 0.247,
+       "TO": 0.958,
+       "FGM": 3.196,
+       "FGA": 7.016,
+       "FTM": 0.952,
+       "FTA": 1.193,
+       "GP": 10.0,
+       "3PM": 1.076,
+       "FG%": 0.479,
+       "FT%": 0.74
+      }
+     }
+    },
+    {
+     "id": 1155,
+     "name": "Rafe Dunmore",
+     "pro_team": "HIL",
+     "position": "SG",
+     "eligible_slots": [
+      "BE",
+      "G",
+      "G/F",
+      "IR",
+      "SG",
+      "SG/SF",
+      "UT"
+     ],
+     "lineup_slot": "BE",
+     "injury_status": "ACTIVE",
+     "stats": {
+      "season": {
+       "PTS": 8.678,
+       "REB": 2.158,
+       "AST": 1.462,
+       "STL": 0.671,
+       "BLK": 0.111,
+       "TO": 0.812,
+       "FGM": 3.307,
+       "FGA": 7.337,
+       "FTM": 0.748,
+       "FTA": 0.942,
+       "GP": 11.0,
+       "3PM": 1.315,
+       "FG%": 0.451,
+       "FT%": 0.795
+      },
+      "last_30": {
+       "PTS": 11.042,
+       "REB": 2.732,
+       "AST": 1.848,
+       "STL": 0.835,
+       "BLK": 0.146,
+       "TO": 0.812,
+       "FGM": 3.933,
+       "FGA": 8.724,
+       "FTM": 0.975,
+       "FTA": 1.214,
+       "GP": 11.0,
+       "3PM": 1.583,
+       "FG%": 0.451,
+       "FT%": 0.795
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "fetched_at": "2026-11-07T12:00:00+00:00",
+ "source": "demo",
+ "note": "Made-up players and teams. Add your ESPN league details to use your own league."
+}

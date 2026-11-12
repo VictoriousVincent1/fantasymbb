@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade Coach</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><h1>Trade Coach</h1><p id="league-name"></p></div>
+  <div class="controls">
+    <label>Your team <select id="team"></select></label>
+    <label>Stats from <select id="window">
+      <option value="season">This season</option>
+      <option value="last_30">Last 30 days</option>
+    </select></label>
+    <button id="refresh" type="button" hidden>Update from ESPN</button>
+  </div>
+</header>
+<div id="banner" class="banner" hidden></div>
+<nav role="tablist">
+  <button role="tab" data-tab="team-view" aria-selected="true">My Team</button>
+  <button role="tab" data-tab="ideas-view" aria-selected="false">Trade Ideas</button>
+  <button role="tab" data-tab="check-view" aria-selected="false">Trade Check</button>
+</nav>
+<main>
+  <section id="team-view"></section>
+  <section id="ideas-view" hidden>
+    <div class="filters">
+      <label>Opponent <select id="opponent"><option value="">All teams</option></select></label>
+      <label>Category you need <select id="need"><option value="">Any</option></select></label>
+    </div>
+    <p id="ideas-count" class="muted" role="status"></p>
+    <div id="ideas"></div>
+  </section>
+  <section id="check-view" hidden>
+    <p class="muted">Pick any trade to see the same analysis the coach uses for its own ideas.</p>
+    <form id="check-form">
+      <label class="wide">Trade partner <select id="check-opponent"></select></label>
+      <fieldset><legend>You give</legend><div id="check-give" class="picker"></div></fieldset>
+      <fieldset><legend>You get</legend><div id="check-get" class="picker"></div></fieldset>
+      <button type="submit" class="primary">Check this trade</button>
+    </form>
+    <p id="check-error" class="error" role="alert" hidden></p>
+    <div id="check-result"></div>
+  </section>
+</main>
+<footer>Read-only: this app never proposes or submits trades on ESPN. Estimates assume each active player plays one game, so they compare teams rather than predict a week's totals.</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
