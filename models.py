@@ -46,6 +46,22 @@ class Team:
 
 
 @dataclass
+class Offer:
+    """A pending trade proposal on ESPN."""
+    id: str
+    proposer_id: int
+    proposed_ms: int
+    expires_ms: int
+    # Each move: {"player_id": int, "from_team": int, "to_team": int}
+    moves: List[Dict[str, int]]
+    includes_budget: bool = False
+
+    @property
+    def team_ids(self) -> List[int]:
+        return sorted({m["from_team"] for m in self.moves} | {m["to_team"] for m in self.moves})
+
+
+@dataclass
 class League:
     league_id: int
     year: int
@@ -61,6 +77,8 @@ class League:
     note: Optional[str] = None
     scoring_mode: str = "categories"  # or "points"
     points_per_stat: Dict[str, float] = field(default_factory=dict)
+    offers: List[Offer] = field(default_factory=list)
+    offers_error: Optional[str] = None
 
     def team(self, team_id: int) -> Team:
         for team in self.teams:
@@ -78,4 +96,5 @@ class League:
         data["teams"] = [
             Team(**{**t, "players": [Player(**p) for p in t["players"]]}) for t in data["teams"]
         ]
+        data["offers"] = [Offer(**o) for o in data.get("offers", [])]
         return cls(**data)

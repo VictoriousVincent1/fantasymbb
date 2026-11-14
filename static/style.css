@@ -69,3 +69,10 @@ legend { font-weight: 600; font-size: 13px; padding: 0 6px; }
   .controls label, .filters label { flex: 1 1 140px; }
   select { width: 100%; }
 }
+.offer-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.advice { display: inline-block; padding: 3px 10px; border-radius: 12px; font-weight: 700; font-size: 13px; background: var(--chip); }
+.advice.accept { color: var(--good); }
+.advice.decline { color: var(--bad); }
+.card.offer { border-left: 3px solid var(--line); }
+.card.offer.accept { border-left-color: var(--good); }
+.card.offer.decline { border-left-color: var(--bad); }

@@ -22,6 +22,7 @@
 <nav role="tablist">
   <button role="tab" data-tab="team-view" aria-selected="true">My Team</button>
   <button role="tab" data-tab="ideas-view" aria-selected="false">Trade Ideas</button>
+  <button role="tab" data-tab="offers-view" aria-selected="false">Offers</button>
   <button role="tab" data-tab="check-view" aria-selected="false">Trade Check</button>
 </nav>
 <main>
@@ -33,6 +34,10 @@
     </div>
     <p id="ideas-count" class="muted" role="status"></p>
     <div id="ideas"></div>
+  </section>
+  <section id="offers-view" hidden>
+    <p class="muted">Pending trade offers from ESPN, analyzed for your team. Accept or decline them on ESPN; this app only reads. <span id="offers-updated"></span></p>
+    <div id="offers"></div>
   </section>
   <section id="check-view" hidden>
     <p class="muted">Pick any trade to see the same analysis the coach uses for its own ideas.</p>

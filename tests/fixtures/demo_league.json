@@ -8091,5 +8091,69 @@
  ],
  "fetched_at": "2026-11-07T12:00:00+00:00",
  "source": "demo",
- "note": "Made-up players and teams. Add your ESPN league details to use your own league."
+ "note": "Made-up players and teams. Add your ESPN league details to use your own league.",
+ "offers": [
+  {
+   "id": "demo-offer-1",
+   "proposer_id": 3,
+   "proposed_ms": 1794500000000,
+   "expires_ms": 4102444800000,
+   "includes_budget": false,
+   "moves": [
+    {
+     "player_id": 1021,
+     "from_team": 3,
+     "to_team": 1
+    },
+    {
+     "player_id": 1000,
+     "from_team": 1,
+     "to_team": 3
+    }
+   ]
+  },
+  {
+   "id": "demo-offer-2",
+   "proposer_id": 5,
+   "proposed_ms": 1794400000000,
+   "expires_ms": 4102444800000,
+   "includes_budget": false,
+   "moves": [
+    {
+     "player_id": 1041,
+     "from_team": 5,
+     "to_team": 1
+    },
+    {
+     "player_id": 1115,
+     "from_team": 5,
+     "to_team": 1
+    },
+    {
+     "player_id": 1028,
+     "from_team": 1,
+     "to_team": 5
+    }
+   ]
+  },
+  {
+   "id": "demo-offer-3",
+   "proposer_id": 1,
+   "proposed_ms": 1794300000000,
+   "expires_ms": 4102444800000,
+   "includes_budget": false,
+   "moves": [
+    {
+     "player_id": 1074,
+     "from_team": 1,
+     "to_team": 5
+    },
+    {
+     "player_id": 1072,
+     "from_team": 5,
+     "to_team": 1
+    }
+   ]
+  }
+ ]
 }

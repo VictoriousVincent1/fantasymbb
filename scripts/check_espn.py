@@ -17,6 +17,7 @@ def anonymize(data: dict) -> dict:
     data["teams"] = [
         dict(team, name=f"Team {i}", abbrev=f"T{i}") for i, team in enumerate(data["teams"], 1)
     ]
+    data["offers"] = []  # private between the teams involved
     return data
 
 
@@ -39,6 +40,10 @@ def main() -> int:
         recent = sum(bool(p.stats.get("last_30")) for p in team.players)
         print(f"  {team.id:>3} {team.name}: {len(team.players)} players, "
               f"{with_stats} with season stats, {recent} with last-30 stats")
+    if league.offers_error:
+        print(league.offers_error)
+    else:
+        print(f"Pending trade offers in the last week: {len(league.offers)}")
     OUT.write_text(json.dumps(anonymize(league.to_dict()), indent=1))
     print(f"Saved anonymized snapshot to {OUT}")
     return 0

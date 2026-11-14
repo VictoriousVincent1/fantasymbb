@@ -2,11 +2,15 @@
 from __future__ import annotations
 
 import datetime as dt
+import json
 import logging
 from typing import Dict, List, Optional
 
 from config import Settings
-from models import Category, League, Player, Team
+from models import Category, League, Offer, Player, Team
+
+OFFER_LOOKBACK_DAYS = 7  # ESPN files each proposal under the day it was made
+REQUEST_TIMEOUT = 20
 
 # ESPN's numeric stat IDs for scoring categories.
 from espn_api.basketball.constant import POSITION_MAP, STATS_MAP
@@ -95,6 +99,53 @@ def player_from_espn(raw, year: int) -> Player:
     )
 
 
+def offers_from_transactions(transactions: List[dict]) -> List[Offer]:
+    """Pending trade proposals from ESPN's transaction records."""
+    offers: Dict[str, Offer] = {}
+    for t in transactions:
+        if t.get("type") != "TRADE_PROPOSAL" or t.get("status") != "PENDING":
+            continue
+        items = t.get("items", [])
+        moves = [
+            {"player_id": i["playerId"], "from_team": i["fromTeamId"], "to_team": i["toTeamId"]}
+            for i in items
+            if i.get("type") == "TRADE" and i.get("playerId")
+        ]
+        if not moves:
+            continue
+        offers[t["id"]] = Offer(
+            id=t["id"],
+            proposer_id=t.get("teamId", 0),
+            proposed_ms=t.get("proposedDate", 0),
+            expires_ms=t.get("expirationDate", 0),
+            moves=moves,
+            includes_budget=any(i.get("type") == "ACQUISITION_BUDGET_TRADE" for i in items),
+        )
+    return sorted(offers.values(), key=lambda o: o.proposed_ms, reverse=True)
+
+
+def fetch_offers(espn) -> List[Offer]:
+    """Reads pending proposals from the last week. Read-only: never accepts or declines."""
+    import requests
+
+    request = espn.espn_request
+    current = espn.scoringPeriodId
+    headers = {"x-fantasy-filter": json.dumps(
+        {"transactions": {"filterType": {"value": ["TRADE_PROPOSAL"]}}})}
+    transactions: List[dict] = []
+    for period in range(max(1, current - OFFER_LOOKBACK_DAYS + 1), current + 1):
+        response = requests.get(
+            request.LEAGUE_ENDPOINT,
+            params={"view": "mTransactions2", "scoringPeriodId": period},
+            headers=headers, cookies=request.cookies, timeout=REQUEST_TIMEOUT,
+        )
+        response.raise_for_status()
+        data = response.json()
+        data = data[0] if isinstance(data, list) else data
+        transactions.extend(data.get("transactions", []))
+    return offers_from_transactions(transactions)
+
+
 def fetch_league(settings: Settings) -> League:
     if not settings.has_league:
         raise EspnError("No ESPN league is configured. Add ESPN_LEAGUE_ID to your .env file.")
@@ -151,6 +202,13 @@ def fetch_league(settings: Settings) -> League:
         )
         for t in espn.teams
     ]
+    offers: List[Offer] = []
+    offers_error = None
+    try:
+        offers = fetch_offers(espn)
+    except Exception as exc:
+        offers_error = f"Couldn't read trade offers from ESPN ({type(exc).__name__})."
+
     largest = max((sum(not p.on_ir for p in t.players) for t in teams), default=0)
     limit = sum(n for slot, n in slots.items() if slot != "IR") or largest
     return League(
@@ -167,4 +225,6 @@ def fetch_league(settings: Settings) -> League:
         source="espn",
         scoring_mode=mode,
         points_per_stat=weights,
+        offers=offers,
+        offers_error=offers_error,
     )

@@ -4,6 +4,13 @@ A local, read-only coach for ESPN fantasy basketball points, category and roto l
 
 Without a league configured, it runs on a demo league of made-up players.
 
+## Screens
+
+- **My Team:** your team's strengths and weaknesses, and how your scoring works.
+- **Trade Ideas:** trades that could help both teams, with an explanation and a lesson for each.
+- **Offers:** pending trade offers to and from your team on ESPN, each analyzed with advice to accept, treat as a close call, or decline. Offers from the last 7 days are read with each update; expired ones are hidden. You still accept or decline on ESPN.
+- **Trade Check:** any trade you enter, analyzed the same way.
+
 ## Setup
 
 Requires Python 3.9 or newer.

@@ -74,10 +74,10 @@ function playerList(players) {
   return `<ul>${players.map((p) => `<li>${esc(p.name)} <span class="muted">${esc(p.position)}, ${label} ${p.value.toFixed(digits)}${statusText(p) ? ", " + esc(statusText(p)) : ""}</span></li>`).join("")}</ul>`;
 }
 
-function tradeCard(t) {
+function tradeCard(t, header) {
   const change = t.headline.change;
-  return `<article class="card">
-    <h3>${esc(t.verdict)} <span class="muted">with ${esc(t.opponent.name)}</span></h3>
+  return `<article class="card${header ? " " + header.className : ""}">
+    ${header ? header.html : `<h3>${esc(t.verdict)} <span class="muted">with ${esc(t.opponent.name)}</span></h3>`}
     <div class="deal">
       <div><h4>YOU GIVE</h4>${playerList(t.give)}</div>
       <div><h4>YOU GET</h4>${playerList(t.get)}</div>
@@ -119,6 +119,42 @@ function renderPointsTeam(r) {
         <td>${p.trend ? `<span class="chip ${p.trend === "hot" ? "strength" : "weakness"}">${trend[p.trend]}</span>` : ""}</td>
         <td>${p.above_replacement.toFixed(1)}</td></tr>`).join("")}</tbody>
     </table></div>`;
+}
+
+const when = (ms) => new Date(ms).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+
+function offerCard(o) {
+  const title = o.incoming ? `Offer from ${esc(o.from_team)}` : `Your offer to ${esc(o.analysis ? o.analysis.opponent.name : "another team")}`;
+  const times = `Proposed ${when(o.proposed_ms)}${o.expires_ms ? ` · expires ${when(o.expires_ms)}` : ""}`;
+  const notes = o.notes.map((n) => `<p class="muted">${esc(n)}</p>`).join("");
+  if (!o.analysis) {
+    return `<article class="card offer"><h3>${title}</h3><p class="muted">${times}</p>${notes}<p>${esc(o.problem)}</p></article>`;
+  }
+  const html = `<div class="offer-head"><div><h3>${title}</h3><span class="muted">${times}</span></div>
+    <span class="advice ${o.advice.key}">${esc(o.advice.text)}</span></div>${notes}`;
+  return tradeCard(o.analysis, { html, className: `offer ${o.advice.key}` });
+}
+
+let offersRequest = 0;
+
+async function loadOffers() {
+  const request = ++offersRequest;
+  $("offers").innerHTML = '<p class="muted" role="status">Checking offers...</p>';
+  try {
+    const result = await api(`/api/offers?team_id=${teamId()}&window=${windowName()}`);
+    if (request !== offersRequest) return;
+    $("offers-updated").textContent = result.source === "demo"
+      ? "These are example offers in the demo league."
+      : `Offers as of ${new Date(result.fetched_at).toLocaleString()}; click Update from ESPN for the latest.`;
+    const section = (title, items, empty) => `<h2>${title}</h2>` +
+      (items.length ? items.map(offerCard).join("") : `<div class="empty">${empty}</div>`);
+    $("offers").innerHTML = (result.error ? `<p class="error" role="alert">${esc(result.error)}</p>` : "") +
+      section("Offers to you", result.incoming, "No pending offers to your team.") +
+      section("Offers you sent", result.sent, "You have no pending offers out.");
+  } catch (error) {
+    if (request !== offersRequest) return;
+    $("offers").innerHTML = `<p class="error" role="alert">${esc(error.message)}</p>`;
+  }
 }
 
 async function loadTeam() {
@@ -206,11 +242,12 @@ function activeTab() {
 function refreshView() {
   if (activeTab() === "team-view") loadTeam();
   if (activeTab() === "ideas-view") loadIdeas();
+  if (activeTab() === "offers-view") loadOffers();
 }
 
 function showTab(tab) {
   document.querySelectorAll("nav button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
-  ["team-view", "ideas-view", "check-view"].forEach((id) => { $(id).hidden = id !== tab; });
+  ["team-view", "ideas-view", "offers-view", "check-view"].forEach((id) => { $(id).hidden = id !== tab; });
   refreshView();
 }
 

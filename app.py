@@ -20,6 +20,7 @@ from explain import explain_trade, team_report
 from points_explain import explain_points_trade, points_team_report
 from points_model import PointsModel, search_points_trades
 from models import League, WINDOWS
+from offers import offers_for_team
 from store import Store, refresh_wait_seconds
 from team_model import LeagueModel
 from trade_search import diversify, search_trades
@@ -203,6 +204,12 @@ def create_app(coach: Optional[Coach] = None, password: Optional[str] = None,
             "matching": len(found),
             "trades": [coach.explain(model, r) for r in found[:limit]],
         }
+
+    @app.get("/api/offers")
+    def offers(team_id: int, window: str = "season"):
+        model = coach.model(window)
+        require_team(team_id)
+        return offers_for_team(coach.load(), team_id, model, coach.explain)
 
     @app.post("/api/trade-check")
     def trade_check(body: TradeCheck):

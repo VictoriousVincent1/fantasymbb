@@ -112,6 +112,22 @@ def main():
     teams[8]["players"][-1]["injury_status"] = "OUT"
     del teams[10]["players"][5]["stats"]["last_30"]
 
+    def move(player, frm, to):
+        return {"player_id": player["id"], "from_team": frm, "to_team": to}
+
+    t1, t3, t5 = teams[0]["players"], teams[2]["players"], teams[4]["players"]
+    offers = [
+        {"id": "demo-offer-1", "proposer_id": 3, "proposed_ms": 1794500000000,
+         "expires_ms": 4102444800000, "includes_budget": False,
+         "moves": [move(t3[1], 3, 1), move(t1[0], 1, 3)]},
+        {"id": "demo-offer-2", "proposer_id": 5, "proposed_ms": 1794400000000,
+         "expires_ms": 4102444800000, "includes_budget": False,
+         "moves": [move(t5[3], 5, 1), move(t5[9], 5, 1), move(t1[2], 1, 5)]},
+        {"id": "demo-offer-3", "proposer_id": 1, "proposed_ms": 1794300000000,
+         "expires_ms": 4102444800000, "includes_budget": False,
+         "moves": [move(t1[6], 1, 5), move(t5[6], 5, 1)]},
+    ]
+
     league = {
         "league_id": 0, "year": 2027, "name": "Demo League (made-up players)", "scoring_type": "H2H_CATEGORY",
         "categories": [{"name": n, "reverse": n == "TO"} for n in
@@ -120,6 +136,7 @@ def main():
         "roster_limit": 13, "trade_deadline_ms": 0, "teams": teams,
         "fetched_at": "2026-11-07T12:00:00+00:00", "source": "demo",
         "note": "Made-up players and teams. Add your ESPN league details to use your own league.",
+        "offers": offers,
     }
     OUT.write_text(json.dumps(league, indent=1))
     print(f"Wrote {OUT}")
