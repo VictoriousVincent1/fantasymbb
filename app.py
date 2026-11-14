@@ -1,12 +1,16 @@
 """Local web app for the trade coach. Read-only: it never changes anything on ESPN."""
 from __future__ import annotations
 
+import base64
+import binascii
 import json
+import os
+import secrets
 import threading
 from typing import Dict, List, Optional, Tuple
 
-from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse
+from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi.responses import FileResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -97,9 +101,46 @@ class Coach:
             return self.searches[key]
 
 
-def create_app(coach: Optional[Coach] = None) -> FastAPI:
+def password_from_header(header: str) -> Optional[str]:
+    """The password from an HTTP Basic auth header. Any username is accepted."""
+    if not header.startswith("Basic "):
+        return None
+    try:
+        decoded = base64.b64decode(header[6:], validate=True).decode("utf-8")
+    except (binascii.Error, UnicodeDecodeError):
+        return None
+    return decoded.split(":", 1)[1] if ":" in decoded else None
+
+
+def create_app(coach: Optional[Coach] = None, password: Optional[str] = None,
+               require_password: Optional[bool] = None) -> FastAPI:
     coach = coach or Coach()
-    app = FastAPI(title="Trade Coach")
+    password = password if password is not None else os.environ.get("APP_PASSWORD") or None
+    if require_password is None:
+        # Render sets RENDER; anywhere else can opt in with REQUIRE_PASSWORD=1.
+        require_password = bool(os.environ.get("RENDER") or os.environ.get("REQUIRE_PASSWORD"))
+    app = FastAPI(title="Trade Coach", docs_url=None, redoc_url=None, openapi_url=None)
+
+    @app.middleware("http")
+    async def check_password(request: Request, call_next):
+        if request.url.path == "/healthz":
+            return await call_next(request)
+        if password:
+            given = password_from_header(request.headers.get("authorization", ""))
+            if given is None or not secrets.compare_digest(given.encode(), password.encode()):
+                return PlainTextResponse(
+                    "Password required.", status_code=401,
+                    headers={"WWW-Authenticate": 'Basic realm="Trade Coach", charset="UTF-8"'},
+                )
+        elif require_password:
+            # Never serve league data publicly by accident.
+            return PlainTextResponse(
+                "This site is locked until APP_PASSWORD is set in the host's settings.", status_code=503)
+        return await call_next(request)
+
+    @app.get("/healthz")
+    def health():
+        return {"ok": True}
 
     def require_team(team_id: int) -> None:
         if team_id not in {t.id for t in coach.load().teams}:

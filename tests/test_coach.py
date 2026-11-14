@@ -300,3 +300,39 @@ def test_trade_check_validates_input(client):
     assert client.get("/api/team/999").status_code == 404
     assert client.get("/api/team/1", params={"window": "nope"}).status_code == 400
     assert client.post("/api/refresh").status_code == 400
+
+
+# Password protection for hosting
+def basic(password, user="friend"):
+    import base64
+    return {"Authorization": "Basic " + base64.b64encode(f"{user}:{password}".encode()).decode()}
+
+
+def make_client(tmp_path, **options):
+    coach = Coach(Store(tmp_path / "s.sqlite"), Settings(None, 2027, None, None, None))
+    return TestClient(create_app(coach, **options))
+
+
+def test_password_protects_every_page(tmp_path):
+    client = make_client(tmp_path, password="hoops", require_password=True)
+    for path in ("/", "/api/league", "/static/app.js"):
+        response = client.get(path)
+        assert response.status_code == 401
+        assert response.headers["www-authenticate"].startswith("Basic")
+    assert client.get("/api/league", headers=basic("wrong")).status_code == 401
+    assert client.get("/api/league", headers={"Authorization": "Basic !!!"}).status_code == 401
+    assert client.get("/api/league", headers=basic("hoops")).status_code == 200
+    assert client.get("/api/league", headers=basic("hoops", user="")).status_code == 200
+    assert client.get("/healthz").status_code == 200
+
+
+def test_hosted_site_stays_locked_without_a_password(tmp_path):
+    client = make_client(tmp_path, password="", require_password=True)
+    assert client.get("/api/league").status_code == 503
+    assert client.get("/healthz").status_code == 200
+
+
+def test_local_use_needs_no_password(tmp_path):
+    client = make_client(tmp_path, password="", require_password=False)
+    assert client.get("/api/league").status_code == 200
+    assert client.get("/docs").status_code == 404  # API docs aren't exposed

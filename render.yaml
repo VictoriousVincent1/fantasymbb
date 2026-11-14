@@ -1,0 +1,25 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: trade-coach
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: ESPN_YEAR
+        value: "2027"
+      # Entered in the Render dashboard, never committed.
+      - key: APP_PASSWORD
+        sync: false
+      - key: ESPN_LEAGUE_ID
+        sync: false
+      - key: ESPN_S2
+        sync: false
+      - key: ESPN_SWID
+        sync: false
+      - key: ESPN_TEAM_ID
+        sync: false

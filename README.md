@@ -14,7 +14,7 @@ python3 -m venv .venv
 .venv/bin/python run.py
 ```
 
-Open http://127.0.0.1:8765.
+Open http://127.0.0.1:8765. Running locally needs no password unless you set `APP_PASSWORD`.
 
 ## Connect your ESPN league
 
@@ -28,6 +28,22 @@ Open http://127.0.0.1:8765.
 ```
 
 This prints what it read and saves an anonymized snapshot to `tests/fixtures/espn_snapshot.json`. ESPN access uses the unofficial `espn-api` package, so it can break when ESPN changes its internal endpoints. The app keeps working from your last saved snapshot.
+
+## Put it on the web (Render)
+
+The site is locked behind a password. Your browser asks for it once; any username works. On Render it refuses to show anything until `APP_PASSWORD` is set.
+
+1. Sign in at [render.com](https://render.com) with GitHub.
+2. Choose **New > Blueprint**, pick this repository, and confirm. Render reads `render.yaml`.
+3. When asked, fill in `APP_PASSWORD`, `ESPN_LEAGUE_ID`, `ESPN_S2`, `ESPN_SWID` and optionally `ESPN_TEAM_ID`. These stay in Render's settings, not in the repository.
+4. Open the `onrender.com` address Render gives you.
+
+Notes:
+
+- The free plan sleeps after about 15 minutes without visits, so the first visit afterward takes up to a minute.
+- Saved snapshots don't survive a restart on the free plan, so the site fetches fresh data from ESPN when it wakes up.
+- Anyone with the password can see your league's rosters. Share it only with people you'd show that to.
+- If your ESPN cookies expire, update `ESPN_S2` and `ESPN_SWID` under **Environment** in Render.
 
 ## How it values trades
 
