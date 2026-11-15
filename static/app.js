@@ -1,14 +1,81 @@
 const $ = (id) => document.getElementById(id);
-const state = { league: null };
+// connection: what the visitor entered to connect, plus the server's session token.
+// It lives only in this browser: localStorage when remembered, sessionStorage otherwise.
+const state = { league: null, connection: null };
+const CONNECTION_KEY = "coach-connection";
 
 const esc = (value) => String(value).replace(/[&<>"']/g, (c) => (
   { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-async function api(path, options) {
-  const response = await fetch(path, options);
+function storages() {
+  const found = [];
+  try { found.push(localStorage, sessionStorage); } catch (e) { /* storage blocked */ }
+  return found;
+}
+
+function loadConnection() {
+  for (const store of storages()) {
+    try {
+      const saved = JSON.parse(store.getItem(CONNECTION_KEY) || "null");
+      if (saved && saved.league) return { ...saved, remember: store === storages()[0] };
+    } catch (e) { /* ignore unreadable storage */ }
+  }
+  return null;
+}
+
+function saveConnection(connection) {
+  state.connection = connection;
+  storages().forEach((store) => { try { store.removeItem(CONNECTION_KEY); } catch (e) { /* optional */ } });
+  if (!connection) return;
+  const store = storages()[connection.remember ? 0 : 1];
+  const { remember, ...kept } = connection;
+  try { if (store) store.setItem(CONNECTION_KEY, JSON.stringify(kept)); } catch (e) { /* kept in memory only */ }
+}
+
+const cookiesOf = (c) => ({ espn_s2: c.espn_s2 || null, swid: c.swid || null });
+
+async function request(path, options = {}) {
+  const headers = { ...(options.headers || {}) };
+  if (state.connection && state.connection.session) headers["X-League-Session"] = state.connection.session;
+  const response = await fetch(path, { ...options, headers });
   const body = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(body.detail || "Something went wrong. Try again.");
+  if (!response.ok) {
+    const error = new Error(body.detail || "Something went wrong. Try again.");
+    error.status = response.status;
+    throw error;
+  }
   return body;
+}
+
+let reconnecting = null;
+
+// The server keeps connected leagues in memory, so after a restart it asks the browser to reconnect.
+function reconnect() {
+  if (!reconnecting) {
+    const c = state.connection;
+    reconnecting = request("/api/connect", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ league: String(c.league), ...cookiesOf(c) }),
+    }).then((result) => { saveConnection({ ...state.connection, session: result.session }); })
+      .finally(() => { reconnecting = null; });
+  }
+  return reconnecting;
+}
+
+async function api(path, options) {
+  try {
+    return await request(path, options);
+  } catch (error) {
+    if (error.status !== 410 || !state.connection) throw error;
+    try {
+      await reconnect();
+    } catch (failure) {
+      connectionLost(failure.message);
+      throw failure;
+    }
+    return request(path, options);
+  }
 }
 
 const teamId = () => Number($("team").value);
@@ -262,8 +329,91 @@ function teamChanged() {
 }
 
 function updatedText(league) {
-  if (league.source === "demo") return league.note;
+  if (league.source === "demo") {
+    return league.public
+      ? "You're exploring a demo league of made-up players. Click Connect your league to coach your real team."
+      : league.note;
+  }
   return `Data from ${new Date(league.fetched_at).toLocaleString()}.`;
+}
+
+// Connecting a league
+function openConnect(message, openPrivate) {
+  const c = state.connection;
+  $("connect-league").value = c ? c.league : "";
+  $("connect-s2").value = c && c.espn_s2 ? c.espn_s2 : "";
+  $("connect-swid").value = c && c.swid ? c.swid : "";
+  $("connect-remember").checked = c ? c.remember !== false : true;
+  $("private-fields").open = Boolean(openPrivate || (c && c.espn_s2));
+  $("connect-error").textContent = message || "";
+  $("connect-error").hidden = !message;
+  $("connect-dialog").showModal();
+  $("connect-league").focus();
+}
+
+async function submitConnect(event) {
+  event.preventDefault();
+  const connection = {
+    league: $("connect-league").value.trim(),
+    espn_s2: $("connect-s2").value.trim(),
+    swid: $("connect-swid").value.trim(),
+    remember: $("connect-remember").checked,
+  };
+  if (!connection.league) {
+    $("connect-error").textContent = "Enter your league ID or league page address.";
+    $("connect-error").hidden = false;
+    return;
+  }
+  $("connect-submit").disabled = true;
+  $("connect-submit").textContent = "Connecting...";
+  $("connect-error").hidden = true;
+  try {
+    const result = await request("/api/connect", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ league: connection.league, ...cookiesOf(connection) }),
+    });
+    saveConnection({ ...connection, session: result.session });
+    $("connect-dialog").close();
+    await $("connect").addEventListener("click", () => openConnect());
+$("disconnect").addEventListener("click", disconnect);
+$("connect-form").addEventListener("submit", submitConnect);
+$("connect-cancel").addEventListener("click", () => $("connect-dialog").close());
+
+state.connection = loadConnection();
+if (state.connection && !state.connection.session) state.connection.session = "expired"; // forces a reconnect
+init();
+  } catch (error) {
+    $("connect-error").textContent = error.message;
+    $("connect-error").hidden = false;
+    if (error.status === 403) $("private-fields").open = true;
+  } finally {
+    $("connect-submit").disabled = false;
+    $("connect-submit").textContent = "Connect";
+  }
+}
+
+// Reconnecting failed, usually because ESPN cookies expired: fall back to the starting league.
+function connectionLost(message) {
+  const kept = state.connection;
+  state.connection = kept ? { ...kept, session: null } : null;
+  init().then(() => openConnect(`Couldn't reconnect your league. ${message}`, true));
+}
+
+async function disconnect() {
+  const old = state.connection;
+  if (old && old.session) {
+    await request("/api/disconnect", { method: "POST" }).catch(() => {});
+  }
+  saveConnection(null);
+  await $("connect").addEventListener("click", () => openConnect());
+$("disconnect").addEventListener("click", disconnect);
+$("connect-form").addEventListener("submit", submitConnect);
+$("connect-cancel").addEventListener("click", () => $("connect-dialog").close());
+
+state.connection = loadConnection();
+if (state.connection && !state.connection.session) state.connection.session = "expired"; // forces a reconnect
+init();
 }
 
 async function init() {
@@ -276,6 +426,9 @@ async function init() {
     $("banner").textContent = notices.join(" ");
     $("banner").hidden = !notices.length;
     $("refresh").hidden = !league.can_refresh;
+    $("connect").textContent = league.connected ? "Change league" : "Connect your league";
+    $("connect").classList.toggle("primary", !league.connected);
+    $("disconnect").hidden = !league.connected;
     fillSelect($("team"), league.teams.map((t) => ({ value: t.id, label: t.name })));
     fillSelect($("need"), league.categories.map((c) => ({ value: c, label: c })), "Any");
     $("need").closest("label").hidden = league.scoring_mode === "points";
@@ -299,12 +452,31 @@ document.querySelectorAll("nav button").forEach((b) => b.addEventListener("click
 $("refresh").addEventListener("click", async () => {
   $("refresh").disabled = true;
   try {
-    await api("/api/refresh", { method: "POST" });
-    await init();
+    const options = { method: "POST" };
+    if (state.connection && state.connection.session) {
+      options.headers = { "Content-Type": "application/json" };
+      options.body = JSON.stringify(cookiesOf(state.connection));
+    }
+    await api("/api/refresh", options);
+    await $("connect").addEventListener("click", () => openConnect());
+$("disconnect").addEventListener("click", disconnect);
+$("connect-form").addEventListener("submit", submitConnect);
+$("connect-cancel").addEventListener("click", () => $("connect-dialog").close());
+
+state.connection = loadConnection();
+if (state.connection && !state.connection.session) state.connection.session = "expired"; // forces a reconnect
+init();
   } catch (error) {
     $("banner").textContent = error.message;
     $("banner").hidden = false;
   }
   $("refresh").disabled = false;
 });
+$("connect").addEventListener("click", () => openConnect());
+$("disconnect").addEventListener("click", disconnect);
+$("connect-form").addEventListener("submit", submitConnect);
+$("connect-cancel").addEventListener("click", () => $("connect-dialog").close());
+
+state.connection = loadConnection();
+if (state.connection && !state.connection.session) state.connection.session = "expired"; // forces a reconnect
 init();

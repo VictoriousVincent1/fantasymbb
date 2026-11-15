@@ -76,3 +76,22 @@ legend { font-weight: 600; font-size: 13px; padding: 0 6px; }
 .card.offer { border-left: 3px solid var(--line); }
 .card.offer.accept { border-left-color: var(--good); }
 .card.offer.decline { border-left-color: var(--bad); }
+
+input { font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; min-height: 36px; width: 100%; }
+input[type="checkbox"] { width: auto; min-height: 0; }
+dialog { width: min(560px, calc(100% - 32px)); max-height: calc(100% - 32px); border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--text); padding: 20px 22px; }
+dialog::backdrop { background: rgba(0, 0, 0, 0.45); }
+dialog h2 { margin: 0 0 4px; }
+dialog form { display: grid; gap: 10px; }
+dialog form > p { margin: 0; }
+.hint { font-size: 13px; color: var(--muted); margin: 0; }
+.privacy { border-left: 3px solid var(--accent); padding-left: 10px; }
+dialog details { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; display: grid; gap: 8px; }
+dialog details[open] > summary { margin-bottom: 8px; }
+dialog details > label, dialog details > p, dialog details > details { margin-top: 8px; }
+dialog summary { cursor: pointer; font-weight: 600; }
+.howto ol { margin: 4px 0 0; padding-left: 20px; font-size: 13px; }
+.howto li { margin-bottom: 6px; }
+label.check { display: flex; gap: 8px; align-items: center; font-size: 14px; color: var(--text); font-weight: 400; }
+.actions { display: flex; justify-content: flex-end; gap: 8px; }
+code { font-size: 12px; background: var(--chip); padding: 1px 4px; border-radius: 4px; }

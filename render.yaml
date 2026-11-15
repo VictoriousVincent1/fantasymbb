@@ -10,16 +10,5 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.8
-      - key: ESPN_YEAR
-        value: "2027"
-      # Entered in the Render dashboard, never committed.
-      - key: APP_PASSWORD
-        sync: false
-      - key: ESPN_LEAGUE_ID
-        sync: false
-      - key: ESPN_S2
-        sync: false
-      - key: ESPN_SWID
-        sync: false
-      - key: ESPN_TEAM_ID
-        sync: false
+      # Public site: visitors connect their own leagues, and no league is configured here.
+      # Optional: add APP_PASSWORD in the dashboard to limit the site to people you share it with.

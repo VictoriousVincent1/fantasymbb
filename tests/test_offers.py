@@ -140,7 +140,7 @@ def test_advice_thresholds(mode, delta, key):
 
 def test_offers_api_on_demo_league(tmp_path):
     coach = Coach(Store(tmp_path / "s.sqlite"), Settings(None, 2027, None, None, None))
-    client = TestClient(create_app(coach, password="", require_password=False))
+    client = TestClient(create_app(coach, password=""))
     result = client.get("/api/offers", params={"team_id": 1}).json()
     assert result["source"] == "demo"
     assert len(result["incoming"]) == 2 and len(result["sent"]) == 1

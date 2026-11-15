@@ -24,6 +24,31 @@ class NotCategoryLeague(EspnError):
     pass
 
 
+class PrivateLeague(EspnError):
+    """ESPN refused access: the league is private, or the cookies are wrong or expired."""
+
+
+class LeagueNotFound(EspnError):
+    pass
+
+
+def season_label(year: int) -> str:
+    return f"{year - 1}-{str(year)[2:]}"
+
+
+def viewer_team_id(teams, swid: Optional[str]) -> Optional[int]:
+    """The team owned by the person whose SWID was used, if any."""
+    if not swid:
+        return None
+    wanted = swid.strip().upper()
+    for team in teams:
+        for owner in getattr(team, "owners", None) or []:
+            owner_id = owner.get("id") if isinstance(owner, dict) else owner
+            if isinstance(owner_id, str) and owner_id.strip().upper() == wanted:
+                return team.team_id
+    return None
+
+
 def is_category_scoring(scoring_type: Optional[str]) -> bool:
     text = (scoring_type or "").upper()
     return "CATEGOR" in text or "ROTO" in text
@@ -163,6 +188,17 @@ def fetch_league(settings: Settings) -> League:
         )
         raw_settings = espn.espn_request.get_league().get("settings", {})
     except Exception as exc:  # the wrapper raises several types, some bare
+        kind = type(exc).__name__
+        if kind == "ESPNAccessDenied":
+            raise PrivateLeague(
+                "ESPN says this league is private. Add your espn_s2 and SWID cookies, or "
+                "copy fresh ones if you already did, since they expire."
+            ) from None
+        if kind == "ESPNInvalidLeague":
+            raise LeagueNotFound(
+                f"ESPN has no basketball league {settings.league_id} for the "
+                f"{season_label(settings.year)} season. Check the league ID."
+            ) from None
         # Never include the exception's request details, which could hold cookies.
         raise EspnError(
             f"ESPN request failed ({type(exc).__name__}). Check the league ID and season "
@@ -227,4 +263,5 @@ def fetch_league(settings: Settings) -> League:
         points_per_stat=weights,
         offers=offers,
         offers_error=offers_error,
+        viewer_team_id=viewer_team_id(espn.teams, settings.swid),
     )

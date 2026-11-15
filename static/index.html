@@ -16,6 +16,8 @@
       <option value="last_30">Last 30 days</option>
     </select></label>
     <button id="refresh" type="button" hidden>Update from ESPN</button>
+    <button id="connect" type="button" class="primary">Connect your league</button>
+    <button id="disconnect" type="button" hidden>Disconnect</button>
   </div>
 </header>
 <div id="banner" class="banner" hidden></div>
@@ -51,6 +53,40 @@
     <div id="check-result"></div>
   </section>
 </main>
+<dialog id="connect-dialog" aria-labelledby="connect-title">
+  <form id="connect-form" method="dialog" novalidate>
+    <h2 id="connect-title">Connect your ESPN league</h2>
+    <p class="muted">Works with ESPN fantasy basketball points, category and roto leagues.</p>
+    <label class="wide">League ID or league page address
+      <input id="connect-league" name="league" autocomplete="off" required
+        placeholder="https://fantasy.espn.com/basketball/league?leagueId=12345678">
+    </label>
+    <p class="hint">Open your league on ESPN and copy the address from the browser bar, or just the number after <code>leagueId=</code>.</p>
+    <details id="private-fields">
+      <summary>Private league? Add two ESPN cookies</summary>
+      <p class="hint">Most leagues are private. If yours is, ESPN only shares it with a signed-in member, so the coach needs two cookies from a computer where you're signed in to ESPN.</p>
+      <label class="wide">espn_s2 <input id="connect-s2" name="espn_s2" autocomplete="off" spellcheck="false"></label>
+      <label class="wide">SWID <input id="connect-swid" name="swid" autocomplete="off" spellcheck="false" placeholder="{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"></label>
+      <details class="howto">
+        <summary>How to find them</summary>
+        <ol>
+          <li>On a computer, sign in at fantasy.espn.com.</li>
+          <li><strong>Chrome or Edge:</strong> press F12 (Cmd+Option+I on a Mac), open the <strong>Application</strong> tab, then <strong>Cookies</strong> &gt; <strong>https://fantasy.espn.com</strong>.<br>
+            <strong>Safari:</strong> turn on Settings &gt; Advanced &gt; Show features for web developers, then Develop &gt; Show Web Inspector &gt; <strong>Storage</strong> &gt; <strong>Cookies</strong>.<br>
+            <strong>Firefox:</strong> press F12 and open <strong>Storage</strong> &gt; <strong>Cookies</strong>.</li>
+          <li>Copy the values of <code>espn_s2</code> and <code>SWID</code> into the boxes above.</li>
+        </ol>
+      </details>
+    </details>
+    <label class="check"><input id="connect-remember" type="checkbox" checked> Remember on this device</label>
+    <p class="hint privacy">Your cookies stay in this browser. The server uses them only to read your league from ESPN and never saves them. They give access to your ESPN account, so only enter them on a device you trust, and click Disconnect to remove them. Trade Coach never changes anything on ESPN.</p>
+    <p id="connect-error" class="error" role="alert" hidden></p>
+    <div class="actions">
+      <button type="button" id="connect-cancel">Cancel</button>
+      <button type="submit" id="connect-submit" class="primary">Connect</button>
+    </div>
+  </form>
+</dialog>
 <footer>Read-only: this app never proposes or submits trades on ESPN. Estimates assume each active player plays one game, so they compare teams rather than predict a week's totals.</footer>
 <script src="/static/app.js"></script>
 </body>

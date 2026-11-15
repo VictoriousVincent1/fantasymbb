@@ -1,6 +1,6 @@
 # Trade Coach
 
-A local, read-only coach for ESPN fantasy basketball points, category and roto leagues. It finds trades that could help both teams and explains the reasoning behind each one. It never proposes or submits anything on ESPN.
+A read-only coach for ESPN fantasy basketball points, category and roto leagues. It finds trades that could help both teams and explains the reasoning behind each one. It never proposes or submits anything on ESPN.
 
 Without a league configured, it runs on a demo league of made-up players.
 
@@ -25,10 +25,28 @@ Open http://127.0.0.1:8765. Running locally needs no password unless you set `AP
 
 ## Connect your ESPN league
 
-1. Copy `.env.example` to `~/.config/fantasy-trade-coach/.env`. Use this location rather than the project folder if the folder syncs to iCloud, because the cookies give access to your ESPN account.
-2. Add your league ID, which is in your league page's URL as `leagueId=`.
-3. For a private league, add the `espn_s2` and `SWID` cookies from a browser signed in to ESPN (DevTools > Application > Cookies).
-4. Test the connection:
+Click **Connect your league** and enter your league ID, or paste your league page's address.
+
+- **Public leagues:** that's all.
+- **Private leagues** (most leagues): also add the `espn_s2` and `SWID` cookies from a computer signed in to ESPN. The connect window shows where to find them in Chrome, Safari and Firefox.
+- **Your team** is picked automatically from your SWID when you add cookies.
+
+### Where your cookies go
+
+The cookies give access to your ESPN account, so the site handles them carefully:
+
+- They stay in your browser (localStorage, or only for this tab if you untick **Remember on this device**).
+- They reach the server only with a connect or update request, over HTTPS. The server uses them for that one ESPN request and never saves or logs them, and error messages never repeat them.
+- Connected leagues are kept in the server's memory only, never on disk, and are dropped after 12 hours unused or when the server restarts. Your browser then reconnects on its own.
+- **Disconnect** removes them from your browser and the league from the server.
+
+### Running it on your own computer
+
+Instead of connecting in the browser, you can set a league for your own copy:
+
+1. Copy `.env.example` to `~/.config/fantasy-trade-coach/.env`. Use this location rather than the project folder if the folder syncs to iCloud.
+2. Add your league ID and, for a private league, the two cookies.
+3. Test the connection:
 
 ```bash
 .venv/bin/python scripts/check_espn.py
@@ -38,19 +56,19 @@ This prints what it read and saves an anonymized snapshot to `tests/fixtures/esp
 
 ## Put it on the web (Render)
 
-The site is locked behind a password. Your browser asks for it once; any username works. On Render it refuses to show anything until `APP_PASSWORD` is set.
+The hosted site is public: anyone with the link can try the demo league and connect their own. It never shows a league from the host's settings, so `ESPN_*` values set on Render are ignored.
 
 1. Sign in at [render.com](https://render.com) with GitHub.
 2. Choose **New > Blueprint**, pick this repository, and confirm. Render reads `render.yaml`.
-3. When asked, fill in `APP_PASSWORD`, `ESPN_LEAGUE_ID`, `ESPN_S2`, `ESPN_SWID` and optionally `ESPN_TEAM_ID`. These stay in Render's settings, not in the repository.
-4. Open the `onrender.com` address Render gives you.
+3. Open the `onrender.com` address Render gives you.
 
 Notes:
 
-- The free plan sleeps after about 15 minutes without visits, so the first visit afterward takes up to a minute.
-- Saved snapshots don't survive a restart on the free plan, so the site fetches fresh data from ESPN when it wakes up.
-- Anyone with the password can see your league's rosters. Share it only with people you'd show that to.
-- If your ESPN cookies expire, update `ESPN_S2` and `ESPN_SWID` under **Environment** in Render.
+- To limit the site to people you choose, add `APP_PASSWORD` under **Environment**. Browsers then ask for it once; any username works.
+- The free plan sleeps after about 15 minutes without visits, so the first visit afterward takes up to a minute, and connected visitors reconnect automatically.
+- Each visitor can start 8 ESPN connections per 10 minutes, and each league can update from ESPN once every 10 minutes.
+- Up to 25 connected leagues are kept at once; the least recently used is dropped first and reconnects when its visitor returns.
+- ESPN's data access is unofficial. ESPN could change it or limit requests from hosting providers at any time.
 
 ## How it values trades
 

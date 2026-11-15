@@ -314,7 +314,7 @@ def make_client(tmp_path, **options):
 
 
 def test_password_protects_every_page(tmp_path):
-    client = make_client(tmp_path, password="hoops", require_password=True)
+    client = make_client(tmp_path, password="hoops")
     for path in ("/", "/api/league", "/static/app.js"):
         response = client.get(path)
         assert response.status_code == 401
@@ -326,13 +326,7 @@ def test_password_protects_every_page(tmp_path):
     assert client.get("/healthz").status_code == 200
 
 
-def test_hosted_site_stays_locked_without_a_password(tmp_path):
-    client = make_client(tmp_path, password="", require_password=True)
-    assert client.get("/api/league").status_code == 503
-    assert client.get("/healthz").status_code == 200
-
-
-def test_local_use_needs_no_password(tmp_path):
-    client = make_client(tmp_path, password="", require_password=False)
+def test_no_password_by_default(tmp_path):
+    client = make_client(tmp_path, password="")
     assert client.get("/api/league").status_code == 200
     assert client.get("/docs").status_code == 404  # API docs aren't exposed

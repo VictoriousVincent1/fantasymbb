@@ -79,6 +79,7 @@ class League:
     points_per_stat: Dict[str, float] = field(default_factory=dict)
     offers: List[Offer] = field(default_factory=list)
     offers_error: Optional[str] = None
+    viewer_team_id: Optional[int] = None  # the team owned by whoever connected, if known
 
     def team(self, team_id: int) -> Team:
         for team in self.teams:
